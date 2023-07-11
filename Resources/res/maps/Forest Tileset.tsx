@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tileset version="1.2" tiledversion="1.3.4385" name="Forest Tileset" tilewidth="32" tileheight="32" tilecount="323" columns="19">
+ <image source="Forest Tileset.png" width="639" height="544"/>
+ <terraintypes>
+  <terrain name="tree1" tile="0"/>
+  <terrain name="tree2" tile="0"/>
+  <terrain name="mountain1" tile="0"/>
+ </terraintypes>
+ <tile id="114" terrain=",,,2"/>
+ <tile id="115" terrain=",,2,2"/>
+ <tile id="116" terrain=",,2,"/>
+ <tile id="117" terrain="2,2,2,"/>
+ <tile id="118" terrain="2,2,,2"/>
+ <tile id="133" terrain=",2,,2"/>
+ <tile id="134" terrain="2,2,2,2"/>
+ <tile id="135" terrain="2,,2,"/>
+ <tile id="136" terrain="2,,2,2"/>
+ <tile id="137" terrain=",2,2,2"/>
+ <tile id="152" terrain=",2,,"/>
+ <tile id="153" terrain="2,2,,"/>
+ <tile id="154" terrain="2,,,"/>
+ <tile id="171" terrain=",,,0"/>
+ <tile id="172" terrain=",,0,0"/>
+ <tile id="173" terrain=",,0,0"/>
+ <tile id="174" terrain=",,0,"/>
+ <tile id="177" terrain=",,,1"/>
+ <tile id="178" terrain=",,1,1"/>
+ <tile id="179" terrain=",,1,1"/>
+ <tile id="180" terrain=",,1,"/>
+ <tile id="190" terrain=",0,,0"/>
+ <tile id="191" terrain="0,0,0,0"/>
+ <tile id="192" terrain="0,0,0,0"/>
+ <tile id="193" terrain="0,,0,"/>
+ <tile id="196" terrain=",1,,1"/>
+ <tile id="197" terrain="1,1,1,1"/>
+ <tile id="198" terrain="1,1,1,1"/>
+ <tile id="199" terrain="1,,1,"/>
+ <tile id="209" terrain=",0,,0"/>
+ <tile id="210" terrain="0,0,0,0"/>
+ <tile id="211" terrain="0,0,0,0"/>
+ <tile id="212" terrain="0,,0,"/>
+ <tile id="215" terrain=",1,,1"/>
+ <tile id="216" terrain="1,1,1,1"/>
+ <tile id="217" terrain="1,1,1,1"/>
+ <tile id="218" terrain="1,,1,"/>
+ <tile id="219" terrain="1,1,1,"/>
+ <tile id="220" terrain="1,1,,1"/>
+ <tile id="228" terrain=",0,,"/>
+ <tile id="229" terrain="0,0,,"/>
+ <tile id="230" terrain="0,0,,"/>
+ <tile id="231" terrain="0,,,"/>
+ <tile id="234" terrain=",1,,"/>
+ <tile id="235" terrain="1,1,,"/>
+ <tile id="236" terrain="1,1,,"/>
+ <tile id="237" terrain="1,,,"/>
+ <tile id="238" terrain="1,,1,1"/>
+ <tile id="239" terrain=",1,1,1"/>
+ <tile id="248" terrain="0,0,0,"/>
+ <tile id="249" terrain="0,0,,0"/>
+ <tile id="267" terrain="0,,0,0"/>
+ <tile id="268" terrain=",0,0,0"/>
+</tileset>

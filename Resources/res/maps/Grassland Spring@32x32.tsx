@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tileset version="1.2" tiledversion="1.3.4385" name="Grassland Spring@32x32" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+ <image source="Grassland Spring@32x32.png" width="512" height="512"/>
+ <terraintypes>
+  <terrain name="grass1" tile="7"/>
+  <terrain name="road1" tile="7"/>
+  <terrain name="riverRoad1" tile="7"/>
+  <terrain name="riverRoad2" tile="7"/>
+ </terraintypes>
+ <tile id="7" terrain=",,,0"/>
+ <tile id="8" terrain=",,0,0"/>
+ <tile id="9" terrain=",,0,"/>
+ <tile id="10" terrain=",,,2"/>
+ <tile id="11" terrain=",,2,2"/>
+ <tile id="12" terrain=",,2,2"/>
+ <tile id="13" terrain=",,2,"/>
+ <tile id="14" terrain="2,2,2,"/>
+ <tile id="15" terrain="2,2,,2"/>
+ <tile id="23" terrain=",0,,0"/>
+ <tile id="24" terrain="0,0,0,0"/>
+ <tile id="25" terrain="0,,0,"/>
+ <tile id="26" terrain=",2,,2"/>
+ <tile id="27" terrain="2,2,2,2"/>
+ <tile id="28" terrain="2,2,2,2"/>
+ <tile id="29" terrain="2,,2,"/>
+ <tile id="30" terrain="2,,2,2"/>
+ <tile id="31" terrain=",2,2,2"/>
+ <tile id="37" terrain="0,0,0,"/>
+ <tile id="38" terrain="0,0,,0"/>
+ <tile id="39" terrain=",0,,"/>
+ <tile id="40" terrain="0,0,,"/>
+ <tile id="41" terrain="0,,,"/>
+ <tile id="42" terrain=",2,,2"/>
+ <tile id="43" terrain="2,2,2,2"/>
+ <tile id="44" terrain="2,2,2,2"/>
+ <tile id="45" terrain="2,,2,"/>
+ <tile id="53" terrain="0,,0,0"/>
+ <tile id="54" terrain=",0,0,0"/>
+ <tile id="58" terrain=",2,,"/>
+ <tile id="59" terrain="2,2,,"/>
+ <tile id="60" terrain="2,2,,"/>
+ <tile id="61" terrain="2,,,"/>
+ <tile id="122" terrain=",,,3"/>
+ <tile id="123" terrain=",,3,3"/>
+ <tile id="124" terrain=",,3,3"/>
+ <tile id="125" terrain=",,3,"/>
+ <tile id="126" terrain="3,3,3,"/>
+ <tile id="127" terrain="3,3,,3"/>
+ <tile id="138" terrain=",3,,3"/>
+ <tile id="139" terrain="3,3,3,3"/>
+ <tile id="140" terrain="3,3,3,3"/>
+ <tile id="141" terrain="3,,3,"/>
+ <tile id="142" terrain="3,,3,3"/>
+ <tile id="143" terrain=",3,3,3"/>
+ <tile id="154" terrain=",3,,3"/>
+ <tile id="155" terrain="3,3,3,3"/>
+ <tile id="156" terrain="3,3,3,3"/>
+ <tile id="157" terrain="3,,3,"/>
+ <tile id="170" terrain=",3,,"/>
+ <tile id="171" terrain="3,3,,"/>
+ <tile id="172" terrain="3,3,,"/>
+ <tile id="173" terrain="3,,,"/>
+</tileset>

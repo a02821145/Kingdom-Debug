@@ -1,0 +1,3 @@
+curUnFinishLevel = 1
+levelCount = 20
+playerMoney = 0

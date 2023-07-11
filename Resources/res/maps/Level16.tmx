@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.4385" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="32" tileheight="32" infinite="0" nextlayerid="28" nextobjectid="86">
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <tileset firstgid="2049" source="building4001.tsx"/>
+ <tileset firstgid="2050" source="building4009.tsx"/>
+ <tileset firstgid="2051" source="building4007.tsx"/>
+ <tileset firstgid="2052" source="building4011.tsx"/>
+ <tileset firstgid="2053" source="building4013.tsx"/>
+ <tileset firstgid="2054" source="building4017.tsx"/>
+ <tileset firstgid="2055" source="building4019.tsx"/>
+ <tileset firstgid="2056" source="building4021.tsx"/>
+ <tileset firstgid="2057" source="building4023.tsx"/>
+ <tileset firstgid="2058" source="building4025.tsx"/>
+ <tileset firstgid="2059" source="building4002.tsx"/>
+ <tileset firstgid="2060" source="building4010.tsx"/>
+ <tileset firstgid="2061" source="building4008.tsx"/>
+ <tileset firstgid="2062" source="building4012.tsx"/>
+ <tileset firstgid="2063" source="building4014.tsx"/>
+ <tileset firstgid="2064" source="building4018.tsx"/>
+ <tileset firstgid="2065" source="building4020.tsx"/>
+ <tileset firstgid="2066" source="building4022.tsx"/>
+ <tileset firstgid="2067" source="building4024.tsx"/>
+ <tileset firstgid="2068" source="building4026.tsx"/>
+ <tileset firstgid="2069" source="building4028.tsx"/>
+ <tileset firstgid="2070" source="building4031.tsx"/>
+ <tileset firstgid="2071" source="building4030.tsx"/>
+ <tileset firstgid="2072" source="building4016.tsx"/>
+ <tileset firstgid="2073" source="trap_fire.tsx"/>
+ <tileset firstgid="2074" source="trap_wooden_spike.tsx"/>
+ <tileset firstgid="2075" source="trap_spike.tsx"/>
+ <tileset firstgid="2076" source="building4033.tsx"/>
+ <tileset firstgid="2077" source="building4034.tsx"/>
+ <tileset firstgid="2078" source="trap_Suriken.tsx"/>
+ <tileset firstgid="2079" source="Forest-Prairie Tileset.tsx"/>
+ <tileset firstgid="2646" source="LPC_cliffs_sand.tsx"/>
+ <layer id="1" name="river" width="80" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztwzENAAAMA6DOv876qI0dkNBLqqqqqqqqqqqqqqqq6tsDETY7pg==
+  </data>
+ </layer>
+ <layer id="2" name="ground" width="80" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt0sERgCAMRFFszf6L8upBJAmRmPB3Zi8iCg/Oo7WTUuraXqLXlaXV/FYEP/wig99cqvqtsq3m1xv7+pwq+GnH8POxfYvGr2Lxwy+L39NzjZ/kDP7aUUZztM/xk31rBz9J8Iv3s64j2ifyPPDDz7puD4fRf3b2086r6vd2b1b6VSx++OGXt577tPhmN8bPvjfvPVT1kwS/OT9pZs5F8s4f6xn85rKjn6crfvhF+kavKVPvZvjZ/bh/e/ldBv+BmA==
+  </data>
+ </layer>
+ <layer id="3" name="fakeground" width="80" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztwzENAAAMA6DOWv2Lqo0dkNBLqqqqqqqqqqqqqqqq6tsD++xFrg==
+  </data>
+ </layer>
+ <layer id="24" name="underroad" width="80" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzNmr1yUzEQhTX2wANQhNRhoIfCMKFKAtRAERioSIAa6AJVEqAGOsiTEB4E3gRKpLF3fHzYlXblH7wzp7Gvrq4+rVZ79yql1dlO1m7WXuBakacN2p2su6B7wfbraM+yDrK20iwbTVcm14oOJ/dgLpauZb0AvVz24ILmHQfOv/CLaJB1knU66fd5muVi6ULWB9BHx5i4T1bEjvJN3oLeDab/FXY8vy2V+T82nqsm4Sb2Ps1yQV1MU3YeXhxPeK4ixryeZn0DnQE/9AGeZ0ue8cxr8lyttSrcJEZIbOjhVuxI4cXS+HnneVXm4VfYWbG117422DE/WUPrxK6Yhx/GYF6v0T1ezOK3nXU+0Y+B3f5+1oOJHnY+wyKsxQ99rwzHWq87wX6Z37aDGdqrrNcTvQn2vUhrrQv0vXnXLBrzO6tw03LgT1mX0pjf9RTzQc6TPepdZ+vAD3NgHEePD2qx3CPse8vZV7GSPw3T8vh51q01h+iDXn5aLG+Jx3/Q6IP9m3OWRZjwezKYzZM1q82h+GCUXy2WW2208WuxwPLvZa3f2toV4zHI/nsj+fnh2o2Mhfs+Vu6nSfx7mes3yk/iEMY+Lz9cuxxLPe14/K1YcNpoL7aRAV9WtDn893/5DeOfJ2fhGFhi3+cUi39cS/D4Q81nvbGAa0A8b6PM5Kai34Mxsz+D6W+3iJ8n/hWzYmAk/vXwq+Uf8kyt+7T63c83+TXQGbKYnzDkekvtOf4HP/YxrAdYfuXtd4N8jPUz//doONZjhR9ztGpYyG9n8ryyjr80OPS+w1v1V23fsO7X6tdav8JOmKF56geyt3DtZyvNzrtHkfFq/Dyy7le7ruV7JQZuKvy+599vO/n11JDnGa/GryyDk6Tn1fKftYfUrqv5Hsc8Nm8Nq6eGbI21l592rfVeGbnH/nAa20S8l1j80Ae3DX9s5YaSR7fqB+zD5ba1nIPb1fi15qKV/7HtE0eLH9agC6fC85w4Wvyi7x89ey+2WyU/sZFz/XIOLRxrdYXo+we/K3h8D9tpY8ectKzhXUNW/t0yLz/P+xtbL78IO2xnjX0R+7NmuC/X4l+k5oyGtasIv6gPePnV9ucoP85pLH5ewxoR7nOR+mnrHdTqE3NOrU1rfSNHLz/Maaz8OWJW3aSHH97HilfIrRUzPX7tuQZrLIv0vWLWPEbqz3wPr3BdognLCD/2YYuZJ/eLfsPZM541Wn+O5uKtvSbCj6/jdw+pE2D+rPHr+YZzmPR5jPJbpHnr2VbtjfkVVp69o+cbzmnS59Fbf1mGRb5Nan7Kdb/CSmNq3cuKyZZxvtraQ5dtkW+T1jpHhho/rf7Sm4thW42hnA9c5blPiafzxMlRxf80hj38OB/T1o2cRbma1u/sbKsGU3yw8LNq+cjQW/fR+tf2FTE8I1gYLvIscvTsK/fZ8pkRMMKalrYX93xHtPIOXDflLI+cB2XN65PeM7zW+ecav9q7LsfHYhh3e+OgZdpZW2E6z3nu2hlez/nXWpzEmKftt+KP+B63rHM1mq3r2UsxXK+ed92/DtcnQg==
+  </data>
+ </layer>
+ <layer id="4" name="road" width="80" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt2rENwjAQRuFLAhTAJMAkwFyMwiTAJIE5SJMG6ZRIvy0f8fukKyOZV6BgzgxABNvObOfMvit9uvgOQ6OjMyf6TYre79GYPTPMq0lzvuj9+uFzvjPMp5J+q9ZsnXBuifudh0YXZ64B+qXWJ+5XG/pp6Kehn4Z+Gvpp6Kehn2Z8H9+0pU8CAEA9xvvYVPenteH9T0M/Df009NPQT0M/Df009NPU1m/u/ob3e+L3+XvQfrn2uObub3g9vOej9cu1BzK1vzG1j+E9H+3+udQezVK+z+inoZ+m1B7XUvqV8o//R34Ba5iWnw==
+  </data>
+ </layer>
+ <layer id="18" name="mount1" width="80" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt0LENgzAURVEXVkgmSTYJm5BNwmRswh6YzjKN0S9QlHOk1z/dlAAAAIAr3HJKQ7V7vvrR79jbPcqe1V76dWvb6XdO206/c/SL0S9Gvxj9YvSL0S9Gv5i911L2rjbq120traZmH/26ffNxs34AAAAAf2sDwmESXw==
+  </data>
+ </layer>
+ <layer id="22" name="mount2" width="80" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt0DEKwkAQhtEttsoVoxam0V4voCcJ9t7Bm7nBiEuqhClC5D34mXb4UgIA4KttUtpV2zdrf7QdQ7tD2anaWb/Zpu30W2baTr9l9IvRL0a/GP1i9IsZej3KLtWu+s32LK2O+bN+vF1e+6vtuOXfXuO96wcAAAAAAMCfewPAgiC4
+  </data>
+ </layer>
+ <layer id="23" name="mount3" width="80" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt0LEKwjAUhtEMmfKKKgUd1F33UgcfxN1nNMWKpVNLhhA4B37uevlCAAAAAAAAAFqwSyHsZzuk2h+1Y2zXpdBf8v3tqt9qy3b6bbNsp982+pXRr4x+ZfQrM/Z65d1mu+u32ju3OsbvztM9xdpftWOI/z2n+9APAKC6D1/oHpk=
+  </data>
+ </layer>
+ <layer id="5" name="playerBuildings" width="80" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt10EKgzAQBdBUqx17gi48bI/eVaEVAiqRyeK9zWyHz09ISgEArjRH9gYAALQyxrkJAPD16uh9cOtol94MUd7ZO4D/BJn8f8mkT2Ta07+njnIR9187UclykXGV/pFJ/9q4x/+cfnJ9yLhK/45bZdbMuDm3e+cHCoQChw==
+  </data>
+ </layer>
+ <layer id="6" name="npcBuildings" width="80" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt2MsOgjAQBVCWJIrvBxv//zfd6EJDTEurjcM5mwaWNzdlmK6DdjZ92kmZQY6T9Kyu/VuO28ez/vENh4leHSfe6R8tlfTvvODu+i5/dkrMx/1X31WmyfSvncg9Hfq8k/8QrbP6l+8mMyCwlTuO4KLNcnOsZUBD/j/aiby/z92/jD/IQtcBgFS7CnPDxexRRH7zPHcsufnZzbxaWv/uwrcE2w==
+  </data>
+ </layer>
+ <layer id="7" name="goldenPlayer" width="80" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1TENAAAIBDEW/AvDFDI+hFbBbVcFpEynCwC4yD8AAAAAAAAAAADgnwWyEAGh
+  </data>
+ </layer>
+ <layer id="8" name="goldenNPC" width="80" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1TEJAAAIAEEX+wezlBUEBxHuEvz2EQAAAAAAAAAAAABMVV4XAPCRf7DV9O4BoQ==
+  </data>
+ </layer>
+ <layer id="26" name="npcTrap" width="80" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt2kEKgCAQAMCOfqGC/v/MDhJEUWSGoc7A3hYPi7orOAzUZg7neJrLff2WcJ8LQBuO9z0ApNJLAKCMnJ47hhhvTCFG7b6qX+o6PdXvKidn/7Xir/PbCm8O6JOzDwBQh5JzmxkR6NX2Z9f/3Tz7+ukp7VgBYLAGyg==
+  </data>
+ </layer>
+ <layer id="9" name="trees" width="80" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt2ktKA1EUhOEjCN2dGEHdhUbcR0SykAyyEBGX4j4MwRWoQx8ggnGoYgULMr3tGXRC/g9qkEFDKO6gm1sRALB+7uuIB+exLntmZzdiXkWcKJfKfvX3ext9qLOF89mivxv1NVBulakyob/i/s7U1Z476ynnyjv9Ffe3PHPHSl+5U2bKNf0V94cV+supmojaaZqu/w0AANvhSe8sz84L7y+tfamzb+eH/lqjvxz6y6G/HPrLOdA376FzxPcvAADYAP+5P8cK90c59JdDfzn0l9Nlf6/ebo28BVluki42bAfS5f35zNutsXc0b950oczYO6RTn70r77pQZui+et5fjnwGAayPX12ZXGw=
+  </data>
+ </layer>
+ <objectgroup id="27" name="dogPos">
+  <object id="85" x="814.667" y="608">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="cameraPos">
+  <object id="1" x="1885.33" y="618.667">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="BoxPoints">
+  <object id="2" x="1629.33" y="645.333">
+   <point/>
+  </object>
+  <object id="3" x="1253.33" y="70.6667">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="13" name="spawnArea">
+  <object id="5" name="playerArea" x="1792" y="0" width="768" height="1280"/>
+  <object id="6" x="448" y="250.667" width="196" height="704"/>
+ </objectgroup>
+ <objectgroup id="14" name="createArea">
+  <object id="7" x="1792" y="0" width="768" height="1280"/>
+ </objectgroup>
+ <objectgroup id="15" name="walls">
+  <object id="18" type="1" x="879" y="166" width="710" height="80">
+   <properties>
+    <property name="normalInside" type="bool" value="false"/>
+    <property name="wallID" type="int" value="4102"/>
+   </properties>
+  </object>
+  <object id="19" type="1" x="1515" y="249" width="73" height="281">
+   <properties>
+    <property name="normalInside" type="bool" value="false"/>
+    <property name="wallID" type="int" value="4102"/>
+   </properties>
+  </object>
+  <object id="20" type="1" x="1517" y="715" width="73" height="318">
+   <properties>
+    <property name="normalInside" type="bool" value="false"/>
+    <property name="wallID" type="int" value="4102"/>
+   </properties>
+  </object>
+  <object id="21" type="1" x="1391" y="1033.33" width="200" height="70">
+   <properties>
+    <property name="normalInside" type="bool" value="false"/>
+    <property name="wallID" type="int" value="4102"/>
+   </properties>
+  </object>
+  <object id="26" x="0" y="0" width="2560" height="1280">
+   <properties>
+    <property name="normalInside" type="bool" value="true"/>
+    <property name="wallID" type="int" value="4101"/>
+   </properties>
+  </object>
+  <object id="61" x="1782.67" y="117.333" width="85.3333" height="196">
+   <properties>
+    <property name="normalInside" type="bool" value="false"/>
+    <property name="wallID" type="int" value="4101"/>
+   </properties>
+  </object>
+  <object id="62" x="1780" y="501.333" width="89.3333" height="193.333">
+   <properties>
+    <property name="normalInside" type="bool" value="false"/>
+    <property name="wallID" type="int" value="4101"/>
+   </properties>
+  </object>
+  <object id="63" x="1782.67" y="917.333" width="86.6667" height="194.667">
+   <properties>
+    <property name="normalInside" type="bool" value="false"/>
+    <property name="wallID" type="int" value="4101"/>
+   </properties>
+  </object>
+  <object id="78" type="1" x="876" y="1034.33" width="330" height="70">
+   <properties>
+    <property name="normalInside" type="bool" value="false"/>
+    <property name="wallID" type="int" value="4102"/>
+   </properties>
+  </object>
+  <object id="79" type="1" x="1135" y="1107.67" width="70" height="170">
+   <properties>
+    <property name="normalInside" type="bool" value="false"/>
+    <property name="wallID" type="int" value="4102"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="25" name="mountWall">
+  <object id="22" x="695" y="256">
+   <polygon points="4,64 167,1 168,254 50,254 -6,332 185,333 182,-24 73,-24"/>
+  </object>
+  <object id="23" x="695" y="736">
+   <polygon points="6,56.6667 171,-1 168,222 63,218.333 0,300.667 176,300 179,-23 68.3333,-16.3333"/>
+  </object>
+  <object id="27" x="1118" y="443.333">
+   <polygon points="31.3333,52 73,2.66663 183.333,-26.3333 180,282.667 88.6667,278 7,370 206.667,369.333 207.333,-50 90,-44.6667 20,27.3333"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="16" name="playerSolders">
+  <object id="53" name="1003" x="2140" y="449.333">
+   <point/>
+  </object>
+  <object id="54" name="1003" x="2137.33" y="518.667">
+   <point/>
+  </object>
+  <object id="55" name="1003" x="2145.33" y="713.333">
+   <point/>
+  </object>
+  <object id="56" name="1003" x="2141.33" y="914.667">
+   <point/>
+  </object>
+  <object id="57" name="1003" x="2145.33" y="1157.33">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="17" name="npcSolders">
+  <object id="30" name="1004" x="353.333" y="554.667">
+   <point/>
+  </object>
+  <object id="31" name="1008" x="354.667" y="620">
+   <point/>
+  </object>
+  <object id="32" name="1004" x="349.333" y="674.667">
+   <point/>
+  </object>
+  <object id="33" name="1004" x="346.667" y="841.333">
+   <point/>
+  </object>
+  <object id="34" name="1004" x="153.333" y="841.333">
+   <point/>
+  </object>
+  <object id="35" name="1004" x="348" y="398.667">
+   <point/>
+  </object>
+  <object id="36" name="1004" x="349.333" y="204">
+   <point/>
+  </object>
+  <object id="37" name="1004" x="345.333" y="14.6667">
+   <point/>
+  </object>
+  <object id="38" name="1002" x="256" y="1042.67">
+   <point/>
+  </object>
+  <object id="39" name="1006" x="389.333" y="1053.33">
+   <point/>
+  </object>
+  <object id="40" name="1002" x="322.667" y="1104">
+   <point/>
+  </object>
+  <object id="41" name="1006" x="438.667" y="1154.67">
+   <point/>
+  </object>
+  <object id="42" name="1002" x="517.333" y="1142.67">
+   <point/>
+  </object>
+  <object id="43" name="1006" x="557.333" y="1026.67">
+   <point/>
+  </object>
+  <object id="44" name="1002" x="373.333" y="1230.67">
+   <point/>
+  </object>
+  <object id="64" name="1004" x="1214.67" y="849.333">
+   <point/>
+  </object>
+  <object id="69" name="1006" x="1282.67" y="945.333">
+   <point/>
+  </object>
+  <object id="70" name="1002" x="1345.33" y="953.333">
+   <point/>
+  </object>
+  <object id="71" name="1006" x="1312" y="896">
+   <point/>
+  </object>
+  <object id="72" name="1002" x="1144" y="938.667">
+   <point/>
+  </object>
+  <object id="80" name="1002" x="1170.67" y="578.667">
+   <point/>
+  </object>
+  <object id="81" name="1002" x="1182.67" y="645.333">
+   <point/>
+  </object>
+  <object id="82" name="1006" x="1118.67" y="566.667">
+   <point/>
+  </object>
+  <object id="83" name="1002" x="1148" y="657.333">
+   <point/>
+  </object>
+ </objectgroup>
+</map>

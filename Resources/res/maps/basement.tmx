@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.4385" orientation="orthogonal" renderorder="right-down" width="30" height="40" tilewidth="32" tileheight="32" infinite="0" nextlayerid="14" nextobjectid="4">
+ <tileset firstgid="1" source="terrain.tsx"/>
+ <tileset firstgid="2049" source="building4001.tsx"/>
+ <tileset firstgid="2050" source="building4005.tsx"/>
+ <tileset firstgid="2051" source="building4017.tsx"/>
+ <tileset firstgid="2052" source="tiledObject7.tsx"/>
+ <layer id="1" name="ground" width="30" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt0qENAEAIBEFojf6Leo8miGcuWT3mKiNKGq6Py+Vyubdd/d21P3O5XC5X2u8Biyoe6A==
+  </data>
+ </layer>
+ <layer id="12" name="fakeground" width="30" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztwzENAAAMA6DOWv2Lqo0dkNBLqqqqqqpPD4TdOiA=
+  </data>
+ </layer>
+ <layer id="8" name="underroad" width="30" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztlVEKgDAMQ4fexJ1EPYl6EvXirrBC7H8z2Broz34eqbFJaUytZbY6O5F7lDnrLET2XWYG9kXiWjbTswj3HZ59hZ6ZXJF6Di6HG5n2V6+7xu7V/pW37MxFX7rXbN48uJKhJ/37d6pvOq8D1/KVo/tnZkrU4mZhrpjcFvcKvUq+PDOFanWblcv0itze7nJwx/qH2F61d7x73sr2Puu7Yu96d/yo+gBv1zpI
+  </data>
+ </layer>
+ <layer id="5" name="roads" width="30" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1VEKABAURNF5wv4XhZVgHd4SlFJ0b833+RyJ6J+KSdXX7K7b3Ru+iYuLi7tZDFLy5XDXJfopfh8XF/cVl98nOm8BOP41Uw==
+  </data>
+ </layer>
+ <layer id="7" name="grass" width="30" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20ND6AAAAAA4NcAEsAAAQ==
+  </data>
+ </layer>
+ <layer id="3" name="playerBuildings" width="30" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt1rEJACAMAMGoTcZ2dCdII4KCdxN8+RG8YuTtAgCAWtt4lZ4xj4cAAN9ZmL8Anw==
+  </data>
+ </layer>
+ <layer id="9" name="npcBuildings" width="30" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztwTEBAAAAwqD1T20ND6AAAAAA4NcAEsAAAQ==
+  </data>
+ </layer>
+ <layer id="6" name="obstacles" width="30" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztzaENAAAIwDAEgv8vRuDRJLTJ9CKATdb05QsAAADXNPReADE=
+  </data>
+ </layer>
+ <objectgroup id="11" name="walls" visible="0">
+  <object id="1" type="1" x="12.5" y="198.25" width="71.75" height="332">
+   <properties>
+    <property name="normalInside" type="bool" value="false"/>
+    <property name="wallID" type="int" value="4102"/>
+   </properties>
+  </object>
+  <object id="2" type="1" x="13.5" y="744" width="69.5" height="330.5">
+   <properties>
+    <property name="normalInside" type="bool" value="false"/>
+    <property name="wallID" type="int" value="4102"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

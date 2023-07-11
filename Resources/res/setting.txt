@@ -1,0 +1,63 @@
+#    Level of logging to be written to debug.txt:
+#    -    <nothing> (no logging)
+#    -    none (messages with no level)
+#    -    error
+#    -    warning
+#    -    action
+#    -    info
+#    -    verbose
+#    type: enum values: , none, error, warning, action, info, verbose
+debug_log_level = action
+
+#    If the file size of debug.txt exceeds the number of megabytes specified in
+#    this setting when it is opened, the file is moved to debug.txt.1,
+#    deleting an older debug.txt.1 if it exists.
+#    debug.txt is only moved if this setting is positive.
+#    type: int
+debug_log_size_max = 50
+logfile = TWLog.txt
+playerSetting = defaultPlayerSetting.txt
+#open unittest
+unittest = false
+#actorPoolNum pow of 2
+actorPoolNum = 128
+projectilePoolNum = 128
+frameRate = 60
+
+RailGun_MaxRoundsCarried = 50
+RocketLauncher_MaxRoundsCarried = 50
+ShotGun_MaxRoundsCarried = 50
+
+GiftBoxRange = 300
+MaxItemDistance = 300
+MinItemDistance = 50
+drawGraph = true
+NumCellsX = 10
+NumCellsY = 10
+GraveLifetime = 5
+MaxSearchCyclesPerUpdateStep = 1000
+maxThreadTask = 5
+maxTargetCount = 3
+LoadUseMultiple = true
+SeprationCheckFrame = 5
+UpdateTargetRegulator = 1
+AoidRegulator = 10
+AoidWallRegulator = 10
+MemoryKeepTime = 3
+StandTime = 2
+HitFlashTime = 2
+CharacterFadeInTime = 0.7
+SwtichTargetRegulator = 0.5
+MountViewDist = 500
+PlayerAI = true
+OpenPlayerAI = false
+TimeToStand = 0.5
+TimeToCreateBox = 5
+SelectActosRegulator = 5
+maxCollectMoney = 10
+sellRatio = 0.5
+SetAsTargetTime = 5
+DiffDelta = 0.1
+StandonViewAdd = 50
+CollectMoneyAdd = 1
+MaxCollectResWhenNOBuilding = 50
