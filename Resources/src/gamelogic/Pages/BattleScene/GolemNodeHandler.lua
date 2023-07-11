@@ -17,7 +17,7 @@ function GolemNodeHandler:ctor(skillNode)
     self._Pause = false
     self._CDTime = 60
 
-    local key    = "UnitLV_"..4001
+    local key    = "UnitLV_"..building_type.player_church
 	local temp   = getPlayerSetting(key,SettingType.TYPE_INT,1)
 	local iLevel = tonumber(temp.Value)
 
@@ -32,6 +32,10 @@ function GolemNodeHandler:ctor(skillNode)
     self._missleReadyAni:setVisible(false)
 
     self:addListener(MessageDef_GameLogic.MSG_TouchMapPos,self.onTouchGameMap)
+end
+
+function GolemNodeHandler:SetCDTime(CDTime)
+	self._CDTime = CDTime
 end
 
 function GolemNodeHandler:onTouchGameMap(message)
@@ -117,6 +121,10 @@ function GolemNodeHandler:_update(dt)
 	end
 
 	self._mask:setPercent(ratio*100)
+end
+
+function GolemNodeHandler:SetCDTime(CDTime)
+
 end
 
 function GolemNodeHandler:Pause(isPause)

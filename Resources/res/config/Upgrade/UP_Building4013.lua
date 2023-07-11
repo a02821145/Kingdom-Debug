@@ -16,7 +16,7 @@ local UP_Building4013 =
 			magDef = 0,
 			spd = 0,
 			cost = 0,
-			addValue = 15,
+			addValue = 60, --石头人CD时间
 			healthAdd = 50,
 		},
 
@@ -29,7 +29,7 @@ local UP_Building4013 =
 			magDef = 0,
 			spd = 0,
 			cost = 32,
-			addValue = 17,
+			addValue = 59,
 			healthAdd = 56,
 		},
 
@@ -42,7 +42,7 @@ local UP_Building4013 =
 			magDef = 0,
 			spd = 0,
 			cost = 38,
-			addValue = 19,
+			addValue = 58,
 			healthAdd = 62,
 		},
 
@@ -55,7 +55,7 @@ local UP_Building4013 =
 			magDef = 0,
 			spd = 0,
 			cost = 44,
-			addValue = 21,
+			addValue = 57,
 			healthAdd = 68,
 		},
 
@@ -68,7 +68,7 @@ local UP_Building4013 =
 			magDef = 0,
 			spd = 0,
 			cost = 50,
-			addValue = 23,
+			addValue = 56,
 			healthAdd = 74,
 		},
 
@@ -81,7 +81,7 @@ local UP_Building4013 =
 			magDef = 0,
 			spd = 0,
 			cost = 56,
-			addValue = 25,
+			addValue = 55,
 			healthAdd = 80,
 		},
 
@@ -94,7 +94,7 @@ local UP_Building4013 =
 			magDef = 0,
 			spd = 0,
 			cost = 62,
-			addValue = 27,
+			addValue = 54,
 			healthAdd = 86,
 		},
 
@@ -107,7 +107,7 @@ local UP_Building4013 =
 			magDef = 0,
 			spd = 0,
 			cost = 68,
-			addValue = 29,
+			addValue = 53,
 			healthAdd = 92,
 		},
 
@@ -120,7 +120,7 @@ local UP_Building4013 =
 			magDef = 0,
 			spd = 0,
 			cost = 74,
-			addValue = 31,
+			addValue = 52,
 			healthAdd = 98,
 		},
 
@@ -133,7 +133,7 @@ local UP_Building4013 =
 			magDef = 0,
 			spd = 0,
 			cost = 80,
-			addValue = 33,
+			addValue = 51,
 			healthAdd = 104,
 		}
 	}

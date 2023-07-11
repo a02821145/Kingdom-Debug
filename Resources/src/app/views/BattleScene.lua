@@ -539,7 +539,7 @@ function BattleScene:OnStateStart()
 	_GModel.PlayerManager:SetPreparePop(0)
 
 	self:setNodeVisible("bagNode",self._Level ~=1)
-	self:setNodeVisible("GolemNode",self._level >= GolemLevelStart)
+	self:setNodeVisible("GolemNode",self._showGolem)
 
 	self._Pause = false
 
@@ -646,6 +646,14 @@ end
 function BattleScene:refreshBuildingLV()
 	local buildings = configManager:getMod("Buildings")
 	local traps = configManager:getMod("Traps")
+	local upGradeCfgs = configManager:getMod("Upgrade")
+
+	local upGradeCfgs = configManager:getMod("Upgrade")
+	local upGradeCfgsMap = {}
+
+	for _,v in ipairs(upGradeCfgs) do
+		upGradeCfgsMap[v.id] = v
+	end
 
 	local fortressList = {}
 	local fortressListUnlock = {}
@@ -676,7 +684,7 @@ function BattleScene:refreshBuildingLV()
 	self._PutBuildingLV:removeAllChildren()
 
 	for _,fortress in ipairs(fortressList) do
-		local fortressNode = PutSelNode.new(fortress.data,fortress.unlock)
+		local fortressNode = PutSelNode.new(fortress.data,fortress.unlock,upGradeCfgsMap[fortress.data.upID])
 		self._PutBuildingLV:addChild(fortressNode)
 		table.insert(self._PutNodeList,fortressNode)
 	end
@@ -790,13 +798,8 @@ function BattleScene:startGame()
 
 		_GModel.LevelManager:setCurLevel(self._level)
 		_GModel.PlayerManager:SetCurSelectId(0)
-
-		if self._level >= GolemLevelStart then
-			local golemNode = self:getSceneNode(self._uiSceneNode,"GolemNode")
-			local golMask = self:getSceneNode(self._uiSceneNode,"SpGolemMask")
-			self._GolemNodeHandler = GolemNodeHandler.new(golemNode,golMask)
-		end
 	end
+	self._showGolem = false
 
 	self._curLevelData = levelData
 	local forbidenList = levelData.forbidenList
@@ -1016,11 +1019,28 @@ function BattleScene:onSkillNodeEvent(data)
 	end
 end
 
+function BattleScene:releaseGolemHander()
+	if self._GolemNodeHandler then
+    	self._GolemNodeHandler:Release()
+    end
+    self._GolemNodeHandler = nil
+end
+
 function BattleScene:onGolemNodeEvent(data)
-	if data.cmd == "start" then
-		self._GolemNodeHandler:Start()
-	elseif data.cmd == "stop" then
-		self._GolemNodeHandler:Stop()
+	if data.cmd == "show" then
+		self:releaseGolemHander()
+		local golemNode = self:getSceneNode(self._uiSceneNode,"GolemNode")
+		local golMask = self:getSceneNode(self._uiSceneNode,"SpGolemMask")
+		self._GolemNodeHandler = GolemNodeHandler.new(golemNode,golMask)
+		self._showGolem = true
+	elseif data.cmd == "hide" then
+	    self:releaseGolemHander()
+		self:setSceneNodeVisible("GolemNode",false,self._uiSceneNode)
+		self._showGolem = false
+	elseif data.cmd == "CDTime" then
+		if self._GolemNodeHandler then
+			self._GolemNodeHandler:SetCDTime(tonumber(data.value))
+		end
 	end
 end
 
@@ -1402,11 +1422,6 @@ function BattleScene:onRestart(data)
 	local skillNode = self:getSceneNode(self._uiSceneNode,"SkillNode")
 	self._SkillNodeHandler = SkillNodeHandler.new(skillNode)
 
-	if self._level >= GolemLevelStart then
-		local golemNode = self:getSceneNode(self._uiSceneNode,"GolemNode")
-		self._GolemNodeHandler = GolemNodeHandler.new(golemNode)
-	end
-
 	self:refreshCharacterLV()
 	self:refreshBuildingLV()
 	self:refreshPutSoldierLV()
@@ -1416,6 +1431,7 @@ function BattleScene:onRestart(data)
     self:setSceneNodeVisible("LoadingNode",true,self._uiLoadingNode)
     self:setSceneNodeVisible("GolemNode",false,self._uiSceneNode)
 
+    self._showGolem = false
     self:playSceneNodeTimeLine(self._uiLoadingTimeline,"startLoading",false,function (  )
     	-- body
     	QueueEvent(EventType.ScriptEvent_Restart)

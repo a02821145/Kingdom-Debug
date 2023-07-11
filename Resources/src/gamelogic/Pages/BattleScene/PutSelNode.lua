@@ -1,16 +1,16 @@
 local PutSelNode = class("PutSelNode", ccui.Widget,_GModel.IBaseInterface,_GModel.IMsgInterface)
 
-function PutSelNode:ctor(data,isUnlock)
+function PutSelNode:ctor(data,isUnlock,upInfo)
 	self:load("UI/Pages/BattlePage/BuildingSelNode.csb")
 	self._data = data
 	self._isSoldier = data.type == actor_type.type_soilder
 	self._isUnLock = isUnlock
 	self._pop = data.population and data.population or 0
+	self._cost = self._data.cost
 
 	self:setImageTexture("icon",self._data.icon)
 
 	self._moneyCost = self:getNode("moneyCost")
-	self._moneyCost:setString(self._data.cost)
 
 	self:setNodeVisible("lock_icon",not isUnlock)
 	self:setNodeVisible("forbiden",false)
@@ -18,6 +18,18 @@ function PutSelNode:ctor(data,isUnlock)
 	self._panelBG = self:getNode("panelBG")
 	self._panelBG:setSwallowTouches(false)
 	self._panelBG:onTouch(isUnlock and handler(self,self.onSelectPut) or nil)
+
+	if not self._isSoldier and upInfo then
+		local key    = "UnitLV_"..tostring(data.id)
+		local temp   = getPlayerSetting(key,SettingType.TYPE_INT,1)
+		local iLevel = tonumber(temp.Value)
+		local levelInfo = upInfo.levelInfo[iLevel]
+		if levelInfo and levelInfo.buildCost and levelInfo.buildCost > 0 then
+			self._cost = levelInfo.buildCost
+		end
+	end
+
+	self._moneyCost:setString(self._cost)
 
 	self:setContentSize(210,150)
 end
@@ -27,7 +39,7 @@ function PutSelNode:setForbidenByMoney(money)
 		return
 	end
 
-	self:setForbiden(money < self._data.cost)
+	self:setForbiden(money < self._cost)
 end
 
 function PutSelNode:setForbiden(forbid)
@@ -55,7 +67,7 @@ function PutSelNode:onSelectPut(event)
 	local curCost = _GModel.PlayerManager:GetPlayerCoins()
 	local prepareMoney = _GModel.PlayerManager:GetPrepareMoney()
 
-	if curCost < self._data.cost or (self._data.cost + prepareMoney) >  curCost then
+	if curCost < self._cost or (self._cost + prepareMoney) >  curCost then
 		gMessageManager:sendMessage(MessageDef_GameLogic.MSG_PlayBattleSceneAni,{ani="moneyNotEnough",loop = false,isUINode = true })
 		return
 	end
@@ -82,7 +94,7 @@ function PutSelNode:onSelectPut(event)
 			id = self._data.id,
 			level = 1,
 			insertQuadtree = false,
-			cost = self._data.cost
+			cost = self._cost
 		}
 
 		QueueEvent(EventType.ScriptEvent_GameCommand,data2)
@@ -93,7 +105,7 @@ function PutSelNode:onSelectPut(event)
 			id = self._data.id,
 			level = 1,
 			insertQuadtree = false,
-			cost = self._data.cost
+			cost = self._cost
 		}
 
 		QueueEvent(EventType.ScriptEvent_GameCommand,data2)
