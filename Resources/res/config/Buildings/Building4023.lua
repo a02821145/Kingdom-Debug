@@ -4,8 +4,9 @@ local Building =
 	type = actor_type.type_building,
 	name = "@Building_Name_4012",
 	desc = "@Building_Desc_4012",
-	canBeOp = false,
+	canBeOp = true,
 	upID = 200023,
+	cost = 30,
 	team = actor_team.team_player,
 	icon = "buliding_icon_4023.png",
 	displayCSB = "buildings/Building4023.csb",
@@ -53,6 +54,7 @@ local Building =
 			csb = "UI/buildings/Building4023.csb",
 			sfPath = "UI/TextureUI/buildings.png",
 			effect = 7004,
+			countStar = true,
 		},
 		
 		{

@@ -6,7 +6,6 @@ local Building =
 	desc = "@Building_Desc_4007",
 	canBeOp = false,
 	upID = 200014,
-	cost = 30,
 	team = actor_team.team_NPC,
 	icon = "buliding_icon_4013.png",
 	updateQuad = false,

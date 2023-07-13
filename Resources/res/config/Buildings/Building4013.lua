@@ -49,6 +49,7 @@ local Building =
 			csb = "UI/buildings/Building4013.csb",
 			sfPath = "UI/TextureUI/buildings.png",
 			effect = 7004,
+			countStar = true,
 		},
 		
 		{
