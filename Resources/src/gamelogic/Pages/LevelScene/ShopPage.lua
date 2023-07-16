@@ -7,6 +7,9 @@ function ShopPage:_init()
 end
 
 function ShopPage:_initUI()
+	local panelBG = self:getNode("PanelBG")
+    panelBG:onTouch(handler(self,self._close))
+
 	self:addBtnClickListener("btn_close",self._close)
 	self:addBtnClickListener("btn_buy",self._onBuy)
 
@@ -15,6 +18,8 @@ function ShopPage:_initUI()
 	self:setNodeVisibleLang("infoTitle")
 	self:setNodeVisibleLang("infoContent")
 	self:resetLocationByRatio("background")
+
+	self:setNodeVisibleLang("TextPanelClose")
 end
 
 function ShopPage:_refreshItems()

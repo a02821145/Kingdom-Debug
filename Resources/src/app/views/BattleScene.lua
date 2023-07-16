@@ -798,6 +798,7 @@ function BattleScene:startGame()
 
 		_GModel.LevelManager:setCurLevel(self._level)
 		_GModel.PlayerManager:SetCurSelectId(0)
+		gMessageManager:sendMessage(MessageDef_GameLogic.MSG_PauseGame,{isPause = false})
 	end
 	self._showGolem = false
 

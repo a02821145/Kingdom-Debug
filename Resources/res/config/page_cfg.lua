@@ -121,6 +121,11 @@ local page_cfg =
 		csb = "UI/Introduce/IntroducePage2.csb"
 	},
 
+	["DiamondShopPage"] = 
+	{
+		csb = "UI/Pages/ShopPage/DiamondPage.csb"
+	},
+
 	["SoldierSkillUpgradePage"] = 
 	{
 		csb = "UI/Pages/UpGradePage/SoldierSkillUpgradePage.csb"

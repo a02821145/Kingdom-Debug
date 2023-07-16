@@ -7,12 +7,22 @@ function GemShopPage:_init()
 end
 
 function GemShopPage:_initUI()
+	local panelBG = self:getNode("PanelBG")
+    panelBG:onTouch(handler(self,self._close))
+
 	self._LVGems = self:GetListView("LVGems")
 	self:addBtnClickListener("btn_close",self._close)
 	self:addBtnClickListener("btnBuy",self.onBuy)
+	self:addBtnClickListener("btnDiamond",self.onBtnDiamond)
 
 	self:setNodeVisibleLang("Title_text")
 	self:setNodeVisibleLang("btn_text_buy")
+	self:setNodeVisibleLang("TextPanelClose")
+	
+	local panelBG = self:getNode("PanelBG")
+    panelBG:onTouch(handler(self,self._close))
+
+    self:setNodeVisibleLang("btn_text_exchange")
 end
 
 
@@ -61,6 +71,10 @@ function GemShopPage:onBuy()
 	end
 
 	_GModel.PlayerManager:BuyGems(self._CurSelectItem:GetID())
+end
+
+function GemShopPage:onBtnDiamond()
+	gRootManager:OpenPage("DiamondShopPage")
 end
 
 function GemShopPage:_Release()

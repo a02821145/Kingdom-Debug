@@ -5,7 +5,7 @@ local conf =
 	name = "@SoldierAnchorName",
 	desc = "@SoldierAnchorDesc",
 	type = actor_type.type_soilder,
-	profession = actor_profession.prof_archer,
+	profession = actor_profession.prof_archer, 
 	radius = 15,
 	showPriority = 3,
 	CDTime = 5,
@@ -15,7 +15,7 @@ local conf =
 	upID = 10007,
 	spId = 80001,
 	population = 2,
-	canStandOnBuilding = true,
+	standLevel = 1,
 	displayCSB = "UI/displayAni/displayAni1013.csb",
 
 	regulators = 

@@ -124,5 +124,8 @@ local data = {
 ['@SkillDesc800012'] = 'Shoot three arrows simultaneously towards the surroundings',
 ['@SkillDesc800013'] = 'Shoot three armor piercing fire arrows simultaneously towards the surroundings',
 ['@WarningOutofStar'] = 'Not enough stars',
+['@SkillUpgradeSuccess'] = 'Successfully upgraded skills',
+['@WarningNoDiamond'] = 'Not enough diamonds',
+['@ExhangeDiamondSuccess'] = 'Successfully exchanged Ruby',
 }
 return data

@@ -130,5 +130,8 @@ local data = {
 ['@SkillDesc800012'] = '朝周围同时射出3支箭',
 ['@SkillDesc800013'] = '朝周围同时射出3支穿甲火箭',
 ['@WarningOutofStar'] = '星星不够',
+['@SkillUpgradeSuccess'] = '技能升级成功',
+['@WarningNoDiamond'] = '宝石不够',
+['@ExhangeDiamondSuccess'] = '兑换宝石成功',
 }
 return data

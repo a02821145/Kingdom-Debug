@@ -33,6 +33,7 @@ local ProjectileBombRadiusRed =
 			blastRadius = 50,
 			effect = 70021,
 			frameIndex = 15,
+			buffId = 120071,
 		},
 
 		{

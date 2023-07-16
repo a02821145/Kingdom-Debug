@@ -3,6 +3,10 @@ local PlayerManager = class("PlayerManager",_GModel.IManager)
 function PlayerManager:_Init()
 	local temp = getPlayerSetting("playerMoney",SettingType.TYPE_INT,0)
 	self._Gems = temp.Value
+
+	temp = getPlayerSetting("playerDiamond",SettingType.TYPE_INT,0)
+	self._Diamond = temp.Value
+
 	self._buyFinishHandler = handler(self,self.onBuyFinish)
 	self._curBuyId = nil
 	self._curBuyItemId = nil
@@ -16,6 +20,18 @@ end
 
 function PlayerManager:GetGems()
 	return self._Gems
+end
+
+function PlayerManager:GetDiamond()
+	return self._Diamond
+end
+
+function PlayerManager:CheckDiamond(cost)
+	if cost > 0 and self._Diamond > 0 and self._Diamond >= cost then
+		return true
+	end
+
+	return false
 end
 
 function PlayerManager:CheckGems(cost)
@@ -64,14 +80,13 @@ function PlayerManager:BuyItems(id)
 
 	local cfg = _GModel.items[id]
 	if cfg then
-
-		if not self:CheckGems(cfg.cost) then
-			gRootManager:ShowMsgBox(_Lang("@GemsNotEnought"),false)
+		if not self:CheckDiamond(cfg.cost) then
+			gRootManager:ShowMsgBox(_Lang("@WarningNoDiamond"),false)
 			return
 		end
 
-		self._Gems = self._Gems - cfg.cost
-		setPlayerSetting("playerMoney",SettingType.TYPE_INT,self._Gems)
+		self._Diamond = self._Diamond - cfg.cost
+		setPlayerSetting("playerDiamond",SettingType.TYPE_INT,self._Diamond)
 		gRootManager:ShowMsgBox(_Lang("@BuyItemSuccess", _Lang(cfg.title)))
 		gMessageManager:sendMessage(MessageDef_GameLogic.MSG_RefreshGems)
 
@@ -79,6 +94,30 @@ function PlayerManager:BuyItems(id)
 		local packageItemCount = getPlayerSetting(Key,SettingType.TYPE_INT,0)
 		local count = packageItemCount.Value + 1
 		setPlayerSetting(Key,SettingType.TYPE_INT,count)
+	end
+end
+
+function PlayerManager:ExchangeDiamond(id)
+	local diamondCfg = _GModel.DiamonsCfg[id]
+	if not diamondCfg then
+		LogError("invalid diamond cfg id"..tostring(id))
+		return
+	end
+
+	if diamondCfg then
+		if not self:CheckGems(diamondCfg.gems) then
+			gRootManager:ShowMsgBox(_Lang("@GemsNotEnought"),false)
+			return
+		end
+
+		self._Gems = self._Gems - diamondCfg.gems
+		setPlayerSetting("playerMoney",SettingType.TYPE_INT,self._Gems)
+
+		self._Diamond = self._Diamond + diamondCfg.gemCount
+		setPlayerSetting("playerDiamond",SettingType.TYPE_INT,self._Diamond)
+
+		gRootManager:ShowMsgBox(_Lang("@ExhangeDiamondSuccess"))
+		gMessageManager:sendMessage(MessageDef_GameLogic.MSG_RefreshGems)
 	end
 end
 

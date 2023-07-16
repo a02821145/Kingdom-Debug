@@ -30,7 +30,7 @@ function ItemAskNode:onBtnOK()
 		command="onCommandManager",
 		name = "PlayerManager",
 		team = actor_team.team_player,
-		cmd =  "AddMoney",
+		cmd =  "AddItemMoney",
 		money = self._data.value
 	}
 

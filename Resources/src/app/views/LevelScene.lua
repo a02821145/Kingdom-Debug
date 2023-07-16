@@ -435,6 +435,9 @@ end
 function LevelScene:onRefreshGems()
 	local gems = _GModel.PlayerManager:GetGems()
 	self:setLabelText("GemsCount",gems)
+
+	local diamonds = _GModel.PlayerManager:GetDiamond()
+	self:setLabelText("iDiamond",diamonds)
 end
 
 function LevelScene:onEventStartGame(data)

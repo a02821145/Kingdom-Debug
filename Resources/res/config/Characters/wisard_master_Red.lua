@@ -139,6 +139,10 @@ local conf =
 			},
 		},
 
+		{
+			name = "ProfressionComponent",
+		},
+		
 		-- {
 		-- 	name = "SpriteBatchAniComponent",
 		-- 	pngPath = "UI/TextureUI/MasterRed.png",

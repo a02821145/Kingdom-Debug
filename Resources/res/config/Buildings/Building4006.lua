@@ -48,6 +48,7 @@ local Building =
 			csb = "UI/buildings/Building4006.csb",
 			sfPath = "UI/TextureUI/buildings.png",
 			effect = 7004,
+			standLevel = 1,
 		},
 		
 		{

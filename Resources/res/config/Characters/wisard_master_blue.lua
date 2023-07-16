@@ -125,6 +125,10 @@ local conf =
 		},
 
 		{
+			name = "ProfressionComponent",
+		},
+		
+		{
 			name = "SpriteAniComponent",
 			csbPath = "UI/characters/MasterBlue.csb",
 			pngPath = "UI/TextureUI/SoldierAll.png",
