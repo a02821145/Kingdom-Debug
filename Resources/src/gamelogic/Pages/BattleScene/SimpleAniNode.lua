@@ -10,9 +10,9 @@ function SimpleAniNode:ctor(str,isLoop)
 	end
 end
 
-function SimpleAniNode:play()
+function SimpleAniNode:play(callback)
 	self:setVisible(true)
-	self:playTimeLine("start",false)
+	self:playTimeLine("start",false,callback)
 end
 
 function SimpleAniNode:stop()

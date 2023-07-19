@@ -224,6 +224,13 @@ function BattleScene:initUI()
 	self._selectSoldierAni:setVisible(false)
 	self._ItemAskNode = self:getSceneNode(self._uiSceneNode,"ItemAskNode")
 
+	self._DecisiveTimeAni = SimpleAniNode.new("UI/InGame/DecisiveAniNode.csb")
+	self._DecisiveTimeAni:setPosition(cc.p(0,0))
+	self._DecisiveTimeAni:stop()
+	self._DecisiveTimeAni:setNodeVisibleLang("TextDecisive")
+	self:addChildNode("UIEffectNode",self._DecisiveTimeAni)
+	self._CurDecisiveTime = 0
+
 	self:setSceneNodeVisibleLang("btn_text_study",true,self._uiSceneNode)
 	self:setSceneNodeVisibleLang("btn_text_buy",true,self._uiSceneNode)
 	self:setSceneNodeVisibleLang("btn_text_sell",true,self._uiSceneNode)
@@ -565,6 +572,11 @@ function BattleScene:OnStateStart()
 		end
 	end
 
+	self._CurDecisiveTime = ConstCfg.Decisive_Time*60
+	local str = common:format_time(self._CurDecisiveTime)
+	self:setLabelText("TextDecisiveBattle",str,self._uiSceneNode)
+	self._DecisiveTimeAni:stop()
+
 	if self._GolemNodeHandler then
 		 self._GolemNodeHandler:Start()
 	end
@@ -800,6 +812,11 @@ function BattleScene:startGame()
 		_GModel.PlayerManager:SetCurSelectId(0)
 		gMessageManager:sendMessage(MessageDef_GameLogic.MSG_PauseGame,{isPause = false})
 	end
+
+	self._CurDecisiveTime = ConstCfg.Decisive_Time*60
+	local str = common:format_time(self._CurDecisiveTime)
+	self:setLabelText("TextDecisiveBattle",str,self._uiSceneNode)
+
 	self._showGolem = false
 
 	self._curLevelData = levelData
@@ -998,6 +1015,8 @@ function BattleScene:_update(dt)
 	end
 
 	self:UpdateSimpluator(dt)
+
+	self:UpdateDecisiveTime(dt)
 end
 
 function BattleScene:onShrinkMap()
@@ -1204,6 +1223,28 @@ function BattleScene:UpdateSimpluator(dt)
 
 	if self._MapScaleHandler then
 		self._MapScaleHandler:OnTouchesMoved(movePoints,moveDeltas)
+	end
+end
+
+function BattleScene:UpdateDecisiveTime(dt)
+	if self._CurDecisiveTime > 0 then
+		self._CurDecisiveTime = self._CurDecisiveTime - dt
+		if self._CurDecisiveTime <=0 then
+			self._CurDecisiveTime = 0
+			self._DecisiveTimeAni:play(function( ... )
+				-- body
+				local data =
+				{
+					command="onCommandFinalTime",
+				}
+
+				QueueEvent(EventType.ScriptEvent_GameCommand,data)
+			end)
+			QueueEvent(EventType.ScriptEvent_Sound,{id = "Stinger_Ready_For_War"})
+		end
+
+		local str = common:format_time(self._CurDecisiveTime)
+		self:setLabelText("TextDecisiveBattle",str,self._uiSceneNode)
 	end
 end
 
@@ -1431,6 +1472,12 @@ function BattleScene:onRestart(data)
 
     self:setSceneNodeVisible("LoadingNode",true,self._uiLoadingNode)
     self:setSceneNodeVisible("GolemNode",false,self._uiSceneNode)
+
+    self._CurDecisiveTime = ConstCfg.Decisive_Time*60
+    local str = common:format_time(self._CurDecisiveTime)
+	self:setLabelText("TextDecisiveBattle",str,self._uiSceneNode)
+
+	self._DecisiveTimeAni:stop()
 
     self._showGolem = false
     self:playSceneNodeTimeLine(self._uiLoadingTimeline,"startLoading",false,function (  )

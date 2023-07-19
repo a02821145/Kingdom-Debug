@@ -749,6 +749,13 @@ local Sound =
 		time = 0.1,
 	},
 
+
+	{
+		id = "Stinger_Ready_For_War",
+		path = "sounds/Stinger_Ready For War 2.mp3",
+		time = 0.1,
+	},
+
 	{
 		id = "prepareMusic1",
 		path = "sounds/MusicBattlePrepare1.mp3",

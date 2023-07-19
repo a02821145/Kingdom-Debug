@@ -43,4 +43,12 @@ function common:table_simple_copy(tb)
 	return t
 end
 
+--输入秒输出分和秒
+function common:format_time(seconds)
+    local minutes = math.floor(seconds / 60)
+    local seconds = seconds % 60
+    
+    return string.format("%02d:%02d", minutes, seconds)
+end
+
 return common

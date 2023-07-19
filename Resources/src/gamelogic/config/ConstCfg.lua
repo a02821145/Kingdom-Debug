@@ -6,7 +6,8 @@ local ConstCfg =
 	MAP_SCALE_DEACCEL = 0.3,
 	MAX_LEVEL = 10,
 	SKILL_STAR_COUNT = 3,
-	
+	Decisive_Time = 15,
+
 	buildingShowPrio = {
 		[building_type.player_fence_building] = 1,
 		[building_type.enemy_fence_building] = 1,

@@ -61,3 +61,4 @@ DiffDelta = 0.1
 StandonViewAdd = 50
 CollectMoneyAdd = 1
 MaxCollectResWhenNOBuilding = 50
+DecisiveTimeSpeed = 2

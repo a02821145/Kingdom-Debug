@@ -71,7 +71,7 @@ function IBaseInterface:playTimeLine(name,isLoop,callback,time)
 
 	local actInfo = self.timeLine:getAnimationInfo(name)
 	if actInfo and callback then
-		local dur = (actInfo.endIndex - actInfo.startIndex)*0.05
+		local dur = (actInfo.endIndex - actInfo.startIndex)*0.016
 		gRootManager:AddTimer(time ~= nil and time or dur,false,callback)
 	end
 
