@@ -31,7 +31,7 @@
  <tileset firstgid="2964" source="tiledObject2.tsx"/>
  <tileset firstgid="2965" source="tiledObject3.tsx"/>
  <tileset firstgid="2966" source="../../../tiledObject1.tsx"/>
- <layer id="1" name="river" width="80" height="40">
+ <layer id="1" name="river" width="80" height="40" visible="0">
   <data encoding="base64" compression="zlib">
    eJztwzENAAAMA6DOv876qI0dkNBLqqqqqqqqqqqqqqqq6tsDETY7pg==
   </data>
@@ -43,7 +43,7 @@
  </layer>
  <layer id="3" name="fakeground" width="80" height="40">
   <data encoding="base64" compression="zlib">
-   eJztwzENAAAMA6DOWv2Lqo0dkNBLqqqqqqqqqqqqqqqq6tsD++xFrg==
+   eJzt1UENADAIBEFq7fyLqof2ASRDMgLYz+VUBQAAAADgQ8d1/6zfHPoB8MJ+6KcfAAAAANtcL8MYJA==
   </data>
  </layer>
  <layer id="18" name="underroad" width="80" height="40">
@@ -53,25 +53,25 @@
  </layer>
  <layer id="4" name="road" width="80" height="40">
   <data encoding="base64" compression="zlib">
-   eJztmkFOAkEQRWsYZdF6ByURF+hSTYQTMONZAKMs9BC61+uoJ1HPQZG4Ip0wXZX5tMN/yUvIJBPot/oJLYLhJIicAh0E0MFAXOl5roHeZNgvlCJHEY/L7e+yn8hIO11EvGS/RrCfD/bzUWmnOuId+7UO+/mY6nkqoDWo30ch8mn0q2j+PQ96nscNZ+o88tzqQr3/+7wE9fvWBj9GfxP6dZWDnsih0X5v17+eEEJI1/HspLa31X/As5O4rXw7iduKEEL2F+4XH9wvPrhfCCGEWDgLIkOg54n/H1n3FYpbPc8Y6CSxn3Vfoci9n3Vfoci9X+7k3M9zrxFFzv0898pQsJ8PZL8n9blj/db3r16Avib089xrRBG7f9XUN/U98R3U/asVQ/tL3A==
+   eJztmkFKA0EQRSuJ46LjHVRQFzFLDagnMOM9YjYa0SziBdSN2esB1HuoJ4k5R0pwFRqc7op/mvY/eBAGhkm9VUOXCIZNJ7IFdNuBBgNxoPMcAu0l2M+1RNoeN1q/v8t+Ih3ttO+xy36VYD8b7Gejr51Kj2fs9+ewn41TnacPtAT1e2+IfET62aj+nWud52bJC/XS8zzWkXr183sM6jfTBl+RzgP65cpaU6SIdL1Z978nhBCSO4NC5BzosKh74tVyp/PcA33IrN+LzvMK9C2zfoQQ8l/h+cUGzy82eH4hhBASw44T2QW6F3h/FHuPhuJI5zkGehLYL/YeDUXq/WLv0VCk3i91Uu5n2WtEkXI/y14ZCvazgew3UW8z6/e9f/UIdBrQz7LXiMK3f1XVJ/U58B3U/tUCb/ZJJA==
   </data>
  </layer>
- <layer id="5" name="playerBuildings" width="80" height="40">
+ <layer id="5" name="playerBuildings" width="80" height="40" visible="0">
   <data encoding="base64" compression="zlib">
    eJzt1jEOgzAMQNEUliBRzkd7Go7esQwUMgS5st5bskbWj5VSgH+z1LaTr8FMCLTvzzu9tk7RN8jF/iOS/vp6H+zHl535k/6IpD8i6Y9I+oNcnvX8hDvp7Nqjli36Dlnpr53/X3/6a6e//vb9jeZ7Sn8AQAazPw2k9QGoUAN/
   </data>
  </layer>
- <layer id="6" name="npcBuildings" width="80" height="40">
+ <layer id="6" name="npcBuildings" width="80" height="40" visible="0">
   <data encoding="base64" compression="zlib">
    eJzt1j0Kg0AQgFGLmKggOV4K738PC7HxBzeQyaC+1yxstQzfoFUFADHaJvsF99SZO5yW/QVg6enbUORlTiH0V0Z/ZNIfkR4HfekvRm2uRfb68//CP+iPSHNfR+eS/sikPzLpL15vxrv0R4ShXd+9N1rT36QxhxT6+73Pxu5f3by/3576m4y27AL+
   </data>
  </layer>
- <layer id="7" name="goldenPlayer" width="80" height="40">
+ <layer id="7" name="goldenPlayer" width="80" height="40" visible="0">
   <data encoding="base64" compression="zlib">
    eJzt1DEBAAAIw7A9+BeGKSzw7UkU9GoCAAAAAAAAAAAAAHzstAsAOvyv7wC40AGh
   </data>
  </layer>
- <layer id="8" name="goldenNPC" width="80" height="40">
+ <layer id="8" name="goldenNPC" width="80" height="40" visible="0">
   <data encoding="base64" compression="zlib">
    eJzt1DENAAAMw7A+4w9spAaj0mQjyJUE/thpFwB0+B8AAAAAAAAAAADAbwfULgGh
   </data>

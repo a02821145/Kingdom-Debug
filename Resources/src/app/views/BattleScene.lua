@@ -269,6 +269,8 @@ function BattleScene:resizeImgs(winSize)
 	
 	self:setPositionByDeltaRight("btnCancelPut",self._uiSceneNode)
 	self:setPositionByDeltaRight("bagNode",self._uiSceneNode)
+
+	self._cancelSelCB = handler(self,self.onBtnCancelPut)
 end
 
 function BattleScene:initNewbieNode()
@@ -694,10 +696,10 @@ function BattleScene:refreshBuildingLV()
 	local allList = common:table_merge_by_order(fortressList,fortressListUnlock)
 
 	self._PutBuildingLV:removeAllChildren()
-
 	for _,fortress in ipairs(fortressList) do
 		local fortressNode = PutSelNode.new(fortress.data,fortress.unlock,upGradeCfgsMap[fortress.data.upID])
 		self._PutBuildingLV:addChild(fortressNode)
+		fortressNode:setCancelSelectCB(self._cancelSelCB)
 		table.insert(self._PutNodeList,fortressNode)
 	end
 
@@ -735,6 +737,7 @@ function BattleScene:refreshPutSoldierLV()
 	for _,cha in ipairs(allList) do
 		local charNode = PutSelNode.new(cha.cfg,cha.unlock)
 		self._PutSoldierLV:addChild(charNode)
+		charNode:setCancelSelectCB(self._cancelSelCB)
 		table.insert(self._PutNodeList,charNode)
 	end
 
@@ -1227,6 +1230,8 @@ function BattleScene:UpdateSimpluator(dt)
 end
 
 function BattleScene:UpdateDecisiveTime(dt)
+	if self._CurGameState ~= GameState.GameStart then return end
+
 	if self._CurDecisiveTime > 0 then
 		self._CurDecisiveTime = self._CurDecisiveTime - dt
 		if self._CurDecisiveTime <=0 then

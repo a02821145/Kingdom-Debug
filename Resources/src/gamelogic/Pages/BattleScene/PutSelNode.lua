@@ -7,6 +7,7 @@ function PutSelNode:ctor(data,isUnlock,upInfo)
 	self._isUnLock = isUnlock
 	self._pop = data.population and data.population or 0
 	self._cost = self._data.cost
+	self._cancelSelCB = nil
 
 	self:setImageTexture("icon",self._data.icon)
 
@@ -32,6 +33,10 @@ function PutSelNode:ctor(data,isUnlock,upInfo)
 	self._moneyCost:setString(self._cost)
 
 	self:setContentSize(210,150)
+end
+
+function PutSelNode:setCancelSelectCB(CB)
+	self._cancelSelCB =  CB
 end
 
 function PutSelNode:setForbidenByMoney(money)
@@ -60,6 +65,14 @@ function PutSelNode:onSelectPut(event)
 	if curSelectId ~= self._data.id then
 		_GModel.PlayerManager:SetPrepareMoney(0)
 		gMessageManager:sendMessage(MessageDef_GameLogic.MSG_RefreshBattleCoins)
+	elseif curSelectId == self._data.id then
+
+		if self._cancelSelCB then
+			self._cancelSelCB()
+		end
+
+		_GModel.PlayerManager:SetCurSelectId(nil)
+		return
 	end
 
 	_GModel.PlayerManager:SetCurSelectId(self._data.id)
