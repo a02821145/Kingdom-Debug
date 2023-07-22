@@ -20,7 +20,7 @@ local weaponBow =
 	rounds = 0,
 	maxRoundsCarried = 0,
 	firingFreq = 1,
-	idealRange = 200,
+	idealRange = 250,
 	idealRangeMin = 30,
 	soundRange = 50,
 

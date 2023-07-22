@@ -10,7 +10,7 @@ local WeaponMaskWandBall =
 	rounds = 0,
 	maxRoundsCarried = 0,
 	firingFreq = 0.5,
-	idealRange = 220,
+	idealRange = 250,
 	soundRange = 100,
 
 	vertex = 
