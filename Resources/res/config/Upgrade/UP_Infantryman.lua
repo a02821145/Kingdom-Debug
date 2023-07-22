@@ -8,90 +8,90 @@ local UP_Infantryman =
 	{
 		[1] = 
 		{
-			atk = 8,
-			def = 1.5,
+			atk = 25,
+			def = 1,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 0,
-			healthAdd = 55,
+			healthAdd = 120,
 		},
 
 		[2] = 
 		{
-			atk = 11,
-			def = 1.9,
+			atk = 36,
+			def = 1.1,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 19,
-			healthAdd = 62,
+			healthAdd = 133,
 		},
 
 		[3] = 
 		{
-			atk = 14,
-			def = 2.3,
+			atk = 47,
+			def = 1.3,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 29,
-			healthAdd = 69,
+			healthAdd = 146,
 		},
 
 		[4] = 
 		{
-			atk = 17,
-			def = 2.7,
+			atk = 58,
+			def = 1.4,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 38,
-			healthAdd = 76,
+			healthAdd = 159,
 		},
 
 		[5] = 
 		{
-			atk = 20,
-			def = 3.1,
+			atk = 69,
+			def = 1.6,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 48,
-			healthAdd = 83,
+			healthAdd = 172,
 		},
 
 		[6] = 
 		{
-			atk = 23,
-			def = 3.5,
+			atk = 80,
+			def = 1.7,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 57,
-			healthAdd = 90,
+			healthAdd = 185,
 		},
 
 		[7] = 
 		{
-			atk = 26,
-			def = 3.9,
+			atk = 91,
+			def = 1.9,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 67,
-			healthAdd = 97,
+			healthAdd = 198,
 		},
 
 		[8] = 
 		{
-			atk = 29,
-			def = 4.3,
+			atk = 102,
+			def = 2,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 76,
-			healthAdd = 104,
+			healthAdd = 211,
 		},
 
 		[9] = 

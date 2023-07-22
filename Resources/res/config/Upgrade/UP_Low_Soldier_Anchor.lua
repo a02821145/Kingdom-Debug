@@ -8,112 +8,112 @@ local UP_Low_Soldier_Anchor =
 	{
 		[1] = 
 		{
-			atk = 6,
-			def = 0,
+			atk = 12,
+			def = 2,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 0,
-			healthAdd = 35,
+			healthAdd = 25,
 		},
 
 		[2] = 
 		{
-			atk = 7,
-			def = 0,
+			atk = 17,
+			def = 2.4,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 13,
-			healthAdd = 39,
+			healthAdd = 26,
 		},
 
 		[3] = 
 		{
-			atk = 8,
-			def = 0,
+			atk = 22,
+			def = 2.8,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 16,
-			healthAdd = 43,
+			healthAdd = 27,
 		},
 
 		[4] = 
 		{
-			atk = 9,
-			def = 0,
+			atk = 27,
+			def = 3.2,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 19,
-			healthAdd = 47,
+			healthAdd = 28,
 		},
 
 		[5] = 
 		{
-			atk = 10,
-			def = 0,
+			atk = 32,
+			def = 3.6,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 22,
-			healthAdd = 51,
+			healthAdd = 30,
 		},
 
 		[6] = 
 		{
-			atk = 11,
-			def = 0,
+			atk = 37,
+			def = 4,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 25,
-			healthAdd = 55,
+			healthAdd = 32,
 		},
 
 		[7] = 
 		{
-			atk = 12,
-			def = 0,
+			atk = 42,
+			def = 4.5,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 28,
-			healthAdd = 59,
+			healthAdd = 34,
 		},
 
 		[8] = 
 		{
-			atk = 13,
-			def = 0,
+			atk = 48,
+			def = 5,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 31,
-			healthAdd = 63,
+			healthAdd = 36,
 		},
 
 		[9] = 
 		{
-			atk = 14,
-			def = 0,
+			atk = 54,
+			def = 5.5,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 34,
-			healthAdd = 67,
+			healthAdd = 38,
 		},
 
 		[10] = 
 		{
-			atk = 15,
-			def = 0,
+			atk = 60,
+			def = 6,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 37,
-			healthAdd = 71,
+			healthAdd = 40,
 		},
 	}
 }

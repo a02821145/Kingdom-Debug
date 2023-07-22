@@ -19,10 +19,10 @@ local UP_Wisard =
 
 		[2] = 
 		{
-			atk = 4,
-			def = 1.5,
+			atk = 3.3,
+			def = 1.2,
 			viewDist = 0,
-			magAtk = 5.6,
+			magAtk = 6,
 			magDef = 2.8,
 			cost = 28,
 			healthAdd = 67,
@@ -30,10 +30,10 @@ local UP_Wisard =
 
 		[3] = 
 		{
-			atk = 5,
-			def = 2,
+			atk = 3.6,
+			def = 1.4,
 			viewDist = 0,
-			magAtk = 6.2,
+			magAtk = 7,
 			magDef = 3.6,
 			cost = 37,
 			healthAdd = 74,
@@ -41,10 +41,10 @@ local UP_Wisard =
 
 		[4] = 
 		{
-			atk = 6,
-			def = 2.5,
+			atk = 3.9,
+			def = 1.6,
 			viewDist = 0,
-			magAtk = 6.8,
+			magAtk = 8,
 			magDef = 4.4,
 			cost = 45,
 			healthAdd = 81,
@@ -52,68 +52,68 @@ local UP_Wisard =
 
 		[5] = 
 		{
-			atk = 7,
-			def = 3,
+			atk = 4.2,
+			def = 1.8,
 			viewDist = 0,
-			magAtk = 7.4,
-			magDef = 5.2,
+			magAtk = 9,
+			magDef = 5.3,
 			cost = 53,
 			healthAdd = 88,
 		},
 
 		[6] = 
 		{
-			atk = 8,
-			def = 3.5,
+			atk = 4.5,
+			def = 2,
 			viewDist = 0,
-			magAtk = 8,
-			magDef = 6,
+			magAtk = 10,
+			magDef = 6.4,
 			cost = 63,
 			healthAdd = 95,
 		},
 
 		[7] = 
 		{
-			atk = 9,
-			def = 4,
+			atk = 4.8,
+			def = 2.2,
 			viewDist = 0,
-			magAtk = 8.6,
-			magDef = 6.8,
+			magAtk = 11,
+			magDef = 7.3,
 			cost = 71,
 			healthAdd = 102,
 		},
 
 		[8] = 
 		{
-			atk = 10,
-			def = 4.5,
+			atk = 5.2,
+			def = 2.4,
 			viewDist = 0,
-			magAtk = 9.2,
-			magDef = 7.6,
+			magAtk = 12,
+			magDef = 8.2,
 			cost = 80,
 			healthAdd = 109,
 		},
 
 		[9] = 
 		{
-			atk = 11,
-			def = 5,
+			atk = 5.6,
+			def = 2.7,
 			viewDist = 0,
-			magAtk = 9.8,
-			magDef = 8.4,
+			magAtk = 13,
+			magDef = 9.1,
 			cost = 89,
 			healthAdd = 116,
 		},
 
 		[10] = 
 		{
-			atk = 12,
-			def = 5.5,
+			atk = 6,
+			def = 3,
 			viewDist = 0,
-			magAtk = 10.4,
-			magDef = 9.2,
+			magAtk = 15,
+			magDef = 10,
 			cost = 97,
-			healthAdd = 123,
+			healthAdd = 120,
 		},
 	}
 }
