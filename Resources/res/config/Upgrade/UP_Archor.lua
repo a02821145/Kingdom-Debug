@@ -9,8 +9,8 @@ local UP_Anchor =
 	{
 		[1] = 
 		{
-			atk = 10,
-			secondAtk = 5,
+			atk = 8,
+			secondAtk = 4,
 			def = 0.6,
 			viewDist = 0,
 			magAtk = 0,
@@ -21,110 +21,110 @@ local UP_Anchor =
 
 		[2] = 
 		{
-			atk = 14,
-			secondAtk = 7,
+			atk = 11,
+			secondAtk = 5,
 			def = 0.7,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 18,
-			healthAdd = 55,
+			healthAdd = 34,
 		},
 
 		[3] = 
 		{
-			atk = 19,
-			secondAtk = 9,
+			atk = 15,
+			secondAtk = 7,
 			def = 0.8,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 26,
-			healthAdd = 62,
+			healthAdd = 38,
 		},
 
 		[4] = 
 		{
-			atk = 23,
-			secondAtk = 11,
+			atk = 18,
+			secondAtk = 9,
 			def = 0.9,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 34,
-			healthAdd = 67,
+			healthAdd = 42,
 		},
 
 		[5] = 
 		{
-			atk = 28,
-			secondAtk = 14,
+			atk = 22,
+			secondAtk = 12,
 			def = 1,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 42,
-			healthAdd = 74,
+			healthAdd = 46,
 		},
 
 		[6] = 
 		{
-			atk = 32,
-			secondAtk = 16,
+			atk = 25,
+			secondAtk = 13,
 			def = 1.2,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 51,
-			healthAdd = 79,
+			healthAdd = 50,
 		},
 
 		[7] = 
 		{
-			atk = 36,
-			secondAtk = 18,
+			atk = 29,
+			secondAtk = 14,
 			def = 1.4,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 59,
-			healthAdd = 85,
+			healthAdd = 54,
 		},
 
 		[8] = 
 		{
-			atk = 40,
-			secondAtk = 20,
+			atk = 32,
+			secondAtk = 16,
 			def = 1.6,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 67,
-			healthAdd = 90,
+			healthAdd = 58,
 		},
 
 		[9] = 
 		{
-			atk = 45,
-			secondAtk = 22,
+			atk = 36,
+			secondAtk = 18,
 			def = 1.8,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 75,
-			healthAdd = 95,
+			healthAdd = 62,
 		},
 
 		[10] = 
 		{
-			atk = 50,
-			secondAtk = 25,
+			atk = 40,
+			secondAtk = 20,
 			def = 1.9,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 83,
-			healthAdd = 100,
+			healthAdd = 66,
 		},
 	}
 }
