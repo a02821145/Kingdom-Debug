@@ -11,7 +11,7 @@ local WeaponMagicWand =
 	rounds = 0,
 	maxRoundsCarried = 0,
 	firingFreq = 0.3,
-	idealRange = 250,
+	idealRange = 200,
 	idealRangeMin = 50,
 	soundRange = 0,
 

@@ -25,7 +25,7 @@ local UP_Farmer =
 			magAtk = 0,
 			magDef = 0,
 			cost = 22,
-			healthAdd = 45,
+			healthAdd = 46,
 		},
 
 		[3] = 
@@ -36,7 +36,7 @@ local UP_Farmer =
 			magAtk = 0,
 			magDef = 0,
 			cost = 34,
-			healthAdd = 50,
+			healthAdd = 52,
 		},
 
 		[4] = 
@@ -47,7 +47,7 @@ local UP_Farmer =
 			magAtk = 0,
 			magDef = 0,
 			cost = 46,
-			healthAdd = 55,
+			healthAdd = 58,
 		},
 
 		[5] = 
@@ -58,7 +58,7 @@ local UP_Farmer =
 			magAtk = 0,
 			magDef = 0,
 			cost = 58,
-			healthAdd = 60,
+			healthAdd = 64,
 		},
 
 		[6] = 
@@ -69,7 +69,7 @@ local UP_Farmer =
 			magAtk = 0,
 			magDef = 0,
 			cost = 70,
-			healthAdd = 65,
+			healthAdd = 70,
 		},
 
 		[7] = 
@@ -80,7 +80,7 @@ local UP_Farmer =
 			magAtk = 0,
 			magDef = 0,
 			cost = 82,
-			healthAdd = 70,
+			healthAdd = 76,
 		},
 
 		[8] = 
@@ -91,7 +91,7 @@ local UP_Farmer =
 			magAtk = 0,
 			magDef = 0,
 			cost = 94,
-			healthAdd = 75,
+			healthAdd = 82,
 		},
 
 		[9] = 
@@ -102,7 +102,7 @@ local UP_Farmer =
 			magAtk = 0,
 			magDef = 0,
 			cost = 106,
-			healthAdd = 80,
+			healthAdd = 88,
 		},
 
 		[10] = 
@@ -113,7 +113,7 @@ local UP_Farmer =
 			magAtk = 0,
 			magDef = 0,
 			cost = 118,
-			healthAdd = 85,
+			healthAdd = 95,
 		},
 	}
 }

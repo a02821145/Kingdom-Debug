@@ -80,7 +80,7 @@ local UP_Wolf =
 			magAtk = 0,
 			magDef = 0,
 			cost = 0,
-			healthAdd = 54,
+			healthAdd = 55,
 		},
 
 		[8] = 
@@ -91,7 +91,7 @@ local UP_Wolf =
 			magAtk = 0,
 			magDef = 0,
 			cost = 0,
-			healthAdd = 58,
+			healthAdd = 60,
 		},
 
 		[9] = 
@@ -102,7 +102,7 @@ local UP_Wolf =
 			magAtk = 0,
 			magDef = 0,
 			cost = 0,
-			healthAdd = 62,
+			healthAdd = 65,
 		},
 
 		[10] = 
@@ -113,7 +113,7 @@ local UP_Wolf =
 			magAtk = 0,
 			magDef = 0,
 			cost = 0,
-			healthAdd = 66,
+			healthAdd = 70,
 		},
 	}
 }

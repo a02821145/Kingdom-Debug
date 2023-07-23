@@ -9,9 +9,9 @@ local UP_Anchor =
 	{
 		[1] = 
 		{
-			atk = 8,
-			secondAtk = 4,
-			def = 1,
+			atk = 10,
+			secondAtk = 5,
+			def = 0.6,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
@@ -21,21 +21,21 @@ local UP_Anchor =
 
 		[2] = 
 		{
-			atk = 10,
-			secondAtk = 5,
-			def = 1.3,
+			atk = 14,
+			secondAtk = 7,
+			def = 0.7,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 18,
-			healthAdd = 56,
+			healthAdd = 55,
 		},
 
 		[3] = 
 		{
-			atk = 12,
-			secondAtk = 6,
-			def = 1.6,
+			atk = 19,
+			secondAtk = 9,
+			def = 0.8,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
@@ -45,21 +45,21 @@ local UP_Anchor =
 
 		[4] = 
 		{
-			atk = 14,
-			secondAtk = 7,
-			def = 1.9,
+			atk = 23,
+			secondAtk = 11,
+			def = 0.9,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 34,
-			healthAdd = 68,
+			healthAdd = 67,
 		},
 
 		[5] = 
 		{
-			atk = 16,
-			secondAtk = 8,
-			def = 2.2,
+			atk = 28,
+			secondAtk = 14,
+			def = 1,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
@@ -69,62 +69,62 @@ local UP_Anchor =
 
 		[6] = 
 		{
-			atk = 18,
-			secondAtk = 9,
-			def = 2.5,
+			atk = 32,
+			secondAtk = 16,
+			def = 1.2,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 51,
-			healthAdd = 80,
+			healthAdd = 79,
 		},
 
 		[7] = 
 		{
-			atk = 20,
-			secondAtk = 10,
-			def = 2.8,
+			atk = 36,
+			secondAtk = 18,
+			def = 1.4,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 59,
-			healthAdd = 86,
+			healthAdd = 85,
 		},
 
 		[8] = 
 		{
-			atk = 22,
-			secondAtk = 11,
-			def = 3.1,
+			atk = 40,
+			secondAtk = 20,
+			def = 1.6,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 67,
-			healthAdd = 92,
+			healthAdd = 90,
 		},
 
 		[9] = 
 		{
-			atk = 24,
-			secondAtk = 12,
-			def = 3.4,
+			atk = 45,
+			secondAtk = 22,
+			def = 1.8,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 75,
-			healthAdd = 98,
+			healthAdd = 95,
 		},
 
 		[10] = 
 		{
-			atk = 26,
-			secondAtk = 13,
-			def = 3.7,
+			atk = 50,
+			secondAtk = 25,
+			def = 1.9,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 83,
-			healthAdd = 104,
+			healthAdd = 100,
 		},
 	}
 }

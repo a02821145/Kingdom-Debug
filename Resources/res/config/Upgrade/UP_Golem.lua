@@ -14,7 +14,7 @@ local UP_Golem =
 			magAtk = 0,
 			magDef = 1.5,
 			cost = 0,
-			healthAdd = 100,
+			healthAdd = 180,
 		},
 
 		[2] = 
@@ -25,7 +25,7 @@ local UP_Golem =
 			magAtk = 0,
 			magDef = 1.8,
 			cost = 0 ,
-			healthAdd = 111 ,
+			healthAdd = 204 ,
 		},
 
 		[3] = 
@@ -36,7 +36,7 @@ local UP_Golem =
 			magAtk = 0,
 			magDef = 2.1,
 			cost = 0,
-			healthAdd = 122 ,
+			healthAdd = 228 ,
 		},
 
 		[4] = 
@@ -47,7 +47,7 @@ local UP_Golem =
 			magAtk = 0,
 			magDef = 2.4,
 			cost = 0,
-			healthAdd = 133,
+			healthAdd = 252,
 		},
 
 		[5] = 
@@ -58,7 +58,7 @@ local UP_Golem =
 			magAtk = 0,
 			magDef = 2.7,
 			cost = 0,
-			healthAdd = 144,
+			healthAdd = 276,
 		},
 
 		[6] = 
@@ -69,7 +69,7 @@ local UP_Golem =
 			magAtk = 0,
 			magDef = 3,
 			cost = 0,
-			healthAdd = 155,
+			healthAdd = 300,
 		},
 
 		[7] = 
@@ -80,7 +80,7 @@ local UP_Golem =
 			magAtk = 0,
 			magDef = 3.3,
 			cost = 0,
-			healthAdd = 166,
+			healthAdd = 324,
 		},
 
 		[8] = 
@@ -91,7 +91,7 @@ local UP_Golem =
 			magAtk = 0,
 			magDef = 3.6,
 			cost = 0,
-			healthAdd = 177,
+			healthAdd = 348,
 		},
 
 		[9] = 
@@ -102,7 +102,7 @@ local UP_Golem =
 			magAtk = 0,
 			magDef = 3.9,
 			cost = 0,
-			healthAdd = 188,
+			healthAdd = 372,
 		},
 
 		[10] = 
@@ -113,7 +113,7 @@ local UP_Golem =
 			magAtk = 0,
 			magDef = 4.2,
 			cost = 0,
-			healthAdd = 199,
+			healthAdd = 400,
 		},
 	}
 }

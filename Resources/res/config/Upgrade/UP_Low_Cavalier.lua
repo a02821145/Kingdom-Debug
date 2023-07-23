@@ -9,7 +9,7 @@ local UP_Low_Cavalier =
 		[1] = 
 		{
 			atk = 8,
-			def = 1,
+			def = 3,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
@@ -20,7 +20,7 @@ local UP_Low_Cavalier =
 		[2] = 
 		{
 			atk = 10,
-			def = 1.3,
+			def = 3.5,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
@@ -31,7 +31,7 @@ local UP_Low_Cavalier =
 		[3] = 
 		{
 			atk = 12,
-			def = 1.6,
+			def = 4.1,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
@@ -42,7 +42,7 @@ local UP_Low_Cavalier =
 		[4] = 
 		{
 			atk = 14,
-			def = 1.9,
+			def = 4.6,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
@@ -53,7 +53,7 @@ local UP_Low_Cavalier =
 		[5] = 
 		{
 			atk = 16,
-			def = 2.2,
+			def = 5.2,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
@@ -64,7 +64,7 @@ local UP_Low_Cavalier =
 		[6] = 
 		{
 			atk = 18,
-			def = 2.5,
+			def = 5.7,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
@@ -75,7 +75,7 @@ local UP_Low_Cavalier =
 		[7] = 
 		{
 			atk = 20,
-			def = 2.8,
+			def = 6.3,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
@@ -86,7 +86,7 @@ local UP_Low_Cavalier =
 		[8] = 
 		{
 			atk = 22,
-			def = 3.1,
+			def = 6.8,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
@@ -97,23 +97,23 @@ local UP_Low_Cavalier =
 		[9] = 
 		{
 			atk = 24,
-			def = 3.4,
+			def = 7.4,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 38,
-			healthAdd = 111,
+			healthAdd = 112,
 		},
 
 		[10] = 
 		{
 			atk = 26,
-			def = 3.7,
+			def = 8,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 41,
-			healthAdd = 118,
+			healthAdd = 120,
 		},
 	}
 }

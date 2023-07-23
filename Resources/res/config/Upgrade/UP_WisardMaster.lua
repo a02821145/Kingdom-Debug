@@ -8,13 +8,13 @@ local UP_WisardMaster =
 	{
 		[1] = 
 		{
-			atk = 7,
-			def = 1,
+			atk = 4,
+			def = 2,
 			viewDist = 0,
-			magAtk = 9,
-			magDef = 3,
+			magAtk = 6,
+			magDef = 2,
 			cost = 0,
-			healthAdd = 60,
+			healthAdd = 55,
 			addValue1 = -10, --降低移动速度
 			addValue2 = -10, --降低攻击速度
 			addValue3 = -10, --降级防御力
@@ -23,13 +23,13 @@ local UP_WisardMaster =
 
 		[2] = 
 		{
-			atk = 9,
-			def = 1.3,
+			atk = 4.9,
+			def = 2.4,
 			viewDist = 0,
-			magAtk = 11,
-			magDef = 3.5,
+			magAtk = 7.3,
+			magDef = 2.7,
 			cost = 39 ,
-			healthAdd = 67,
+			healthAdd = 61,
 			addValue1 = -10,
 			addValue2 = -10, 
 			addValue3 = -10,
@@ -38,13 +38,13 @@ local UP_WisardMaster =
 
 		[3] = 
 		{
-			atk = 11,
-			def = 1.6,
+			atk = 5.8,
+			def = 2.8,
 			viewDist = 0,
-			magAtk = 13,
-			magDef = 4,
+			magAtk = 8.6,
+			magDef = 3.4,
 			cost = 64,
-			healthAdd = 74 ,
+			healthAdd = 67 ,
 			addValue1 = -10,
 			addValue2 = -10, 
 			addValue3 = -10,
@@ -53,13 +53,13 @@ local UP_WisardMaster =
 
 		[4] = 
 		{
-			atk = 13,
-			def = 1.9,
+			atk = 6.7,
+			def = 3.2,
 			viewDist = 0,
-			magAtk = 15,
-			magDef = 4.5,
+			magAtk = 9.9,
+			magDef = 4.1,
 			cost = 90,
-			healthAdd = 81,
+			healthAdd = 73,
 			addValue1 = -10,
 			addValue2 = -10, 
 			addValue3 = -10,
@@ -68,13 +68,13 @@ local UP_WisardMaster =
 
 		[5] = 
 		{
-			atk = 15,
-			def = 2.2,
+			atk = 7.6,
+			def = 3.6,
 			viewDist = 0,
-			magAtk = 17,
-			magDef = 5,
+			magAtk = 11.2,
+			magDef = 4.8,
 			cost = 115,
-			healthAdd = 88,
+			healthAdd = 79,
 			addValue1 = -10,
 			addValue2 = -10, 
 			addValue3 = -10,
@@ -83,13 +83,13 @@ local UP_WisardMaster =
 
 		[6] = 
 		{
-			atk = 17,
-			def = 2.5,
+			atk = 8.5,
+			def = 4,
 			viewDist = 0,
-			magAtk = 19,
+			magAtk = 12.5,
 			magDef = 5.5,
 			cost = 140,
-			healthAdd = 95,
+			healthAdd = 85,
 			addValue1 = -10,
 			addValue2 = -10, 
 			addValue3 = -10,
@@ -98,13 +98,13 @@ local UP_WisardMaster =
 
 		[7] = 
 		{
-			atk = 19,
-			def = 2.8,
+			atk = 9.4,
+			def = 4.5,
 			viewDist = 0,
-			magAtk = 21,
-			magDef = 6,
+			magAtk = 13.9,
+			magDef = 6.2,
 			cost = 165,
-			healthAdd = 102,
+			healthAdd = 91,
 			addValue1 = -10,
 			addValue2 = -10, 
 			addValue3 = -10,
@@ -113,13 +113,13 @@ local UP_WisardMaster =
 
 		[8] = 
 		{
-			atk = 21,
-			def = 3.1,
+			atk = 10.3,
+			def = 5,
 			viewDist = 0,
-			magAtk = 23,
-			magDef = 6.5,
+			magAtk = 15.2,
+			magDef = 6.9,
 			cost = 191,
-			healthAdd = 109,
+			healthAdd = 97,
 			addValue1 = -10,
 			addValue2 = -10, 
 			addValue3 = -10,
@@ -128,13 +128,13 @@ local UP_WisardMaster =
 
 		[9] = 
 		{
-			atk = 23,
-			def = 3.4,
+			atk = 11.2,
+			def = 5.5,
 			viewDist = 0,
-			magAtk = 25,
-			magDef = 7,
+			magAtk = 16.6,
+			magDef = 7.6,
 			cost = 216,
-			healthAdd = 116,
+			healthAdd = 103,
 			addValue1 = -10,
 			addValue2 = -10, 
 			addValue3 = -10,
@@ -143,13 +143,13 @@ local UP_WisardMaster =
 
 		[10] = 
 		{
-			atk = 25,
-			def = 3.7,
+			atk = 12,
+			def = 6,
 			viewDist = 0,
-			magAtk = 27,
-			magDef = 7.5,
+			magAtk = 18,
+			magDef = 8,
 			cost = 241,
-			healthAdd = 123,
+			healthAdd = 110,
 			addValue1 = -10,
 			addValue2 = -10, 
 			addValue3 = -10,

@@ -9,111 +9,111 @@ local UP_Low_Soldier_Master =
 		[1] = 
 		{
 			atk = 0,
-			def = 0,
+			def = 3,
 			viewDist = 0,
-			magAtk = 9,
-			magDef = 1,
+			magAtk = 15,
+			magDef = 3,
 			cost = 0,
-			healthAdd = 40,
+			healthAdd = 30,
 		},
 
 		[2] = 
 		{
 			atk = 0,
-			def = 0,
+			def = 3.6,
 			viewDist = 0,
-			magAtk = 11,
-			magDef = 1.4,
+			magAtk = 20,
+			magDef = 3.6,
 			cost = 20,
-			healthAdd = 45,
+			healthAdd = 32,
 		},
 
 		[3] = 
 		{
 			atk = 0,
-			def = 0,
+			def = 4.2,
 			viewDist = 0,
-			magAtk = 13,
-			magDef = 1.8,
+			magAtk = 25,
+			magDef = 4.2,
 			cost = 27,
-			healthAdd = 50,
+			healthAdd = 34,
 		},
 
 		[4] = 
 		{
 			atk = 0,
-			def = 0,
+			def = 4.8,
 			viewDist = 0,
-			magAtk = 15,
-			magDef = 2.2,
+			magAtk = 30,
+			magDef = 4.8,
 			cost = 35,
-			healthAdd = 55,
+			healthAdd = 37,
 		},
 
 		[5] = 
 		{
 			atk = 0,
-			def = 0,
+			def = 5.5,
 			viewDist = 0,
-			magAtk = 17,
-			magDef = 2.6,
+			magAtk = 35,
+			magDef = 5.5,
 			cost = 42,
-			healthAdd = 60,
+			healthAdd = 40,
 		},
 
 		[6] = 
 		{
 			atk = 0,
-			def = 0,
+			def = 6.2,
 			viewDist = 0,
-			magAtk = 19,
-			magDef = 3,
+			magAtk = 40,
+			magDef = 6.2,
 			cost = 50,
-			healthAdd = 65,
+			healthAdd = 43,
 		},
 
 		[7] = 
 		{
 			atk = 0,
-			def = 0,
+			def = 6.9,
 			viewDist = 0,
-			magAtk = 21,
-			magDef = 3.4,
+			magAtk = 45,
+			magDef = 6.9,
 			cost = 57,
-			healthAdd = 70,
+			healthAdd = 46,
 		},
 
 		[8] = 
 		{
 			atk = 0,
-			def = 0,
+			def = 7.6,
 			viewDist = 0,
-			magAtk = 23,
-			magDef = 3.8,
+			magAtk = 50,
+			magDef = 7.6,
 			cost = 65,
-			healthAdd = 75,
+			healthAdd = 49,
 		},
 
 		[9] = 
 		{
 			atk = 0,
-			def = 0,
+			def = 8.3,
 			viewDist = 0,
-			magAtk = 25,
-			magDef = 4.2,
+			magAtk = 55,
+			magDef = 8.3,
 			cost = 72,
-			healthAdd = 80,
+			healthAdd = 52,
 		},
 
 		[10] = 
 		{
 			atk = 0,
-			def = 0,
+			def = 9,
 			viewDist = 0,
-			magAtk = 27,
-			magDef = 4.6,
+			magAtk = 60,
+			magDef = 9,
 			cost = 80,
-			healthAdd = 85,
+			healthAdd = 55,
 		},
 	}
 }

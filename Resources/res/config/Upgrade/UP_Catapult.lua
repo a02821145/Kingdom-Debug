@@ -8,7 +8,7 @@ local UP_Catapult =
 	{
 		[1] = 
 		{
-			atk = 15,
+			atk = 25,
 			def = 2,
 			viewDist = 0,
 			magAtk = 0,
@@ -18,101 +18,101 @@ local UP_Catapult =
 
 		[2] = 
 		{
-			atk = 17,
-			def = 2.5,
+			atk = 36,
+			def = 2.9,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 50,
-			healthAdd = 56,
+			healthAdd = 55,
 		},
 
 		[3] = 
 		{
-			atk = 19,
-			def = 3,
+			atk = 47,
+			def = 3.8,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 89,
-			healthAdd = 62,
+			healthAdd = 60,
 		},
 
 		[4] = 
 		{
-			atk = 21,
-			def = 3.5,
+			atk = 58,
+			def = 4.7,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 129,
-			healthAdd = 68,
+			healthAdd = 65,
 		},
 
 		[5] = 
 		{
-			atk = 23,
-			def = 4,
+			atk = 69,
+			def = 5.6,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 168,
-			healthAdd = 74,
+			healthAdd = 70,
 		},
 
 		[6] = 
 		{
-			atk = 25,
-			def = 4.5,
-			viewDist = 0,
-			magAtk = 0,
-			magDef = 0,
-			cost = 208,
-			healthAdd = 80,
-		},
-
-		[7] = 
-		{
-			atk = 27,
-			def = 5,
-			viewDist = 0,
-			magAtk = 0,
-			magDef = 0,
-			cost = 248,
-			healthAdd = 86,
-		},
-
-		[8] = 
-		{
-			atk = 29,
-			def = 5.5,
-			viewDist = 0,
-			magAtk = 0,
-			magDef = 0,
-			cost = 287,
-			healthAdd = 92,
-		},
-
-		[9] = 
-		{
-			atk = 31,
-			def = 6,
-			viewDist = 0,
-			magAtk = 0,
-			magDef = 0,
-			cost = 327,
-			healthAdd = 98,
-		},
-
-		[10] = 
-		{
-			atk = 33,
+			atk = 80,
 			def = 6.5,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
+			cost = 208,
+			healthAdd = 75,
+		},
+
+		[7] = 
+		{
+			atk = 91,
+			def = 7.4,
+			viewDist = 0,
+			magAtk = 0,
+			magDef = 0,
+			cost = 248,
+			healthAdd = 80,
+		},
+
+		[8] = 
+		{
+			atk = 102,
+			def = 8.3,
+			viewDist = 0,
+			magAtk = 0,
+			magDef = 0,
+			cost = 287,
+			healthAdd = 85,
+		},
+
+		[9] = 
+		{
+			atk = 113,
+			def = 9.4,
+			viewDist = 0,
+			magAtk = 0,
+			magDef = 0,
+			cost = 327,
+			healthAdd = 92,
+		},
+
+		[10] = 
+		{
+			atk = 125,
+			def = 10,
+			viewDist = 0,
+			magAtk = 0,
+			magDef = 0,
 			cost = 366,
-			healthAdd = 104,
+			healthAdd = 100,
 		},
 	}
 }
