@@ -8,7 +8,7 @@ local conf =
 	profession = actor_profession.prof_thief,
 	radius = 15,
 	showPriority = 7,
-	CDTime = 5,
+	CDTime = 8,
 	cost = 25,
 	icon = "icon_soldier_1009.png",
 	team = actor_team.team_NPC,
@@ -84,7 +84,7 @@ local conf =
 		{
 			name = "MoveComponent",
 			mass = 1,
-			maxSpeed = 70,
+			maxSpeed = 105,
 			heading = {x=1,y= 0},
 			maxHeadTurnRate = 0.2,
 			maxForce  = 0.1,

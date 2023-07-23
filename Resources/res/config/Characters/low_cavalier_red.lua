@@ -9,7 +9,7 @@ local conf =
 	radius = 16,
 	showPriority = 3,
 	CDTime = 7,
-	cost = 9,
+	cost = 12,
 	icon = "icon_soldier_lower_knight.png",
 	team = actor_team.team_NPC,
 	population = 0,
@@ -66,7 +66,7 @@ local conf =
 		{
 			name = "MoveComponent",
 			mass = 1,
-			maxSpeed = 55,
+			maxSpeed = 120,
 			heading = {x=1,y= 0},
 			maxHeadTurnRate = 0.2,
 			maxForce  = 0.2,

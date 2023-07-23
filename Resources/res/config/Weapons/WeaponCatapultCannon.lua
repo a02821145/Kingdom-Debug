@@ -11,7 +11,7 @@ local WeaponCatapultCannon =
 	rounds = 0,
 	maxRoundsCarried = 0,
 	firingFreq = 0.3,
-	idealRange = 450,
+	idealRange = 480,
 	soundRange = 100,
 
 	desirabilityInRange = 1.2,

@@ -19,101 +19,101 @@ local UP_Low_Soldier_Spear =
 
 		[2] = 
 		{
-			atk = 7,
+			atk = 8.6,
 			def = 0,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 14,
-			healthAdd = 45,
+			healthAdd = 46,
 		},
 
 		[3] = 
 		{
-			atk = 8,
+			atk = 11.2,
 			def = 0,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 18,
-			healthAdd = 50,
+			healthAdd = 52,
 		},
 
 		[4] = 
 		{
-			atk = 9,
+			atk = 13.8,
 			def = 0,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 21,
-			healthAdd = 55,
+			healthAdd = 58,
 		},
 
 		[5] = 
 		{
-			atk = 10,
+			atk = 16.4,
 			def = 0,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 25,
-			healthAdd = 60,
+			healthAdd = 65,
 		},
 
 		[6] = 
 		{
-			atk = 11,
+			atk = 19,
 			def = 0,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 29,
-			healthAdd = 65,
+			healthAdd = 72,
 		},
 
 		[7] = 
 		{
-			atk = 12,
+			atk = 21.6,
 			def = 0,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 33,
-			healthAdd = 70,
+			healthAdd = 79,
 		},
 
 		[8] = 
 		{
-			atk = 13,
+			atk = 24.2,
 			def = 0,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 36,
-			healthAdd = 75,
+			healthAdd = 86,
 		},
 
 		[9] = 
 		{
-			atk = 14,
+			atk = 26.8,
 			def = 0,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 40,
-			healthAdd = 80,
+			healthAdd = 93,
 		},
 
 		[10] = 
 		{
-			atk = 15,
+			atk = 30,
 			def = 0,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 44,
-			healthAdd = 85,
+			healthAdd = 100,
 		},
 	}
 }

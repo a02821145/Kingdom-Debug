@@ -73,7 +73,7 @@ local conf =
 		{
 			name = "MoveComponent",
 			mass = 1,
-			maxSpeed = 30,
+			maxSpeed = 45,
 			heading = {x=1,y= 0},
 			maxHeadTurnRate = 0.2,
 			maxForce  = 0.1,
@@ -81,7 +81,7 @@ local conf =
 		},
 		{
 			name = "MemoryComponent",
-			ViewDistance = 450,
+			ViewDistance = 480,
 			regulator = 2,
 			memorySpan = 5,
 			ignoreSpan = 5,

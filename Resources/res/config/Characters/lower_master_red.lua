@@ -9,7 +9,7 @@ local conf =
 	radius = 16,
 	showPriority = 4,
 	CDTime = 5,
-	cost = 12,
+	cost = 15,
 	icon = "icon_soldier_sceptre.png",
 	team = actor_team.team_NPC,
 	upID = 10004,
@@ -71,7 +71,7 @@ local conf =
 		{
 			name = "MoveComponent",
 			mass = 1,
-			maxSpeed = 40,
+			maxSpeed = 45,
 			heading = {x=1,y= 0},
 			maxHeadTurnRate = 0.2,
 			maxForce  = 0.1,

@@ -8,13 +8,13 @@ local conf =
 	profession = actor_profession.prof_archer,
 	radius = 15,
 	showPriority = 3,
-	CDTime = 5,
-	cost = 12,
+	CDTime = 6,
+	cost = 10,
 	icon = "icon_soldier_1011.png",
 	team = actor_team.team_NPC,
 	upID = 10007,
 	spId = 80002,
-	population = 2,
+	population = 1,
 	canStandOnBuilding = true,
 	
 	regulators = 
@@ -80,7 +80,7 @@ local conf =
 		{
 			name = "MoveComponent",
 			mass = 1,
-			maxSpeed = 40,
+			maxSpeed = 60,
 			heading = {x=1,y= 0},
 			maxHeadTurnRate = 0.2,
 			maxForce  = 0.1,
@@ -88,7 +88,7 @@ local conf =
 		},
 		{
 			name = "MemoryComponent",
-			ViewDistance = 200,
+			ViewDistance = 250,
 			regulator = 2,
 			memorySpan = 5,
 			ignoreSpan = 5,
