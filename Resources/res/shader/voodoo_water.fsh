@@ -18,5 +18,5 @@ void main()
     vec4 color1 = texture(u_texture, v_texCoord + distortion1)*vec4(1,1.5,3,1);
     vec4 color2 = texture(u_texture, v_texCoord + distortion2)*vec4(1,1.5,3,1);
 
-    gl_FragColor = color1;
+    gl_FragColor = color1 * color2;
 }

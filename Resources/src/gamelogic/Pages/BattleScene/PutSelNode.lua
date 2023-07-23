@@ -65,13 +65,16 @@ function PutSelNode:onSelectPut(event)
 	if curSelectId ~= self._data.id then
 		_GModel.PlayerManager:SetPrepareMoney(0)
 		gMessageManager:sendMessage(MessageDef_GameLogic.MSG_RefreshBattleCoins)
-	elseif curSelectId == self._data.id then
-
+	elseif curSelectId == self._data.id and not self._isSoldier then
 		if self._cancelSelCB then
 			self._cancelSelCB()
 		end
-
+		_GModel.PlayerManager:SetPrepareMoney(0)
+		gMessageManager:sendMessage(MessageDef_GameLogic.MSG_RefreshBattleCoins)
 		_GModel.PlayerManager:SetCurSelectId(nil)
+
+		gMessageManager:sendMessageInstant(MessageDef_GameLogic.MSG_ShowSceneNode,{nodeName = "buildingArrowNode",isShow = false})
+
 		return
 	end
 

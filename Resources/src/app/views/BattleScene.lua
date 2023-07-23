@@ -230,6 +230,7 @@ function BattleScene:initUI()
 	self._DecisiveTimeAni:setNodeVisibleLang("TextDecisive")
 	self:addChildNode("UIEffectNode",self._DecisiveTimeAni)
 	self._CurDecisiveTime = 0
+	self._cancelSelCB = handler(self,self.onBtnBuyAndSellCancel)
 
 	self:setSceneNodeVisibleLang("btn_text_study",true,self._uiSceneNode)
 	self:setSceneNodeVisibleLang("btn_text_buy",true,self._uiSceneNode)
@@ -269,8 +270,6 @@ function BattleScene:resizeImgs(winSize)
 	
 	self:setPositionByDeltaRight("btnCancelPut",self._uiSceneNode)
 	self:setPositionByDeltaRight("bagNode",self._uiSceneNode)
-
-	self._cancelSelCB = handler(self,self.onBtnCancelPut)
 end
 
 function BattleScene:initNewbieNode()
@@ -737,7 +736,6 @@ function BattleScene:refreshPutSoldierLV()
 	for _,cha in ipairs(allList) do
 		local charNode = PutSelNode.new(cha.cfg,cha.unlock)
 		self._PutSoldierLV:addChild(charNode)
-		charNode:setCancelSelectCB(self._cancelSelCB)
 		table.insert(self._PutNodeList,charNode)
 	end
 
@@ -761,6 +759,7 @@ function BattleScene:startGame()
     		mapNode = not self.showGraph,
     		drawNode = self.showGraph,
     		PutActorNode = false,
+    		buildingArrowNode=false,
     	})
 
     	self:setSceneNodesVisible({
@@ -1422,6 +1421,36 @@ function BattleScene:OnSimulateSmall()
 	end
 end
 
+function BattleScene:onBuildingArrowNode(data)
+	self:setNodeVisible("buildingArrowNode",true)
+	local buildingArrowNode = self:getNode("buildingArrowNode");
+	local space = 10
+
+	local spBuildingArrowLeft = self:getNode("SpBuildingArrowLeft")
+	local SpBuildingArrowDown = self:getNode("SpBuildingArrowDown")
+	local SpBuildingArrowRight = self:getNode("SpBuildingArrowRight")
+	local SpBuildingArrowUp = self:getNode("SpBuildingArrowUp")
+
+	local posX = tonumber(data.posX)
+	local posY = tonumber(data.posY)
+	local width = tonumber(data.width)
+	local height = tonumber(data.height)
+	buildingArrowNode:setPositionX(posX)
+	buildingArrowNode:setPositionY(posY)
+
+	spBuildingArrowLeft:setPositionY(height*0.5)
+	spBuildingArrowLeft:setPositionX(-space)
+
+	SpBuildingArrowRight:setPosition(cc.p(width+space,height*0.5 ))
+
+
+	SpBuildingArrowDown:setPositionX(width*0.5)
+	SpBuildingArrowDown:setPositionY(-space)
+
+	SpBuildingArrowUp:setPosition(cc.p(width*0.5,height+space))
+end
+
+
 function BattleScene:onCmdScriptPause(data)
 	local isPause = tonumber(data.isPause) == 1
 	self._Pause = isPause
@@ -1446,6 +1475,7 @@ function BattleScene:onRestart(data)
     		drawNode = self.showGraph,
     		PutActorNode = false,
     		playerCreateAreaNode = false,
+    		buildingArrowNode = false,
     	})
 
 
