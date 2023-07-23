@@ -5,17 +5,7 @@ local weaponAx =
 	type = actor_type.weapon_type_segment,
 	name = "weaponAx",
 	attackType = actor_status.as_attack,
-	
-	damageMoreTargetTypes = 
-	{
-		actor_type.type_soilder
-	},
-
-	damageMoreTargetProfs =
-	{
-		actor_profession.prof_lower_archer,
-		actor_profession.prof_thief,
-	},
+	damageMoreTargetTypes = actor_type.type_building,
 
 	rounds = 0,
 	maxRoundsCarried = 0,

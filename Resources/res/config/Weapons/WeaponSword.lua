@@ -13,14 +13,12 @@ local weaponSword =
 
 	damageMoreTargetProfs =
 	{
-		actor_profession.prof_low_soldier,
-		actor_profession.prof_lower_soldier_spear,
-		actor_profession.prof_archer
+		actor_profession.prof_cavalier,
 	},
 
 	rounds = 0,
 	maxRoundsCarried = 0,
-	firingFreq = 1,
+	firingFreq = 3,
 	idealRange = 15,
 	soundRange = 0,
 

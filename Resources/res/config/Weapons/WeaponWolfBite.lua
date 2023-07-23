@@ -14,8 +14,6 @@ local weaponWolfBite =
 	damageMoreTargetProfs =
 	{
 		actor_profession.prof_catapult,
-		actor_profession.prof_archer,
-		actor_profession.prof_infantryman,
 	},
 
 	rounds = 0,
