@@ -86,7 +86,7 @@ local UP_Infantryman =
 		[8] = 
 		{
 			atk = 102,
-			def = 2,
+			def = 2.1,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
@@ -96,24 +96,24 @@ local UP_Infantryman =
 
 		[9] = 
 		{
-			atk = 32,
-			def = 4.7,
+			atk = 113,
+			def = 2.3,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 86,
-			healthAdd = 111,
+			healthAdd = 224,
 		},
 
 		[10] = 
 		{
-			atk = 35,
-			def = 5.1,
+			atk = 125,
+			def = 2.5,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			cost = 95,
-			healthAdd = 118,
+			healthAdd = 240,
 		},
 	}
 }
