@@ -13,13 +13,12 @@ local WeaponWoodenBow =
 
 	damageMoreTargetProfs =
 	{
-		actor_profession.prof_lower_cavalier,
 		actor_profession.prof_cavalier
 	},
 	
 	rounds = 0,
 	maxRoundsCarried = 0,
-	firingFreq = 1,
+	firingFreq = 1.5,
 	idealRange = 200,
 	soundRange = 50,
 

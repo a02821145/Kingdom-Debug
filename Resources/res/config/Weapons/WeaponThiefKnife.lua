@@ -7,6 +7,18 @@ local weaponThiefKnife =
 	attackType = actor_status.as_attack,
 	damgeType = damage_type.at_puncture,
 	
+	damageMoreTargetTypes = 
+	{
+		actor_type.type_soilder
+	},
+
+	damageMoreTargetProfs =
+	{
+		actor_profession.prof_wisard_master,
+		actor_profession.prof_wisard,
+		actor_profession.prof_lower_wisard,
+	},
+
 	rounds = 0,
 	maxRoundsCarried = 0,
 	firingFreq = 1,

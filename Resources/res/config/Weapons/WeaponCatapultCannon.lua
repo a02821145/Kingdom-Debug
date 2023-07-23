@@ -7,10 +7,11 @@ local WeaponCatapultCannon =
 	attackType = actor_status.as_attack,
 	damgeType = damage_type.at_punctureWall,
 	targetType = actor_type.type_building,
-	
+	damageMoreTargetTypes = actor_type.type_building,
+
 	rounds = 0,
 	maxRoundsCarried = 0,
-	firingFreq = 0.3,
+	firingFreq = 2,
 	idealRange = 480,
 	soundRange = 100,
 

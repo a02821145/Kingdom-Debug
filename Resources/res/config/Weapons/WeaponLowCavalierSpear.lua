@@ -13,13 +13,12 @@ local WeaponLowCavalierSpear =
 
 	damageMoreTargetProfs =
 	{
-		actor_profession.prof_low_soldier,
-		actor_profession.prof_infantryman,
+		actor_profession.prof_thief,
 	},
 
 	rounds = 0,
 	maxRoundsCarried = 0,
-	firingFreq = 1,
+	firingFreq = 0.5,
 	idealRange = 16,
 	soundRange = 0,
 	desirabilityMoreRange= 0.1,

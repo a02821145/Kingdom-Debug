@@ -13,8 +13,7 @@ local weaponBow =
 
 	damageMoreTargetProfs =
 	{
-		actor_profession.prof_lower_cavalier,
-		actor_profession.prof_cavalier
+		actor_profession.prof_low_soldier
 	},
 
 	rounds = 0,

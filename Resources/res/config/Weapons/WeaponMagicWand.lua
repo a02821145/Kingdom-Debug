@@ -8,6 +8,17 @@ local WeaponMagicWand =
 	damgeType = damage_type.at_magic,
 	ignore = actor_type.type_building,
 
+	damageMoreTargetTypes = 
+	{
+		actor_type.type_soilder
+	},
+
+	damageMoreTargetProfs =
+	{
+		actor_profession.prof_low_soldier,
+	},
+
+
 	rounds = 0,
 	maxRoundsCarried = 0,
 	firingFreq = 0.3,

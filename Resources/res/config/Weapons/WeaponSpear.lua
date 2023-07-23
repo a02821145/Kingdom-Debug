@@ -13,9 +13,7 @@ local weaponSpear =
 
 	damageMoreTargetProfs =
 	{
-		actor_profession.prof_low_soldier,
-		actor_profession.prof_infantryman,
-		actor_profession.prof_wisard_master
+		actor_profession.prof_archer,
 	},
 	
 	rounds = 0,
