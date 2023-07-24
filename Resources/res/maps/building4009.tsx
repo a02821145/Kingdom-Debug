@@ -8,7 +8,7 @@
    <property name="real_geo" value="real_geo4009"/>
   </properties>
   <objectgroup draworder="index" id="2">
-   <object id="1" name="geo_type4009" x="0" y="53" width="128" height="288"/>
+   <object id="1" name="geo_type4009" x="0" y="85" width="128" height="256"/>
    <object id="2" name="real_geo4009" x="0" y="0" width="128" height="340"/>
   </objectgroup>
  </tile>

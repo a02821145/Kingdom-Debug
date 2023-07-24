@@ -43,14 +43,16 @@ local ProjectileBuildingCannon =
 			name = "StatusComponent",
 		},
 
+
 		{
-			name = "MoveSpriteComponent",
-			path = "missile.png",
+			name = "MoveCsbComponent",
+			path = "UI/InGame/buildingCannonBlue.csb",
+			path_red = "UI/InGame/buildingCannonRed.csb",
 			batchPath = "UI/TextureUI/Projectiles.png",
 			layer = ESpriteLayer.layerProjectile,
-			isSpriteFrame = true,
-			rotate = true,
 		},
+
+
 
 		{
 			name = "ProjectileProperty",
