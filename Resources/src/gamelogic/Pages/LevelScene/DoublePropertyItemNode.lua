@@ -10,7 +10,6 @@ end
 
 function DoublePropertyItemNode:addLeft(cfg)
 	local leftNode = self:getNode("pLeft")
-
 	self:addProperty(leftNode,cfg)
 end
 

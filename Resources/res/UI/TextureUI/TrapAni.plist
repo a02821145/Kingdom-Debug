@@ -7,20 +7,7 @@
             <key>Fire-Trap---Level-1_01.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{494,159},{10,4}}</string>
-                <key>offset</key>
-                <string>{0,-30}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{11,60},{10,4}}</string>
-                <key>sourceSize</key>
-                <string>{32,64}</string>
-            </dict>
-            <key>Fire-Trap---Level-1_02.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{326,209},{10,4}}</string>
+                <string>{{330,203},{10,4}}</string>
                 <key>offset</key>
                 <string>{0,-30}</string>
                 <key>rotated</key>
@@ -30,10 +17,23 @@
                 <key>sourceSize</key>
                 <string>{32,64}</string>
             </dict>
+            <key>Fire-Trap---Level-1_02.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{147,209},{10,4}}</string>
+                <key>offset</key>
+                <string>{0,-30}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{11,60},{10,4}}</string>
+                <key>sourceSize</key>
+                <string>{32,64}</string>
+            </dict>
             <key>Fire-Trap---Level-1_03.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{216,227},{10,4}}</string>
+                <string>{{370,207},{10,4}}</string>
                 <key>offset</key>
                 <string>{0,-30}</string>
                 <key>rotated</key>
@@ -46,7 +46,7 @@
             <key>Fire-Trap---Level-1_04.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{216,227},{10,4}}</string>
+                <string>{{370,207},{10,4}}</string>
                 <key>offset</key>
                 <string>{0,-30}</string>
                 <key>rotated</key>
@@ -59,7 +59,7 @@
             <key>Fire-Trap---Level-1_05.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{337,200},{12,32}}</string>
+                <string>{{87,203},{12,32}}</string>
                 <key>offset</key>
                 <string>{0,-16}</string>
                 <key>rotated</key>
@@ -72,7 +72,7 @@
             <key>Fire-Trap---Level-1_06.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{254,209},{16,34}}</string>
+                <string>{{264,185},{16,34}}</string>
                 <key>offset</key>
                 <string>{0,-15}</string>
                 <key>rotated</key>
@@ -85,7 +85,7 @@
             <key>Fire-Trap---Level-1_07.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{290,209},{16,34}}</string>
+                <string>{{300,185},{16,34}}</string>
                 <key>offset</key>
                 <string>{0,-15}</string>
                 <key>rotated</key>
@@ -98,7 +98,7 @@
             <key>Fire-Trap---Level-1_08.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{216,209},{16,36}}</string>
+                <string>{{183,181},{16,36}}</string>
                 <key>offset</key>
                 <string>{-1,-14}</string>
                 <key>rotated</key>
@@ -111,11 +111,11 @@
             <key>Fire-Trap---Level-1_09.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{494,159},{10,4}}</string>
+                <string>{{330,203},{10,4}}</string>
                 <key>offset</key>
                 <string>{0,-30}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{11,60},{10,4}}</string>
                 <key>sourceSize</key>
@@ -124,11 +124,11 @@
             <key>Fire-Trap---Level-2_01.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{473,169},{24,12}}</string>
+                <string>{{121,196},{24,12}}</string>
                 <key>offset</key>
                 <string>{0,-26}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{4,52},{24,12}}</string>
                 <key>sourceSize</key>
@@ -137,11 +137,11 @@
             <key>Fire-Trap---Level-2_02.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{473,195},{24,12}}</string>
+                <string>{{226,237},{24,12}}</string>
                 <key>offset</key>
                 <string>{0,-26}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{4,52},{24,12}}</string>
                 <key>sourceSize</key>
@@ -150,11 +150,11 @@
             <key>Fire-Trap---Level-2_03.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{487,169},{24,12}}</string>
+                <string>{{252,237},{24,12}}</string>
                 <key>offset</key>
                 <string>{0,-26}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{4,52},{24,12}}</string>
                 <key>sourceSize</key>
@@ -163,11 +163,11 @@
             <key>Fire-Trap---Level-2_04.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{487,195},{24,12}}</string>
+                <string>{{278,237},{24,12}}</string>
                 <key>offset</key>
                 <string>{0,-26}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{4,52},{24,12}}</string>
                 <key>sourceSize</key>
@@ -176,7 +176,7 @@
             <key>Fire-Trap---Level-2_05.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{464,1},{26,40}}</string>
+                <string>{{183,153},{26,40}}</string>
                 <key>offset</key>
                 <string>{0,-12}</string>
                 <key>rotated</key>
@@ -189,11 +189,11 @@
             <key>Fire-Trap---Level-2_06.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{153,204},{30,38}}</string>
+                <string>{{151,153},{30,38}}</string>
                 <key>offset</key>
                 <string>{0,-13}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{1,26},{30,38}}</string>
                 <key>sourceSize</key>
@@ -202,11 +202,11 @@
             <key>Fire-Trap---Level-2_07.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{464,29},{30,34}}</string>
+                <string>{{263,153},{30,34}}</string>
                 <key>offset</key>
                 <string>{-1,-15}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,30},{30,34}}</string>
                 <key>sourceSize</key>
@@ -215,7 +215,7 @@
             <key>Fire-Trap---Level-2_08.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{377,133},{30,36}}</string>
+                <string>{{225,153},{30,36}}</string>
                 <key>offset</key>
                 <string>{0,-14}</string>
                 <key>rotated</key>
@@ -228,7 +228,7 @@
             <key>Fire-Trap---Level-2_09.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{473,221},{24,12}}</string>
+                <string>{{304,237},{24,12}}</string>
                 <key>offset</key>
                 <string>{0,-26}</string>
                 <key>rotated</key>
@@ -241,11 +241,11 @@
             <key>Fire-Trap---Level-3_01.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{496,73},{41,8}}</string>
+                <string>{{44,207},{41,8}}</string>
                 <key>offset</key>
                 <string>{1,-28}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{2,56},{41,8}}</string>
                 <key>sourceSize</key>
@@ -254,11 +254,11 @@
             <key>Fire-Trap---Level-3_02.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{496,29},{42,8}}</string>
+                <string>{{322,175},{42,8}}</string>
                 <key>offset</key>
                 <string>{0,-28}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,56},{42,8}}</string>
                 <key>sourceSize</key>
@@ -267,11 +267,11 @@
             <key>Fire-Trap---Level-3_03.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{496,116},{41,8}}</string>
+                <string>{{221,185},{41,8}}</string>
                 <key>offset</key>
                 <string>{-1,-28}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,56},{41,8}}</string>
                 <key>sourceSize</key>
@@ -280,11 +280,11 @@
             <key>Fire-Trap---Level-3_04.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{283,166},{41,52}}</string>
+                <string>{{44,153},{41,52}}</string>
                 <key>offset</key>
                 <string>{1,-6}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{2,12},{41,52}}</string>
                 <key>sourceSize</key>
@@ -293,11 +293,11 @@
             <key>Fire-Trap---Level-3_05.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{377,1},{42,64}}</string>
+                <string>{{325,1},{42,64}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{42,64}}</string>
                 <key>sourceSize</key>
@@ -306,46 +306,7 @@
             <key>Fire-Trap---Level-3_06.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{421,1},{41,64}}</string>
-                <key>offset</key>
-                <string>{-1,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{41,64}}</string>
-                <key>sourceSize</key>
-                <string>{43,64}</string>
-            </dict>
-            <key>Fire-Trap---Level-3_07.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{421,67},{41,64}}</string>
-                <key>offset</key>
-                <string>{1,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{2,0},{41,64}}</string>
-                <key>sourceSize</key>
-                <string>{43,64}</string>
-            </dict>
-            <key>Fire-Trap---Level-3_08.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{377,67},{42,64}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{42,64}}</string>
-                <key>sourceSize</key>
-                <string>{42,64}</string>
-            </dict>
-            <key>Fire-Trap---Level-3_09.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{217,166},{41,64}}</string>
+                <string>{{325,89},{41,64}}</string>
                 <key>offset</key>
                 <string>{-1,0}</string>
                 <key>rotated</key>
@@ -355,10 +316,49 @@
                 <key>sourceSize</key>
                 <string>{43,64}</string>
             </dict>
+            <key>Fire-Trap---Level-3_07.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{325,132},{41,64}}</string>
+                <key>offset</key>
+                <string>{1,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{2,0},{41,64}}</string>
+                <key>sourceSize</key>
+                <string>{43,64}</string>
+            </dict>
+            <key>Fire-Trap---Level-3_08.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{325,45},{42,64}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{42,64}}</string>
+                <key>sourceSize</key>
+                <string>{42,64}</string>
+            </dict>
+            <key>Fire-Trap---Level-3_09.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1,153},{41,64}}</string>
+                <key>offset</key>
+                <string>{-1,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{41,64}}</string>
+                <key>sourceSize</key>
+                <string>{43,64}</string>
+            </dict>
             <key>Golden.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{449,137},{32,28}}</string>
+                <string>{{336,185},{32,28}}</string>
                 <key>offset</key>
                 <string>{0,-1}</string>
                 <key>rotated</key>
@@ -371,7 +371,7 @@
             <key>Suriken_01.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{337,166},{32,32}}</string>
+                <string>{{60,217},{32,32}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -384,7 +384,7 @@
             <key>Suriken_02.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{415,133},{32,32}}</string>
+                <string>{{94,217},{32,32}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -397,7 +397,7 @@
             <key>Suriken_03.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{371,166},{32,32}}</string>
+                <string>{{160,209},{32,32}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -410,7 +410,7 @@
             <key>Suriken_04.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{405,167},{32,32}}</string>
+                <string>{{194,199},{32,32}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -423,7 +423,7 @@
             <key>Suriken_05.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{439,167},{32,32}}</string>
+                <string>{{228,195},{32,32}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -436,7 +436,7 @@
             <key>Suriken_06.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{371,200},{32,32}}</string>
+                <string>{{262,203},{32,32}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -449,7 +449,7 @@
             <key>Suriken_07.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{405,201},{32,32}}</string>
+                <string>{{296,203},{32,32}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -462,7 +462,7 @@
             <key>Suriken_08.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{439,201},{32,32}}</string>
+                <string>{{330,215},{32,32}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -475,33 +475,33 @@
             <key>box1Close.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{217,1},{158,163}}</string>
+                <string>{{1,1},{160,150}}</string>
                 <key>offset</key>
-                <string>{2,-31}</string>
+                <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{173,190},{158,163}}</string>
+                <string>{{0,0},{160,150}}</string>
                 <key>sourceSize</key>
-                <string>{500,481}</string>
+                <string>{160,150}</string>
             </dict>
             <key>box1Open.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1,1},{214,201}}</string>
+                <string>{{163,1},{160,150}}</string>
                 <key>offset</key>
-                <string>{-28,-12}</string>
+                <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{115,152},{214,201}}</string>
+                <string>{{0,0},{160,150}}</string>
                 <key>sourceSize</key>
-                <string>{500,481}</string>
+                <string>{160,150}</string>
             </dict>
             <key>long_metal_spike_01.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{464,121},{30,14}}</string>
+                <string>{{151,193},{30,14}}</string>
                 <key>offset</key>
                 <string>{0,-17}</string>
                 <key>rotated</key>
@@ -514,11 +514,11 @@
             <key>long_metal_spike_02.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{464,101},{30,18}}</string>
+                <string>{{370,175},{30,18}}</string>
                 <key>offset</key>
                 <string>{0,-15}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{1,30},{30,18}}</string>
                 <key>sourceSize</key>
@@ -527,7 +527,7 @@
             <key>long_metal_spike_03.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{464,65},{30,34}}</string>
+                <string>{{128,215},{30,34}}</string>
                 <key>offset</key>
                 <string>{0,-7}</string>
                 <key>rotated</key>
@@ -540,11 +540,11 @@
             <key>long_metal_spike_04.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{60,204},{30,48}}</string>
+                <string>{{87,153},{30,48}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{1,0},{30,48}}</string>
                 <key>sourceSize</key>
@@ -553,11 +553,11 @@
             <key>small_wood_spike_01.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{483,137},{30,9}}</string>
+                <string>{{194,233},{30,9}}</string>
                 <key>offset</key>
                 <string>{0,-25}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{1,50},{30,9}}</string>
                 <key>sourceSize</key>
@@ -566,7 +566,7 @@
             <key>small_wood_spike_02.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{193,204},{30,21}}</string>
+                <string>{{299,153},{30,21}}</string>
                 <key>offset</key>
                 <string>{0,-19}</string>
                 <key>rotated</key>
@@ -579,11 +579,11 @@
             <key>small_wood_spike_03.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{110,204},{30,41}}</string>
+                <string>{{119,153},{30,41}}</string>
                 <key>offset</key>
                 <string>{0,-9}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{1,18},{30,41}}</string>
                 <key>sourceSize</key>
@@ -592,7 +592,7 @@
             <key>small_wood_spike_04.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1,204},{30,57}}</string>
+                <string>{{1,219},{30,57}}</string>
                 <key>offset</key>
                 <string>{0,-1}</string>
                 <key>rotated</key>
@@ -614,9 +614,9 @@
             <key>realTextureFileName</key>
             <string>TrapAni.png</string>
             <key>size</key>
-            <string>{505,235}</string>
+            <string>{390,250}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:7a4b262905bb94bc9906f9f860188121:9635738e828b98babbc6cc20e3f80017:ff9785df4f159ea32ba17392d8b9cdb6$</string>
+            <string>$TexturePacker:SmartUpdate:656de1dbdb3eb05476edca9f945572e9:06121afaeb4b3fd6d0ca6a13edf0669e:ff9785df4f159ea32ba17392d8b9cdb6$</string>
             <key>textureFileName</key>
             <string>TrapAni.png</string>
         </dict>

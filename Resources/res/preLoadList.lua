@@ -47,6 +47,7 @@ local preLoadList = {
 	["SoldierAll"] = "UI/TextureUI/SoldierAll.plist",
 	["ThiefDisplayAni"] = "UI/TextureUI/ThiefDisplayAni.plist",
 	["TrapAni"] = "UI/TextureUI/TrapAni.plist",
+	["UIFireEffect"] = "UI/TextureUI/UIFireEffect.plist",
 	["UpGradePage"] = "UI/TextureUI/UpGradePage.plist",
 	["VectorIcon"] = "UI/TextureUI/VectorIcon.plist",
 	["VSFrame"] = "UI/TextureUI/VSFrame.plist",
