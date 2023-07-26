@@ -11,7 +11,7 @@ local BattleSceneNewbieCfg =
 		[100000012] = {id = 100000012,cmd = "ShowUI",value = true,nodes = "PanelBtnSelect,btnSoldierSelected,btnBuy,btnSoldier,LVPutSoldier",nextId = 100000013},
 		[100000013] = {id = 100000013,cmd = "Fadein",value=0.5,nodes= "PanelBtnSelect,btnSoldierSelected,btnBuy,LVPutSoldier,btnSoldier",nextId = 100000014},
 		[100000014] = {id = 100000014,cmd = "DelayTime",value = 1,nextId = 100000015},
-		[100000015] = {id = 100000015,cmd = "FocusBtn",nodes = "newbiePanelSoldier1",callbackList = "NewbieTask001",newbieCSB = "UI/NewbieAni/NewbieStep1.csb", nextId = 1000000151},
+		[100000015] = {id = 100000015,cmd = "FocusBtn",nodes = "newbiePanelSoldier1",dir="left",callbackList = "NewbieTask001",newbieCSB = "UI/NewbieAni/NewbieStep1.csb", nextId = 1000000151},
 		[1000000151] = {id = 1000000151,cmd = "ShowAni",nodes = "newbiePanelMoney",callbackList = "NewbieTask0011",newbieCSB = "UI/NewbieAni/NewbieStep7.csb",nextId = 100000016},
 		[100000016] = {id = 100000016,cmd = "DelayTime",value = 1,nextId = 100000017},
 		[100000017] = {id = 100000017,cmd = "ShowAni",newbieCSB = "UI/NewbieAni/NewbieMoveHand1.csb",nextId = 100000018},

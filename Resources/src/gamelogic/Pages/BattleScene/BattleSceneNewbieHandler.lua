@@ -107,6 +107,8 @@ function BattleSceneNewbieHandler:onNewbieCmdFocusBtn(data)
 		CBList = string.split(data.callbackList,",")
 	end
 
+	local handDir = {"down","left","right","up"}
+
 	if next(nodesList) then
 		local newbieNodef = cc.Node:create()
 		for i,nodeName in ipairs(nodesList) do
@@ -114,10 +116,16 @@ function BattleSceneNewbieHandler:onNewbieCmdFocusBtn(data)
 			local posX,posY = btnNode:getPosition()
 			local size = btnNode:getContentSize()
 			local niewBiePic = cc.Sprite:createWithSpriteFrameName("CryoGui9.png")
-			local framePic = cc.Sprite:createWithSpriteFrameName("selectBlackFrame Yelow.png")
+			local framePic = SimpleAniNode.new("UI/NewbieAni/newbieSelectFrame.csb",true)
+
+			if data.dir then
+				for _,handStr in pairs(handDir) do
+					local handStrKey = "hand_"..handStr
+					framePic:setNodeVisible(handStrKey,data.dir == handStr)
+				end
+			end
 
 			niewBiePic:setContentSize(size.width*1.2,size.height*1.2)
-			framePic:setContentSize(size.width*1.3,size.height*1.3)
 
 			newbieNodef:addChild(niewBiePic)
 			self._NewbieNode:addChild(framePic)
