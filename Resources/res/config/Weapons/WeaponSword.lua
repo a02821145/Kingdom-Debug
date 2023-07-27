@@ -18,7 +18,7 @@ local weaponSword =
 
 	rounds = 0,
 	maxRoundsCarried = 0,
-	firingFreq = 3,
+	firingFreq = 0.3,
 	idealRange = 15,
 	soundRange = 0,
 

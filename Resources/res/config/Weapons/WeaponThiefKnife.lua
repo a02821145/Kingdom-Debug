@@ -21,7 +21,7 @@ local weaponThiefKnife =
 
 	rounds = 0,
 	maxRoundsCarried = 0,
-	firingFreq = 1,
+	firingFreq = 2,
 	idealRange = 15,
 	desirabilityMoreRange= 0.1,
 	
