@@ -18,7 +18,7 @@ local WeaponWoodenBow =
 	
 	rounds = 0,
 	maxRoundsCarried = 0,
-	firingFreq = 1.5,
+	firingFreq = 0.7,
 	idealRange = 200,
 	soundRange = 50,
 

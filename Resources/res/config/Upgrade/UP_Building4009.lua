@@ -10,121 +10,121 @@ local UP_Building4009 =
 		[1] = 
 		{
 			atk = 0,
-			def = 3,
+			def = 12,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			spd = 0,
 			cost = 0,
-			healthAdd = 110,
+			healthAdd = 220,
 		},
 
 		[2] = 
 		{
 			atk = 0,
-			def = 3.4,
+			def = 12.5,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			spd = 0,
 			cost = 20,
-			healthAdd = 122,
+			healthAdd = 244,
 		},
 
 		[3] = 
 		{
 			atk = 0,
-			def = 3.8,
+			def = 13,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			spd = 0,
 			cost = 29,
-			healthAdd = 134,
+			healthAdd = 268,
 		},
 
 		[4] = 
 		{
 			atk = 0,
-			def = 4.2,
+			def = 13.5,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			spd = 0,
 			cost = 39,
-			healthAdd = 145,
+			healthAdd = 290,
 		},
 
 		[5] = 
 		{
 			atk = 0,
-			def = 4.6,
+			def = 14,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			spd = 0,
 			cost = 48,
-			healthAdd = 158,
+			healthAdd = 316,
 		},
 
 		[6] = 
 		{
 			atk = 0,
-			def = 5,
+			def = 14.5,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			spd = 0,
 			cost = 58,
-			healthAdd = 170,
+			healthAdd = 340,
 		},
 
 		[7] = 
 		{
 			atk = 0,
-			def = 5.4,
+			def = 15,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			spd = 0,
 			cost = 68,
-			healthAdd = 182,
+			healthAdd = 364,
 		},
 
 		[8] = 
 		{
 			atk = 0,
-			def = 5.8,
+			def = 15.5,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			spd = 0,
 			cost = 77,
-			healthAdd = 194,
+			healthAdd = 388,
 		},
 
 		[9] = 
 		{
 			atk = 0,
-			def = 6.2,
+			def = 16,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			spd = 0,
 			cost = 87,
-			healthAdd = 206,
+			healthAdd = 412,
 		},
 
 		[10] = 
 		{
 			atk = 0,
-			def = 6.6,
+			def = 17,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
 			spd = 0,
 			cost = 96,
-			healthAdd = 218,
+			healthAdd = 436,
 		},
 	}
 }

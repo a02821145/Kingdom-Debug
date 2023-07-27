@@ -10,7 +10,7 @@ local UP_Building4027 =
 		[1] = 
 		{
 			atk = 12,
-			def = 2,
+			def = 16,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
@@ -22,7 +22,7 @@ local UP_Building4027 =
 		[2] = 
 		{
 			atk = 14,
-			def = 2.4,
+			def = 17,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
@@ -34,7 +34,7 @@ local UP_Building4027 =
 		[3] = 
 		{
 			atk = 16,
-			def = 2.8,
+			def = 18,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
@@ -46,7 +46,7 @@ local UP_Building4027 =
 		[4] = 
 		{
 			atk = 18,
-			def = 3.2,
+			def = 19,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
@@ -58,7 +58,7 @@ local UP_Building4027 =
 		[5] = 
 		{
 			atk = 20,
-			def = 3.6,
+			def = 20,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
@@ -70,7 +70,7 @@ local UP_Building4027 =
 		[6] = 
 		{
 			atk = 22,
-			def = 4,
+			def = 21,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
@@ -82,7 +82,7 @@ local UP_Building4027 =
 		[7] = 
 		{
 			atk = 24,
-			def = 4.4,
+			def = 22,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
@@ -94,7 +94,7 @@ local UP_Building4027 =
 		[8] = 
 		{
 			atk = 26,
-			def = 4.8,
+			def = 23,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
@@ -106,7 +106,7 @@ local UP_Building4027 =
 		[9] = 
 		{
 			atk = 28,
-			def = 5.2,
+			def = 25,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
@@ -118,7 +118,7 @@ local UP_Building4027 =
 		[10] = 
 		{
 			atk = 30,
-			def = 5.6,
+			def = 27,
 			viewDist = 0,
 			magAtk = 0,
 			magDef = 0,
