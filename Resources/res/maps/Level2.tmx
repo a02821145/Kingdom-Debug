@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.3.4385" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="32" tileheight="32" infinite="0" nextlayerid="19" nextobjectid="39">
+<map version="1.2" tiledversion="1.3.4385" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="32" tileheight="32" infinite="0" nextlayerid="21" nextobjectid="43">
  <tileset firstgid="1" source="terrain.tsx"/>
  <tileset firstgid="2049" source="building4001.tsx"/>
  <tileset firstgid="2050" source="building4002.tsx"/>
@@ -27,6 +27,10 @@
  <tileset firstgid="2394" source="building4033.tsx"/>
  <tileset firstgid="2395" source="building4034.tsx"/>
  <tileset firstgid="2396" source="Forest-Prairie Tileset.tsx"/>
+ <tileset firstgid="2963" source="sceneObject_tree2.tsx"/>
+ <tileset firstgid="2964" source="sceneObject_tree1.tsx"/>
+ <tileset firstgid="2965" source="sceneObject___Candles_Big.tsx"/>
+ <tileset firstgid="2966" source="sceneObject___Candles_Small.tsx"/>
  <layer id="1" name="river" width="80" height="40">
   <data encoding="base64" compression="zlib">
    eJzt0LEJACEABEETe/+yLUCDz3RhDjY/Zox939Spv7v989X48ePXjR8/ft348ePXjR8/ft348ePXjR8/ft348ePXjR8/ft348ePXjR8/ft348ePXjR8/ft348XvNbwGL8QaL
@@ -49,15 +53,15 @@
  </layer>
  <layer id="9" name="road" width="80" height="40">
   <data encoding="base64" compression="zlib">
-   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
+   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
   </data>
  </layer>
- <layer id="4" name="playerBuildings" width="80" height="40" visible="0">
+ <layer id="4" name="playerBuildings" width="80" height="40">
   <data encoding="base64" compression="zlib">
    eJzt1kEOgjAQQNESIwwH8HKexqOzcmEi2EpL0byXNLOABZn8NKT0X27T+0Me+9vH/vbJ2d81+nzbL1jb32RnWfR3vDG2J6/0V5feyuiPIzw7W5vQks7oSX+cWUTZhJp0RQuXSI+c9/RHS5/+//RHS/qjp2/6GzRJJe4/errP28/1BwBAqQW7bQbR
   </data>
  </layer>
- <layer id="5" name="npcBuildings" width="80" height="40" visible="0">
+ <layer id="5" name="npcBuildings" width="80" height="40">
   <data encoding="base64" compression="zlib">
    eJzt2UsKgCAARVGJoIwa1uba/z4aiRj4wT96D4TTeNwoSAgAAAAAPZB76zvo25W4z73lvUbj62/2/eivLPpzo7+y6M+N/uyWCt9uI+8Xgv7amn0/+itr5f3rRH9lzfr9p7oKPWONul8us/ZXC/uZVG//04b90rCfif8daIn+kMsZ0RL9hXk8Ox3sGIX+tJjnF2noT1P9+U7k88rWd1DfB7CELMY=
   </data>
@@ -72,16 +76,35 @@
    eJzt0DENADAMwLB+QzD+VAciR4/ZUghkZsc9vZ/51/jX+Nf41/jX+Nd5AQAAAAAAAAAAAGx479sNWQ==
   </data>
  </layer>
- <layer id="7" name="goldenPlayer" width="80" height="40" visible="0">
+ <layer id="7" name="goldenPlayer" width="80" height="40">
   <data encoding="base64" compression="zlib">
    eJzt07EJACAQA0AbcQL3H8ilHMBGCAoPd5D2i5Bv7b85znBPf5kX/a2e36jC/jL6y/jfjP0BAAAAAAAAAAAA1LUBUNkFdQ==
   </data>
  </layer>
- <layer id="8" name="goldenNPC" width="80" height="40" visible="0">
+ <layer id="8" name="goldenNPC" width="80" height="40">
   <data encoding="base64" compression="zlib">
    eJzt1SEBAAAIxEAM/YNRihAIxN8lmFsVAAAAAAAAAAAAZJn+LgCAPP4LNwuZGwGh
   </data>
  </layer>
+ <layer id="19" name="decoration" width="80" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt0KERADAMxLDwjN8O3A1CHqUnEXNX8YvTc5n5l/Ev4x8AAAAAAAAAAADsd3suM/8y/mU2/HvcTxPR
+  </data>
+ </layer>
+ <objectgroup id="20" name="NPCSpawnPoint" visible="0">
+  <object id="39" x="949" y="277">
+   <point/>
+  </object>
+  <object id="40" x="951" y="438">
+   <point/>
+  </object>
+  <object id="41" x="950" y="627">
+   <point/>
+  </object>
+  <object id="42" x="941" y="893">
+   <point/>
+  </object>
+ </objectgroup>
  <objectgroup id="13" name="spawnArea" visible="0">
   <object id="5" name="playerArea" x="1504" y="0" width="896" height="1280"/>
   <object id="6" x="859.333" y="217.333" width="178.667" height="750"/>
@@ -146,7 +169,7 @@
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="12" name="walls" visible="0">
+ <objectgroup id="12" name="walls">
   <object id="2" x="160" y="0" width="2240" height="1280" visible="0">
    <properties>
     <property name="normalInside" type="bool" value="true"/>

@@ -43,6 +43,7 @@ MessageDef_GameLogic =
 	MSG_Refresh_Stars = 25,
 	MSG_ChangeLange = 26,
 	MSG_RefreshSkillStars = 27,
+	MSG_NewbieCallback = 28,
 }
 
 MessageDef_GM=

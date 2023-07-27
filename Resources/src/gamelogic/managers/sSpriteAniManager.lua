@@ -1,6 +1,6 @@
 local sSpriteAniManager = class("sSpriteAniManager",_GModel.IManager)
 local configManager = TWRequire("ConfigDataManager")
-
+local SimpleAniNode = TWRequire("SimpleAniNode")
 local drawColor = cc.c4f(28/255,218/255,28/255,1)
 
 function sSpriteAniManager:_Init()
@@ -70,6 +70,22 @@ function sSpriteAniManager:afterChangeScene()
 	self._LayerEMap["TryPutLayer"] = ESpriteLayer.layerTryLayer
 	self._LayerEMap["RoadLayer"] = ESpriteLayer.layerRoadLayer
 	self._LayerEMap["ProjectileLayer"] = ESpriteLayer.layerProjectile
+end
+
+function sSpriteAniManager:addSceneObject(id,pos)
+	local cfg = _GModel.DecorationCfg[id]
+	if cfg then
+		local ext = _GModel.StringUtil:getExtension(cfg.path)
+		local obj = nil
+		if ext == "csb" then
+			obj = SimpleAniNode.new(cfg.path,true)
+		end
+
+		if obj then
+			obj:setPosition(pos)
+			self._SpriteAniNode:addChild(obj)
+		end
+	end
 end
 
 function sSpriteAniManager:getSpriteBatchNode(LayerName,spriteName,batchNodeName)

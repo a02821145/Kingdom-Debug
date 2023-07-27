@@ -65,7 +65,7 @@ end
 
 function IBaseInterface:playTimeLine(name,isLoop,callback,time)
 	if not self.timeLine then
-		LogError("timeline is nil")
+		LogError("IBaseInterface:playTimeLine timeline is nil")
 		return
 	end
 
@@ -76,6 +76,15 @@ function IBaseInterface:playTimeLine(name,isLoop,callback,time)
 	end
 
 	self.timeLine:play(name,isLoop)
+end
+
+function IBaseInterface:gotoFrameAndPlay(frameIndex,isLoop)
+	if not self.timeLine then
+		LogError("IBaseInterface:gotoFrameAndPlay timeline is nil")
+		return
+	end
+
+	self.timeLine:gotoFrameAndPlay(frameIndex,isLoop)
 end
 
 function IBaseInterface:playSceneNodeTimeLine(timeLine,name,isLoop,callback,time)

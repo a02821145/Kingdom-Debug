@@ -742,6 +742,14 @@ function BattleScene:refreshPutSoldierLV()
 	self._PutSoldierLV:forceDoLayout()
 end
 
+function BattleScene:onAddSceneObject(data)
+	local objectId = tonumber(data.id)
+	local posX = tonumber(data.posX)
+	local posY = tonumber(data.posY)
+
+	_GModel.sSpriteAniManager:addSceneObject(objectId,{x =posX,y = posY })
+end
+
 function BattleScene:startGame()
 	self._curLevelData = nil
 	local levelData = _GModel.LevelManager:getLevelData(self._level)
@@ -1385,6 +1393,7 @@ function BattleScene:onBtnBuyAndSellSure()
 	_GModel.PlayerManager:SetPreparePop(0)
 
 	gMessageManager:sendMessage(MessageDef_GameLogic.MSG_RefreshBattleCoins)
+	gMessageManager:sendMessage(MessageDef_GameLogic.MSG_NewbieCallback,{value = "onBtnBuyAndSellSure"})
 end
 
 function BattleScene:onBtnBuyAndSellCancel()

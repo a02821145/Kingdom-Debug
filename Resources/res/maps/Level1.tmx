@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.3.4385" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="32" tileheight="32" infinite="0" nextlayerid="33" nextobjectid="51">
+<map version="1.2" tiledversion="1.3.4385" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="32" tileheight="32" infinite="0" nextlayerid="34" nextobjectid="51">
  <tileset firstgid="1" source="building4001.tsx"/>
  <tileset firstgid="2" source="building4005.tsx"/>
  <tileset firstgid="3" source="building4003.tsx"/>
@@ -29,7 +29,25 @@
  <tileset firstgid="2074" source="trap_fire.tsx"/>
  <tileset firstgid="2075" source="Forest Tileset.tsx"/>
  <tileset firstgid="2398" source="Forest-Prairie Tileset.tsx"/>
- <layer id="1" name="river" width="80" height="40">
+ <tileset firstgid="2965" source="Water-Splash-01---Spritesheet_14.tsx"/>
+ <tileset firstgid="2966" source="sceneObject_tree1.tsx"/>
+ <tileset firstgid="2967" source="sceneObject_tree3.tsx"/>
+ <tileset firstgid="2968" source="sceneObject_tree4.tsx"/>
+ <tileset firstgid="2969" source="sceneObject_tree5.tsx"/>
+ <tileset firstgid="2970" source="sceneObject_tree6.tsx"/>
+ <tileset firstgid="2971" source="sceneObject_tree7.tsx"/>
+ <tileset firstgid="2972" source="sceneObject_tree8.tsx"/>
+ <tileset firstgid="2973" source="sceneObject_tree9.tsx"/>
+ <tileset firstgid="2974" source="sceneObject_tree10.tsx"/>
+ <tileset firstgid="2975" source="sceneObject_Brazier.tsx"/>
+ <tileset firstgid="2976" source="sceneObject_Campfire.tsx"/>
+ <tileset firstgid="2977" source="sceneObject__Glow.tsx"/>
+ <tileset firstgid="2978" source="sceneObject_Pot_boiling_no_smoke_01.tsx"/>
+ <tileset firstgid="2979" source="sceneObject_Banner.tsx"/>
+ <tileset firstgid="2980" source="sceneObject_transparentanimated.tsx"/>
+ <tileset firstgid="2981" source="sceneObject_chopped.tsx"/>
+ <tileset firstgid="2982" source="sceneObject_flower_transparentanimated.tsx"/>
+ <layer id="1" name="river" width="80" height="40" visible="0">
   <data encoding="base64" compression="zlib">
    eJzt0KENACEABEEM/evvlgJAvINN5pL1lxlj3zd16u9u/3w1fvz4dePHj183fvz4dePHj183fvz4dePHj183fvz4dePHj183fvz4dePHj183fvz4dePHj183fvxe81uAVsB7
   </data>
@@ -41,7 +59,7 @@
  </layer>
  <layer id="12" name="fakeground" width="80" height="40">
   <data encoding="base64" compression="zlib">
-   eJztwzEJAAAMA7DCJNW/t9rYkUB6SVVVVVVVVVVVVVVVVX17L8yjHw==
+   eJzt0MEJADAMA7FARsr+u/WbCdoaZNDf3HTVAAAAAABcsvf6SyL99NMvl3766ZdLPwAAAADgBwdwI54P
   </data>
  </layer>
  <layer id="24" name="roadsDown" width="80" height="40">
@@ -51,7 +69,7 @@
  </layer>
  <layer id="22" name="roads" width="80" height="40">
   <data encoding="base64" compression="zlib">
-   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
+   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
   </data>
  </layer>
  <layer id="3" name="playerBuildings" width="80" height="40">
@@ -81,7 +99,7 @@
  </layer>
  <layer id="23" name="trees" width="80" height="40">
   <data encoding="base64" compression="zlib">
-   eJztms1OwzAMgHPblG2IJxjsGXYC9iK8CY/CnZ8TcGWMN4CVO9qJHfm7DCEQFxytkbzUSdMuWdXOnxSxpSSrXTtOXAvBVMlCCvENrddZfp/KsPM/tIR4bIWdc7dD9yfo3i/g82UBWfrpnH8y24f7+8ZvK/11oe8rvf4SWH+voLs3h/4O4dqotfybx7nl3mQq0xxdn8Dne7k6ThI6KsMCjT+T9vsKgWwL0Wnbr/+C3k6gzRz6G6Ry3xH3aepiD/5339ATNS5vHlufyVj6zR8LZXun0MaePo59Fz93afFp1/g6Mix5/wNiHPXctX4oO3Sh17VhhbZUF3xj5BX4xDW0m4DxL0Y83TS+MXIKcibQngLKmxdP64C5Btr8+x3k/ID2GVDevHhaV6j9Yhfk7EHbaaC8ocH7RcbNuvtnJos6+5lnM4YmIexvzjbpjY+uFqxPhmEaSNlcFVM8L82swucMpmrqnoMuS8zc4zac3ZqQe6ySULlHW/6eOhczWWz5e84hZPFZM7dtT+j7rlfhs2ba9oRNeFe2LtSaSdkbdX7jeEVD2RsVO5r6riwGTY8dqtbF9Dvsc7i+w1wf1Xc9Ts3jWj9t9Rt1jzGq1oXyOyyXeS7TPonH+dRKUb5s/nbMmrVNkVh0qrH5JK4tUpi25ePL1HO4TfvGjvGztFZvFCEu+dTrYBsz5bTZBNYPdfbQz4A6A9vqUTFFzs7HINsRtJ8I+sur16H0g/WpbcK0L2yjoetri/IMsh2kNaOhyavXwT5D1QNSbFOuiut16sc/buaLVg==
+   eJztms1OAjEQgHuDFDA+AcozcFJ5Ed/ER/Huz0m9ivoGyno3nOTo3wVjNF6chm4ydKfLsJStu8yXNEChpTM70+7MjlJCTKZaqS9ondbs80jHXQ+H7Rbdn6C1n8H78yVk6do5f3W2D/d3nf82+mtD36f9/rlk/e03lBo0Zq+LOPWsTVuZJuj7W3h/p+fHaUJHRZii8Sfav64y+AG9HUEb5+ivZ+W+Idbp6mIHfrvr6Ikat2geX5/LUPPmXxfG9o6hDRn2Z8C+i6+79vh03vgq0i+4/h4xjrruqX4oO8wj3df6Fdj/Y8M9Iy/AJy6hXTF9g8M9zPUQcL4YcM/IEciZQHsMKO8LzPVacf25e6DPv99AzndoHwHl1U2lWs1w8/0XqPvFNsjZgbZVQ3lDg+8XhXxWvX8WspjYz43NBJqEsL+J2CQbjq6mok9BEGpI0VyVsHxeWphH4gwhNlXPQRdlnbnHTYjd6pB7jEmo3KMvf0/FxUIWX/5ecghZOHvmpt0Tcp/1Gjh7pu+esA7PylaF2jMpe6PiNzmvaCh7o86Ouj4rWwd1PztMrYvrd9jncH2Huz+az+k4M0/e/umr36j6GWNqXSi/w3K5cVnqk3gcp1aK8mX3v2PWrIUi8eg0xeeTuLbI4NoWx5ep63Bt+4Y548e2Vm8Q6VzCNubK6bMJrB8q9kivARUD++pRMcvEzoegtwNo3xH0R+kH6zO1Cde+sI2WXV/r8gR627M1o2WDfYaqB6TY1FyVUA3+AO2yf/g=
   </data>
  </layer>
  <layer id="10" name="goldenPlayer" width="80" height="40">
@@ -94,7 +112,12 @@
    eJzt1DENAAAIBDEW/OvDDTI+hFbBTVcFAAAAAAAAAAAAALdMpwsAMvzvrwX5bwG9
   </data>
  </layer>
- <objectgroup id="32" name="NPCSpawnPoint">
+ <layer id="33" name="decoration" width="80" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt0KEKACAMRVH7/t9o8kONlgVhBpFzYOzl2xo/6pF/zuhXo1+NfjX68YoZ+wAAAAAAAAAAALhnRL7hdwvgUwzP
+  </data>
+ </layer>
+ <objectgroup id="32" name="NPCSpawnPoint" visible="0">
   <object id="47" x="998" y="372">
    <point/>
   </object>
@@ -105,7 +128,7 @@
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="16" name="spawnArea">
+ <objectgroup id="16" name="spawnArea" visible="0">
   <object id="10" name="playerArea" x="1408" y="0" width="992" height="1280"/>
   <object id="11" x="936.333" y="241.67" width="136" height="800"/>
  </objectgroup>

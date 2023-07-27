@@ -178,6 +178,7 @@ local PreloadCSB = {
 	["NewbieMoveHand2"] = "UI/NewbieAni/NewbieMoveHand2.csb",
 	["NewbiePutFotress"] = "UI/NewbieAni/NewbiePutFotress.csb",
 	["NewbiePutToRightPlace"] = "UI/NewbieAni/NewbiePutToRightPlace.csb",
+	["newbieSelectFrame"] = "UI/NewbieAni/newbieSelectFrame.csb",
 	["NewbieSelectUnit"] = "UI/NewbieAni/NewbieSelectUnit.csb",
 	["NewBieSell"] = "UI/NewbieAni/NewBieSell.csb",
 	["NewbieStep1"] = "UI/NewbieAni/NewbieStep1.csb",

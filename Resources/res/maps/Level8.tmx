@@ -47,6 +47,9 @@
  <tileset firstgid="3950" source="tiledObject6.tsx"/>
  <tileset firstgid="3951" source="TX Props.tsx"/>
  <tileset firstgid="4207" source="building4032.tsx"/>
+ <tileset firstgid="4208" source="scene_object_tree2.tsx"/>
+ <tileset firstgid="4209" source="sceneObject__meat_cooking.tsx"/>
+ <tileset firstgid="4210" source="sceneObject__Torch_Metal.tsx"/>
  <layer id="1" name="river" width="80" height="40" visible="0">
   <data encoding="base64" compression="zlib">
    eJztwzENAAAMA6DOv876qI0dkNBLqqqqqqqqqqqqqqqq6tsDETY7pg==

@@ -63,6 +63,28 @@ function BattleSceneNewbieHandler:onNewbieCmdListenEvent(data)
 	self._parentNode:addBtnClickListener(data.value,clickNextCallback)
 end
 
+function BattleSceneNewbieHandler:onNewbieCmdFuncCallback(data)
+	if data.value == self._curEventName then
+		gMessageManager:sendMessage(MessageDef_GameLogic.MSG_OnNewbie_Event,{id  = self._curNextId})
+
+		self._curNextId = nil
+		self._curEventName = nil
+	end
+end
+
+function BattleSceneNewbieHandler:onNewbieCmdFuncEvent(data)
+	local function clickNextCallback()
+		gMessageManager:sendMessage(MessageDef_GameLogic.MSG_OnNewbie_Event,{id  = data.nextId})
+		self._parentNode:removeBtnClickListener(data.value,clickNextCallback)
+	end
+
+	self._curEventName = data.value
+	self._curNextId = data.nextId
+
+	self._PanelNewbie:setVisible(false)
+	gMessageManager:registerMessageHandler(MessageDef_GameLogic.MSG_NewbieCallback,handler(self,self.onNewbieCmdFuncCallback) )
+end
+
 function BattleSceneNewbieHandler:onNewbieCmdDelayTime(data)
 	gRootManager:AddTimer(data.value,false,function( ... )
 		gMessageManager:sendMessage(MessageDef_GameLogic.MSG_OnNewbie_Event,{id  = data.nextId})
@@ -116,9 +138,21 @@ function BattleSceneNewbieHandler:onNewbieCmdFocusBtn(data)
 			local posX,posY = btnNode:getPosition()
 			local size = btnNode:getContentSize()
 			local niewBiePic = cc.Sprite:createWithSpriteFrameName("CryoGui9.png")
-			local framePic = SimpleAniNode.new("UI/NewbieAni/newbieSelectFrame.csb",true)
+			local framePic = nil
+			local strCallback = nil
 
-			if data.dir then
+			if CBList and next(CBList) then
+				strCallback = CBList[i]
+			end
+
+			if strCallback then
+				framePic = SimpleAniNode.new("UI/NewbieAni/newbieSelectFrame.csb",true)
+
+				self._NewbieNode:addChild(framePic)
+				framePic:setPosition(cc.p(posX,posY))
+			end
+
+			if strCallback and data.dir and framePic then
 				for _,handStr in pairs(handDir) do
 					local handStrKey = "hand_"..handStr
 					framePic:setNodeVisible(handStrKey,data.dir == handStr)
@@ -126,30 +160,22 @@ function BattleSceneNewbieHandler:onNewbieCmdFocusBtn(data)
 			end
 
 			niewBiePic:setContentSize(size.width*1.2,size.height*1.2)
-
 			newbieNodef:addChild(niewBiePic)
-			self._NewbieNode:addChild(framePic)
-
 			niewBiePic:setPosition(cc.p(posX,posY))
-			framePic:setPosition(cc.p(posX,posY))
 
-			if CBList and next(CBList) then
-				local strCallback = CBList[i]
+			if strCallback and self[strCallback] then
+				local cb = handler(self,self[strCallback])
 
-				if strCallback and self[strCallback] then
-					local cb = handler(self,self[strCallback])
-
-					local function newbieBtnEvent()
-						cb(data.nextId)
-					end
-
-					self._BtnNewbie:setPosition(posX,posY)
-					self._BtnNewbie:setContentSize(cc.size(size.width*1.2,size.height*1.2))
-					self._BtnNewbie:addClickEventListener(newbieBtnEvent)
+				local function newbieBtnEvent()
+					cb(data.nextId)
 				end
-			end
 
-			self:createNewbieArrow(Vector2D.new(posX,posY))
+				self._BtnNewbie:setPosition(posX,posY)
+				self._BtnNewbie:setContentSize(cc.size(size.width*1.2,size.height*1.2))
+				self._BtnNewbie:addClickEventListener(newbieBtnEvent)
+			else
+				self:createNewbieArrow(Vector2D.new(posX,posY))
+			end
 		end
 
 		clip:setStencil(newbieNodef)--设置模版

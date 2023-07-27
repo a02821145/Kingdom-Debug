@@ -76,6 +76,7 @@ local configPathList = {
 	["wisard_master_Red"] = "config/Characters/wisard_master_Red.lua",
 	["wisard_red"] = "config/Characters/wisard_red.lua",
 	["DebugRenderList"] = "config/DebugRenderList.lua",
+	["DecorationCfg"] = "config/DecorationCfg.lua",
 	["DiamonsCfg"] = "config/DiamonsCfg.lua",
 	["GemsCfg"] = "config/GemsCfg.lua",
 	["GiftBoxExplode"] = "config/GiftBoxs/GiftBoxExplode.lua",
