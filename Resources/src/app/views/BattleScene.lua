@@ -1079,15 +1079,22 @@ function BattleScene:onGolemNodeEvent(data)
 end
 
 function BattleScene:onShowSceneNode(data)
-	local nodeName = data.nodeName
-	local isShow   = data.isShow
-	self:setNodeVisible(nodeName,isShow)
+	local nodeName 	  = data.nodeName
+	local isShow   	  = data.isShow
+	local isSceneNode = data.isSceneNode
+
+	if isSceneNode then
+		self:setSceneNodeVisible(nodeName,isShow,self._uiSceneNode)
+	else
+		self:setNodeVisible(nodeName,isShow)
+	end
 end
 
 function BattleScene:onEventShowSceneNode(data)	
 	local newData = {}
 	newData.nodeName = data.nodeName
 	newData.isShow = tonumber(data.isShow) == 1
+	newData.isSceneNode = data.isSceneNode and tonumber(data.isSceneNode) == 1 or false
 	self:onShowSceneNode(newData)
 end
 
