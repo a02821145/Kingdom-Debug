@@ -8,6 +8,7 @@ function PutSelNode:ctor(data,isUnlock,upInfo)
 	self._pop = data.population and data.population or 0
 	self._cost = self._data.cost
 	self._cancelSelCB = nil
+	self._selectCB = nil
 
 	self:setImageTexture("icon",self._data.icon)
 
@@ -15,6 +16,7 @@ function PutSelNode:ctor(data,isUnlock,upInfo)
 
 	self:setNodeVisible("lock_icon",not isUnlock)
 	self:setNodeVisible("forbiden",false)
+	self:setNodeVisible("selected",false)
 
 	self._panelBG = self:getNode("panelBG")
 	self._panelBG:setSwallowTouches(false)
@@ -35,8 +37,16 @@ function PutSelNode:ctor(data,isUnlock,upInfo)
 	self:setContentSize(210,150)
 end
 
+function PutSelNode:setSelectCB(CB)
+	self._selectCB = CB
+end
+
 function PutSelNode:setCancelSelectCB(CB)
 	self._cancelSelCB =  CB
+end
+
+function PutSelNode:SetIsSelect(isSelect)
+	self:setNodeVisible("selected",isSelect)
 end
 
 function PutSelNode:setForbidenByMoney(money)
@@ -65,6 +75,10 @@ function PutSelNode:onSelectPut(event)
 	if curSelectId ~= self._data.id then
 		_GModel.PlayerManager:SetPrepareMoney(0)
 		gMessageManager:sendMessage(MessageDef_GameLogic.MSG_RefreshBattleCoins)
+		if self._selectCB then
+			self._selectCB(self._data.id,true)
+		end
+
 	elseif curSelectId == self._data.id and not self._isSoldier then
 		if self._cancelSelCB then
 			self._cancelSelCB()
@@ -72,8 +86,11 @@ function PutSelNode:onSelectPut(event)
 		_GModel.PlayerManager:SetPrepareMoney(0)
 		gMessageManager:sendMessage(MessageDef_GameLogic.MSG_RefreshBattleCoins)
 		_GModel.PlayerManager:SetCurSelectId(nil)
-
 		gMessageManager:sendMessageInstant(MessageDef_GameLogic.MSG_ShowSceneNode,{nodeName = "buildingArrowNode",isShow = false})
+
+		if self._selectCB then
+			self._selectCB(self._data.id,false)
+		end
 
 		return
 	end
@@ -114,6 +131,8 @@ function PutSelNode:onSelectPut(event)
 		}
 
 		QueueEvent(EventType.ScriptEvent_GameCommand,data2)
+
+		gMessageManager:sendMessageInstant(MessageDef_GameLogic.MSG_ShowSceneNode,{nodeName = "buildingArrowNode",isShow = false})
 	else
 		local data2 =
 		{

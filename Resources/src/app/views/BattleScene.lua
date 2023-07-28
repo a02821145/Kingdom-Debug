@@ -231,6 +231,7 @@ function BattleScene:initUI()
 	self:addChildNode("UIEffectNode",self._DecisiveTimeAni)
 	self._CurDecisiveTime = 0
 	self._cancelSelCB = handler(self,self.onBtnBuyAndSellCancel)
+	self._selectPutCB = handler(self,self.onSelectPutNode)
 
 	self:setSceneNodeVisibleLang("btn_text_study",true,self._uiSceneNode)
 	self:setSceneNodeVisibleLang("btn_text_buy",true,self._uiSceneNode)
@@ -699,7 +700,8 @@ function BattleScene:refreshBuildingLV()
 		local fortressNode = PutSelNode.new(fortress.data,fortress.unlock,upGradeCfgsMap[fortress.data.upID])
 		self._PutBuildingLV:addChild(fortressNode)
 		fortressNode:setCancelSelectCB(self._cancelSelCB)
-		table.insert(self._PutNodeList,fortressNode)
+		fortressNode:setSelectCB(self._selectPutCB)
+		self._PutNodeList[fortress.data.id] = fortressNode
 	end
 
 	self._PutBuildingLV:forceDoLayout()
@@ -736,7 +738,9 @@ function BattleScene:refreshPutSoldierLV()
 	for _,cha in ipairs(allList) do
 		local charNode = PutSelNode.new(cha.cfg,cha.unlock)
 		self._PutSoldierLV:addChild(charNode)
-		table.insert(self._PutNodeList,charNode)
+		charNode:setCancelSelectCB(self._cancelSelCB)
+		charNode:setSelectCB(self._selectPutCB)
+		self._PutNodeList[cha.cfg.id] = charNode
 	end
 
 	self._PutSoldierLV:forceDoLayout()
@@ -1394,6 +1398,17 @@ function BattleScene:onBtnBuyAndSellSure()
 
 	gMessageManager:sendMessage(MessageDef_GameLogic.MSG_RefreshBattleCoins)
 	gMessageManager:sendMessage(MessageDef_GameLogic.MSG_NewbieCallback,{value = "onBtnBuyAndSellSure"})
+end
+
+function BattleScene:onSelectPutNode(id,isSelect)
+	for _,putNode in pairs(self._PutNodeList) do
+		putNode:SetIsSelect(false)
+	end
+
+	local putNode = self._PutNodeList[id]
+	if putNode then
+		putNode:SetIsSelect(isSelect)
+	end
 end
 
 function BattleScene:onBtnBuyAndSellCancel()
