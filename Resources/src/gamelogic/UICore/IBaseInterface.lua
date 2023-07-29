@@ -87,6 +87,15 @@ function IBaseInterface:gotoFrameAndPlay(frameIndex,isLoop)
 	self.timeLine:gotoFrameAndPlay(frameIndex,isLoop)
 end
 
+function IBaseInterface:setTimelineCurFrame(frameIndex)
+	if not self.timeLine then
+		LogError("IBaseInterface:setTimelineCurFrame timeline is nil")
+		return
+	end
+
+	self.timeLine:setCurrentFrame(frameIndex)
+end
+
 function IBaseInterface:playSceneNodeTimeLine(timeLine,name,isLoop,callback,time)
 	if not timeLine then
 		LogError("timeline is nil")
@@ -996,6 +1005,7 @@ function IBaseInterface:Release()
 	self:_removeAllMsg()
 	self:_ReleaseBaseInterface()
 	self:_Release()
+	self.sceneNode:removeFromParent()
 end
 
 return IBaseInterface

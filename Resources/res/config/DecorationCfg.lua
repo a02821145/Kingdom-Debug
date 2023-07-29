@@ -4,6 +4,7 @@ local Decoration =
 	{
 		name = "tree1",
 		path = "UI/SceneObject/sceneObject_tree1.csb",
+		randomFrame = 55,
 		isLoop = true
 	},
 
@@ -11,6 +12,7 @@ local Decoration =
 	{
 		name = "tree2",
 		path = "UI/SceneObject/sceneObject_tree2.csb",
+		randomFrame = 55,
 		isLoop = true
 	},
 
@@ -18,6 +20,7 @@ local Decoration =
 	{
 		name = "tree3",
 		path = "UI/SceneObject/sceneObject_tree3.csb",
+		randomFrame = 55,
 		isLoop = true
 	},
 
@@ -151,6 +154,22 @@ local Decoration =
 	{
 		name = "flower_transparentanimated",
 		path = "UI/SceneObject/sceneObject_flower_transparentanimated.csb",
+		isLoop = true
+	},
+
+	[11000023] = 
+	{
+		name = "water_splash",
+		path = "UI/SceneObject/sceneObject_water2.csb",
+		time = 8,
+		isLoop = true
+	},
+
+	[11000024] = 
+	{
+		name = "water_circle",
+		path = "UI/SceneObject/sceneObject_water1.csb",
+		time = 5,
 		isLoop = true
 	},
 }

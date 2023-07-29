@@ -31,6 +31,8 @@
  <tileset firstgid="2964" source="sceneObject_tree1.tsx"/>
  <tileset firstgid="2965" source="sceneObject___Candles_Big.tsx"/>
  <tileset firstgid="2966" source="sceneObject___Candles_Small.tsx"/>
+ <tileset firstgid="2967" source="Water-Splash-01---Spritesheet_14.tsx"/>
+ <tileset firstgid="2968" source="Water-StartUp.tsx"/>
  <layer id="1" name="river" width="80" height="40">
   <data encoding="base64" compression="zlib">
    eJzt0LEJACEABEETe/+yLUCDz3RhDjY/Zox939Spv7v989X48ePXjR8/ft348ePXjR8/ft348ePXjR8/ft348ePXjR8/ft348ePXjR8/ft348ePXjR8/ft348XvNbwGL8QaL
@@ -88,7 +90,7 @@
  </layer>
  <layer id="19" name="decoration" width="80" height="40">
   <data encoding="base64" compression="zlib">
-   eJzt0KERADAMxLDwjN8O3A1CHqUnEXNX8YvTc5n5l/Ev4x8AAAAAAAAAAADsd3suM/8y/mU2/HvcTxPR
+   eJzt1zEKACAIQFH3jl9Qx+0GEjgl7y3uHwSNoIs58klOvxr9avQDAGC7/QAAAGju+H3hW/YXAADerZFPcvrV6FfzQ78L7ZoVuQ==
   </data>
  </layer>
  <objectgroup id="20" name="NPCSpawnPoint" visible="0">
@@ -169,7 +171,7 @@
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="12" name="walls">
+ <objectgroup id="12" name="walls" visible="0">
   <object id="2" x="160" y="0" width="2240" height="1280" visible="0">
    <properties>
     <property name="normalInside" type="bool" value="true"/>

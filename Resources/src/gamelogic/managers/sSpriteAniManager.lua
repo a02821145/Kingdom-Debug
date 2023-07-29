@@ -16,6 +16,7 @@ function sSpriteAniManager:resetData()
 	self._EffectNode = nil
 	self._LayerMap = {}
 	self._EffectNodeList = {}
+	self._StaticObjList = {}
 end
 
 function sSpriteAniManager:_initMsg()
@@ -78,7 +79,21 @@ function sSpriteAniManager:addSceneObject(id,pos)
 		local ext = _GModel.StringUtil:getExtension(cfg.path)
 		local obj = nil
 		if ext == "csb" then
-			obj = SimpleAniNode.new(cfg.path,true)
+			if cfg.time and cfg.time > 0 then
+				local randomObject = {}
+				obj = SimpleAniNode.new(cfg.path)
+				randomObject.obj = obj
+				randomObject.time = cfg.time
+				randomObject.curTime = math.random(0,cfg.time)
+				table.insert(self._StaticObjList,randomObject)
+			else
+				obj = SimpleAniNode.new(cfg.path,true)
+			end
+
+			if cfg.randomFrame and cfg.randomFrame > 0  then
+				local index = math.random(1,cfg.randomFrame)
+				obj:setTimelineCurFrame(index)
+			end
 		end
 
 		if obj then
@@ -239,6 +254,11 @@ function sSpriteAniManager:changeLayer(node,LayerName)
 end
 
 function sSpriteAniManager:_Update(dt)
+	self:_UpdateEffects(dt)
+	self:_UpdateStaticObject(dt)
+end
+
+function sSpriteAniManager:_UpdateEffects(dt)
 	if next(self._EffectNodeList) then
 		local removeList = {}
 		local len = #self._EffectNodeList
@@ -257,6 +277,16 @@ function sSpriteAniManager:_Update(dt)
 			local effectInfo = self._EffectNodeList[id]
 			effectInfo.sceneNode:removeFromParent()
 			table.remove(self._EffectNodeList,id)
+		end
+	end
+end
+
+function sSpriteAniManager:_UpdateStaticObject(dt)
+	for _,obj in ipairs(self._StaticObjList) do
+		obj.curTime = obj.curTime - dt
+		if obj.curTime <= 0 then
+			obj.obj:play()
+			obj.curTime = math.random(obj.time*0.5, obj.time)
 		end
 	end
 end
@@ -299,13 +329,13 @@ function sSpriteAniManager:drawRect(vMin,vMax,isDyn)
 end
 
 function sSpriteAniManager:onGameOver()
-	print("sSpriteAniManager:onGameOver")
 	self:ReleaseEffectNode()
+	self:ReleaseStaticObjs()
 end
 
 function sSpriteAniManager:onRestart()
-	print("sSpriteAniManager:onRestart")
 	self:ReleaseEffectNode()
+	self:ReleaseStaticObjs()
 end
 
 function sSpriteAniManager:ReleaseEffectNode()
@@ -320,10 +350,19 @@ function sSpriteAniManager:ReleaseEffectNode()
 	self._DrawDynNodeIml = nil
 end
 
+function sSpriteAniManager:ReleaseStaticObjs()
+	for _,obj in ipairs(self._StaticObjList) do
+		obj.obj:Release()
+	end
+
+	self._StaticObjList = {}
+end
+
 function sSpriteAniManager:_Release(isExit)
 	if isExit then return end
 
 	self:ReleaseEffectNode()
+	self:ReleaseStaticObjs()
 end
 
 return sSpriteAniManager
