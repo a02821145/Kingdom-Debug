@@ -87,6 +87,8 @@ local level =
 		building_type.player_magic_tower,
 		building_type.enemy_magic_tower,
 	},
+
+	hardUseFog = true,
 }
 
 return level

@@ -16,7 +16,8 @@ local conf =
 	upID = 10005,
 	population = 1,
 	displayCSB = "UI/displayAni/displayAni1009.csb",
-
+	FogViewSize = 200,
+	
 	displayProperty = 
 	{
 		[1] = {com = "HealthComponent",icon = "d2323pixekicon64_233.png",displayName =  "@PropertyHealth",vName = "maxHealth",upAdd = "healthAdd"},

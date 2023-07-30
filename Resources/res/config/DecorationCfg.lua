@@ -28,6 +28,7 @@ local Decoration =
 	{
 		name = "tree4",
 		path = "UI/SceneObject/sceneObject_tree4.csb",
+		randomFrame = 55,
 		isLoop = true
 	},
 
@@ -35,6 +36,7 @@ local Decoration =
 	{
 		name = "tree5",
 		path = "UI/SceneObject/sceneObject_tree5.csb",
+		randomFrame = 55,
 		isLoop = true
 	},
 
@@ -42,6 +44,7 @@ local Decoration =
 	{
 		name = "tree6",
 		path = "UI/SceneObject/sceneObject_tree6.csb",
+		randomFrame = 55,
 		isLoop = true
 	},
 
@@ -49,6 +52,7 @@ local Decoration =
 	{
 		name = "tree7",
 		path = "UI/SceneObject/sceneObject_tree7.csb",
+		randomFrame = 55,
 		isLoop = true
 	},
 
@@ -56,6 +60,7 @@ local Decoration =
 	{
 		name = "tree8",
 		path = "UI/SceneObject/sceneObject_tree8.csb",
+		randomFrame = 55,
 		isLoop = true
 	},
 
@@ -63,6 +68,7 @@ local Decoration =
 	{
 		name = "tree9",
 		path = "UI/SceneObject/sceneObject_tree9.csb",
+		randomFrame = 55,
 		isLoop = true
 	},
 
@@ -70,6 +76,7 @@ local Decoration =
 	{
 		name = "tree10",
 		path = "UI/SceneObject/sceneObject_tree10.csb",
+		randomFrame = 55,
 		isLoop = true
 	},
 

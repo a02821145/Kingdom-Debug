@@ -14,7 +14,8 @@ local conf =
 	team = actor_team.team_NPC,
 	population = 1,
 	upID = 10005,
-
+	FogViewSize = 200,
+	
 	regulators = 
 	{
 		{name = "triggerTestRegulator",time=8},

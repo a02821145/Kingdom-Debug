@@ -1002,10 +1002,12 @@ function IBaseInterface:_ReleaseBaseInterface()
 end
 
 function IBaseInterface:Release()
-	self:_removeAllMsg()
+	if self._removeAllMsg then
+		self:_removeAllMsg()
+	end
+
 	self:_ReleaseBaseInterface()
 	self:_Release()
-	self.sceneNode:removeFromParent()
 end
 
 return IBaseInterface

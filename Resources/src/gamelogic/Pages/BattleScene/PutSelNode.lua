@@ -79,7 +79,7 @@ function PutSelNode:onSelectPut(event)
 			self._selectCB(self._data.id,true)
 		end
 
-	elseif curSelectId == self._data.id and not self._isSoldier then
+	elseif curSelectId == self._data.id then
 		if self._cancelSelCB then
 			self._cancelSelCB()
 		end

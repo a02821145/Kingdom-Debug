@@ -128,7 +128,7 @@
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="16" name="spawnArea" visible="0">
+ <objectgroup id="16" name="spawnArea">
   <object id="10" name="playerArea" x="1408" y="0" width="992" height="1280"/>
   <object id="11" x="936.333" y="241.67" width="136" height="800"/>
  </objectgroup>

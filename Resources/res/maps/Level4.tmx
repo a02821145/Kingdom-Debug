@@ -104,7 +104,7 @@
  <objectgroup id="14" name="createArea" visible="0">
   <object id="25" x="1792" y="0" width="768" height="1280"/>
  </objectgroup>
- <objectgroup id="15" name="walls" visible="0">
+ <objectgroup id="15" name="walls">
   <object id="2" type="0" x="846" y="-2" width="903" height="343">
    <properties>
     <property name="normalInside" type="bool" value="false"/>
