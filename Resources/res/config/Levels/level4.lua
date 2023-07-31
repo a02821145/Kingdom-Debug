@@ -10,7 +10,7 @@ local level =
 
 	weather = 
 	{
-		20003,
+		20002,
 	},
 
 	unLockList = 
@@ -73,6 +73,12 @@ local level =
 		building_type.enemy_cannon_buliding,
 		building_type.player_magic_tower,
 		building_type.enemy_magic_tower,
+	},
+
+	Tips = 
+	{
+		id = 100004,
+		page = "IntroducePage4",
 	},
 }
 

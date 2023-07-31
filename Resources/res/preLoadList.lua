@@ -43,6 +43,7 @@ local preLoadList = {
 	["pixelUI"] = "UI/TextureUI/pixelUI.plist",
 	["Projectiles"] = "UI/TextureUI/Projectiles.plist",
 	["qishiDisplayAni"] = "UI/TextureUI/qishiDisplayAni.plist",
+	["sceneObject"] = "UI/TextureUI/sceneObject.plist",
 	["SkillLevelUpgradeAni"] = "UI/TextureUI/SkillLevelUpgradeAni.plist",
 	["SoldierAll"] = "UI/TextureUI/SoldierAll.plist",
 	["ThiefDisplayAni"] = "UI/TextureUI/ThiefDisplayAni.plist",

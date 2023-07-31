@@ -453,7 +453,7 @@ function LevelScene:onEventStartGame(data)
 
     self:StopTimeLine()
     self:setNodeVisible("LoadingNode",true)
-    self:playTimeLine("startLoading",false,loadLevelScene)
+    self:playTimeLine("startLoading",false,loadLevelScene,0.5)
 end
 
 function LevelScene:onBtnBase()

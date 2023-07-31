@@ -131,6 +131,10 @@ function BattleSceneNewbieHandler:onNewbieCmdFocusBtn(data)
 
 	local handDir = {"down","left","right","up"}
 
+	if data.id == 100000051 then
+		gRootManager:OpenPage("GMPage")
+	end
+
 	if next(nodesList) then
 		local newbieNodef = cc.Node:create()
 		for i,nodeName in ipairs(nodesList) do
@@ -178,13 +182,14 @@ function BattleSceneNewbieHandler:onNewbieCmdFocusBtn(data)
 			end
 		end
 
-		clip:setStencil(newbieNodef)--设置模版
-
 		if data.newbieCSB then
+			local pos = cc.p(self._WinSize.width*0.5,self._WinSize.height*0.5)
 			local newbieAniNode = NewbieAniNode.new(data,clickNextCallback)
 			self._NewbieNode:addChild(newbieAniNode)
-			newbieAniNode:setPosition(cc.p(self._WinSize.width*0.5,self._WinSize.height*0.5))
+			newbieAniNode:setPosition(pos)
 		end
+
+		clip:setStencil(newbieNodef)--设置模版
 	end
 end
 

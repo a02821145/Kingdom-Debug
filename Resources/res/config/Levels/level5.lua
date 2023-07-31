@@ -10,8 +10,6 @@ local level =
 
 	weather = 
 	{
-		20001,
-		20002,
 		20003,
 	},
 
@@ -70,6 +68,12 @@ local level =
 		building_type.enemy_cannon_buliding,
 		building_type.player_magic_tower,
 		building_type.enemy_magic_tower,
+	},
+
+	Tips = 
+	{
+		id = 100005,
+		page = "IntroducePage5",
 	},
 }
 

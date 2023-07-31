@@ -38,6 +38,12 @@ local level =
 		{id = building_type.enemy_magic_tower,level = 6 },
 		{id = building_type.enemy_cannon_buliding,level = 5 },
 	},
+
+	Tips = 
+	{
+		id = 100006,
+		page = "IntroducePage6",
+	},
 }
 
 return level

@@ -8,11 +8,6 @@ local level =
 	BGMusic = "MusicAttack1",
 	bonus = 100,
 
-	weather = 
-	{
-		20001,
-	},
-
 	unLockList = 
 	{
 		{
