@@ -215,6 +215,8 @@ function LevelScene:onNewbieCommandFocusBtn(data)
 		CBList = string.split(data.callbackList,",")
 	end
 
+	local handDir = {"down","left","right","up"}
+
 	if next(nodesList) then
 		local newbieNodef = cc.Node:create()
 		for i,nodeName in ipairs(nodesList) do
@@ -222,34 +224,44 @@ function LevelScene:onNewbieCommandFocusBtn(data)
 			local posX,posY = btnNode:getPosition()
 			local size = btnNode:getContentSize()
 			local niewBiePic = cc.Sprite:createWithSpriteFrameName("CryoGui9.png")
-			local framePic = cc.Sprite:createWithSpriteFrameName("selectBlackFrame Yelow.png")
-
-			niewBiePic:setContentSize(size.width*1.2,size.height*1.2)
-			framePic:setContentSize(size.width*1.3,size.height*1.3)
-
-			newbieNodef:addChild(niewBiePic)
-			self._NewbieNode:addChild(framePic)
-
-			niewBiePic:setPosition(cc.p(posX,posY))
-			framePic:setPosition(cc.p(posX,posY))
+			local framePic = nil
+			local strCallback = nil
 
 			if CBList and next(CBList) then
-				local strCallback = CBList[i]
+				strCallback = CBList[i]
+			end
 
-				if strCallback and self[strCallback] then
-					local cb = handler(self,self[strCallback])
+			if strCallback then
+				framePic = SimpleAniNode.new("UI/NewbieAni/newbieSelectFrame.csb",true)
 
-					local function newbieBtnEvent()
-						cb(data.nextId)
-					end
+				self._NewbieNode:addChild(framePic)
+				framePic:setPosition(cc.p(posX,posY))
+			end
 
-					self._BtnNewbie:setPosition(posX,posY)
-					self._BtnNewbie:setContentSize(cc.size(size.width*1.2,size.height*1.2))
-					self._BtnNewbie:addClickEventListener(newbieBtnEvent)
+			if strCallback and data.dir and framePic then
+				for _,handStr in pairs(handDir) do
+					local handStrKey = "hand_"..handStr
+					framePic:setNodeVisible(handStrKey,data.dir == handStr)
 				end
 			end
 
-			self:createNewbieArrow(Vector2D.new(posX,posY))
+			niewBiePic:setContentSize(size.width*1.2,size.height*1.2)
+			newbieNodef:addChild(niewBiePic)
+			niewBiePic:setPosition(cc.p(posX,posY))
+
+			if strCallback and self[strCallback] then
+				local cb = handler(self,self[strCallback])
+
+				local function newbieBtnEvent()
+					cb(data.nextId)
+				end
+
+				self._BtnNewbie:setPosition(posX,posY)
+				self._BtnNewbie:setContentSize(cc.size(size.width*1.2,size.height*1.2))
+				self._BtnNewbie:addClickEventListener(newbieBtnEvent)
+			else
+				self:createNewbieArrow(Vector2D.new(posX,posY))
+			end
 		end
 
 		clip:setStencil(newbieNodef)--设置模版
@@ -297,76 +309,6 @@ function LevelScene:onNewbieCommandShowUI(data)
 	end
 
 	gMessageManager:sendMessage(MessageDef_GameLogic.MSG_ProcessNewbieCmd,{id  = data.nextId})
-end
-
-
-function LevelScene:onNewbieCommandFocusBtn(data)
-	local function clickNextCallback(id)
-		self._NewbieNode:removeAllChildren()
-		gMessageManager:sendMessage(MessageDef_GameLogic.MSG_OnNewbie_Event,{id  = id})
-	end
-
-	self._NewbieNode:removeAllChildren()
-
-	local clip = cc.ClippingNode:create()
-	clip:setInverted(true)
-	clip:setAlphaThreshold(0.0)
-	self._NewbieNode:addChild(clip)
-
-	local layerColor = cc.LayerColor:create(cc.c4b(0,0,0,150))
-	clip:addChild(layerColor)
-
-	local nodesList = string.split(data.nodes,",")
-	local CBList = nil
-	if data.callbackList then
-		CBList = string.split(data.callbackList,",")
-	end
-
-	if next(nodesList) then
-		local newbieNodef = cc.Node:create()
-		for i,nodeName in ipairs(nodesList) do
-			local btnNode = self:getNode(nodeName)
-			local posX,posY = btnNode:getPosition()
-			local size = btnNode:getContentSize()
-			local niewBiePic = cc.Sprite:createWithSpriteFrameName("CryoGui9.png")
-			local framePic = cc.Sprite:createWithSpriteFrameName("selectBlackFrame Yelow.png")
-
-			niewBiePic:setContentSize(size.width*1.2,size.height*1.2)
-			framePic:setContentSize(size.width*1.3,size.height*1.3)
-
-			newbieNodef:addChild(niewBiePic)
-			self._NewbieNode:addChild(framePic)
-
-			niewBiePic:setPosition(cc.p(posX,posY))
-			framePic:setPosition(cc.p(posX,posY))
-
-			if CBList and next(CBList) then
-				local strCallback = CBList[i]
-
-				if strCallback and self[strCallback] then
-					local cb = handler(self,self[strCallback])
-
-					local function newbieBtnEvent()
-						cb(data.nextId)
-					end
-
-					self._BtnNewbie:setPosition(posX,posY)
-					self._BtnNewbie:setContentSize(cc.size(size.width*1.2,size.height*1.2))
-					self._BtnNewbie:addClickEventListener(newbieBtnEvent)
-				end
-			end
-
-			self:createNewbieArrow(Vector2D.new(posX,posY))
-		end
-
-		clip:setStencil(newbieNodef)--设置模版
-
-		if data.newbieCSB then
-			local newbieAniNode = NewbieAniNode.new(data,clickNextCallback)
-			self._NewbieNode:addChild(newbieAniNode)
-			newbieAniNode:setPosition(cc.p(self._WinSize.width*0.5,self._WinSize.height*0.5))
-		end
-	end
 end
 
 function LevelScene:onNewbieCommandShowDialogue(subCfg)

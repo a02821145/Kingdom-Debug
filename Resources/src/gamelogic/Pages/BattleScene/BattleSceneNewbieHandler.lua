@@ -131,10 +131,6 @@ function BattleSceneNewbieHandler:onNewbieCmdFocusBtn(data)
 
 	local handDir = {"down","left","right","up"}
 
-	if data.id == 100000051 then
-		gRootManager:OpenPage("GMPage")
-	end
-
 	if next(nodesList) then
 		local newbieNodef = cc.Node:create()
 		for i,nodeName in ipairs(nodesList) do

@@ -49,6 +49,14 @@ function PlayerManager:updateGems(cost)
 	gMessageManager:sendMessage(MessageDef_GameLogic.MSG_RefreshGems)
 end
 
+function PlayerManager:updateDiamond(cost)
+	self._Diamond = self._Diamond + cost
+
+	setPlayerSetting("playerDiamond",SettingType.TYPE_INT,self._Diamond)
+	
+	gMessageManager:sendMessage(MessageDef_GameLogic.MSG_RefreshGems)
+end
+
 function PlayerManager:onBuyFinish()
 	local item = _GModel.GemsCfg[self._curBuyId]
 	self._Gems = self._Gems + item.gemCount

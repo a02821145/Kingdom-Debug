@@ -18,7 +18,7 @@ local LevelSceneNewbie =
 	{
 		startId = 100000021,
 		[100000021] = {id = 100000021,cmd = "ShowUI",nodes="PanelNewbie",value = true,nextId = 100000022},
-		[100000022] = {id = 100000022,cmd = "FocusBtn",nodes = "btnUpgrade",callbackList = "NewbieTask001",newbieCSB = "UI/NewbieAni/NewbieLevelSceneStep1.csb"},
+		[100000022] = {id = 100000022,cmd = "FocusBtn",nodes = "btnUpgrade",dir = "up", callbackList = "NewbieTask001",newbieCSB = "UI/NewbieAni/NewbieLevelSceneStep2.csb"},
 	},
 }
 

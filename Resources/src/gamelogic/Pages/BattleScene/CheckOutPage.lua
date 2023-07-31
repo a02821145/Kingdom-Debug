@@ -8,16 +8,22 @@ function CheckOutPage:_init(data)
 	self._startCount = 0
 	self._iLevel = tonumber(data.level)
 	self._strDiff = data.diff
+	self._diamond = 0
+
+	self:setLabelText("diamondTxt",0)
+	self:setLabelText("gemTxt",0)
 
 	if self._IsWin then
 		self._gems = tonumber(data.gems)
 		self._startCount = tonumber(data.star)
+		self._diamond = tonumber(data.diamonds)
 
 		for i=1,3 do
 			self:setNodeVisible("star"..i,i == self._startCount)
 		end
 
 		self:setLabelText("gemTxt",self._gems)
+		self:setLabelText("diamondTxt",self._diamond)
 
 		self:SaveStar()
 	end
@@ -118,7 +124,8 @@ function CheckOutPage:OnExitGame()
 		end
 
 		_GModel.PlayerManager:updateGems(self._gems)
-
+		_GModel.PlayerManager:updateDiamond(self._diamond)
+		
 		self:CheckUnLockList()
 		self:CheckUpGrapdeList()
 	end
