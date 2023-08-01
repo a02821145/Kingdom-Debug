@@ -9,7 +9,7 @@ local GiftBoxExplode =
 	{
 		{
 			name = "GiftBoxComponent",
-			radius = 50,
+			radius = 32,
 			damageRadius = 100,
 			value = 50,
 			regulator = 5,

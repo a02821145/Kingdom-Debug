@@ -9,8 +9,8 @@ local GiftBoxHealthGiver =
 	{
 		{
 			name = "GiftBoxComponent",
-			radius = 50,
-			value = 20,
+			radius = 32,
+			value = 50,
 			regulator = 5,
 			disappearTime = 0.1,
 			normalPic = "box1Close.png",

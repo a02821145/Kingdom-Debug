@@ -9,6 +9,11 @@ function BackPackPage:_initUI()
 	self:addBtnClickListener("btn_close",self._close)
 	self:setNodeVisibleLang("Title_Text")
 	
+	local panelBG = self:getNode("PanelBG")
+    panelBG:onTouch(handler(self,self._close))
+
+    self:setNodeVisibleLang("TextPanelClose")
+    
 	local nodeIndex =  1
 	for id,cfg in pairs(_GModel.items) do
 		local Key = "BackpackItem_"..tostring(id)

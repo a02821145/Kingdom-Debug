@@ -99,7 +99,7 @@ local level =
 		1013
 	},
 	
-	newbieTaskId = 10000002,
+	--newbieTaskId = 10000002,
 }
 
 return level

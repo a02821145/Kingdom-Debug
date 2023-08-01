@@ -9,7 +9,7 @@ local GiftBoxInvincible =
 	{
 		{
 			name = "GiftBoxComponent",
-			radius = 50,
+			radius = 32,
 			regulator = 5,
 			disappearTime = 0.1,
 			normalPic = "box1Close.png",
