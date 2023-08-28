@@ -38,7 +38,9 @@ local ProjectileTowerArrow =
 			name = "DamageCurveComponent",
 			length = 3,
 			damage = 4,
-			curRatio = 0.5
+			curRatio = 0.5,
+			collideEffect = 7046,
+			collideEffectType = actor_type.type_soilder,
 		},
 
 		{

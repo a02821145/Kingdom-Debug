@@ -150,6 +150,16 @@ local page_cfg =
 	{
 		csb = "UI/Pages/UpGradePage/SoldierSkillUpgradePage.csb"
 	},
+
+	["AIMasterChangePage"] = 
+	{
+		csb = "AIMasterSelectPage.csb",
+	},
+
+	["PauseActorPage"] = 
+	{
+		csb = "PauseActorPage.csb",
+	},
 }
 
 return page_cfg

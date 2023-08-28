@@ -206,6 +206,49 @@ function ItemManager:onItemEvent_100007(data)
 	end
 end
 
+function ItemManager:onItemEvent_100008(data)
+	local itemCfg = _GModel.items[100008]
+	local pos = data.pos
+	local radius =  itemCfg.radius
+	local value = itemCfg.value
+
+	gMessageManager:sendMessage(MessageDef_GameLogic.MSG_AddEffect,{id = 7048, pos = pos})
+
+	local function itemCallback()
+		QueueEvent(EventType.ScriptEvent_Sound,{id = "Sound_Harmer_Thor"})
+		
+		local params  = {
+			radius = itemCfg.radius,
+			pos = data.pos,
+			type = actor_type.type_soilder,
+			count = 16,
+			team = actor_team.team_NPC
+		}
+
+		local actors = ActorManager.GetActorByRadius(params)
+		if actors and next(actors) then
+			for _,id in pairs(actors) do
+				local targetActor = _GModel.sActorManager:getActorById(id)
+				if targetActor then
+					local p1 = 
+					{
+						buffType = buff_type.buff_type_dizziness,
+						actorId = id,
+						time = value,
+					}
+
+					BuffManager.AddBuffToActor(p1)
+				end
+			end
+		end
+	end
+
+	self:addTimer(0.5,itemCallback)
+end
+
+function ItemManager:_Update(dt)
+
+end
 
 function ItemManager:onStartGame()
 

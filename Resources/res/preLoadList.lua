@@ -3,6 +3,7 @@ local preLoadList = {
 	["animals"] = "UI/TextureUI/animals.plist",
 	["BannerAni"] = "UI/TextureUI/BannerAni.plist",
 	["BattleScene"] = "UI/TextureUI/BattleScene.plist",
+	["BossAll"] = "UI/TextureUI/BossAll.plist",
 	["BuildingFixEffect"] = "UI/TextureUI/BuildingFixEffect.plist",
 	["buildings"] = "UI/TextureUI/buildings.plist",
 	["CartoonWords"] = "UI/TextureUI/CartoonWords.plist",

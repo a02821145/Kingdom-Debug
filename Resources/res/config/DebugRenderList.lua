@@ -18,7 +18,8 @@ local DebugRenderList =
 	"DrawBuildingPos",
 	"DrawBuildingGeo",
 	"DrawBuildingRealRect",
-	"ShowShapeComponent"
+	"ShowShapeComponent",
+	"ShowMemoryTargets"
 }
 
 return DebugRenderList

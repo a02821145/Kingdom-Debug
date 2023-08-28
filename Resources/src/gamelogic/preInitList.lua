@@ -3,6 +3,7 @@ local preInitList =
 	"IMsgInterface",
 	"IBaseInterface",
 	"IComponent",
+	"ITimerInterface",
 	"IBasePage",
 	"ILoadingAni",
 	"IManager",

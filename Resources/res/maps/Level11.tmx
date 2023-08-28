@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.3.4385" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="32" tileheight="32" infinite="0" nextlayerid="22" nextobjectid="81">
+<map version="1.2" tiledversion="1.3.4385" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="32" tileheight="32" infinite="0" nextlayerid="23" nextobjectid="86">
  <tileset firstgid="1" source="terrain.tsx"/>
  <tileset firstgid="2049" source="Forest Tileset.tsx"/>
  <tileset firstgid="2372" source="building4001.tsx"/>
@@ -35,7 +35,7 @@
  <tileset firstgid="2402" source="Forest-Prairie Tileset.tsx"/>
  <tileset firstgid="2969" source="tiledObject9.tsx"/>
  <tileset firstgid="2970" source="LPC_cliffs_grass.tsx"/>
- <layer id="1" name="river" width="80" height="40">
+ <layer id="1" name="river" width="80" height="40" visible="0">
   <data encoding="base64" compression="zlib">
    eJztwzENAAAMA6DOv876qI0dkNBLqqqqqqqqqqqqqqqq6tsDETY7pg==
   </data>
@@ -50,14 +50,14 @@
    eJztwzENAAAMA6DOWv2Lqo0dkNBLqqqqqqqqqqqqqqqq6tsD++xFrg==
   </data>
  </layer>
+ <layer id="4" name="road" width="80" height="40">
+  <data encoding="base64" compression="zlib">
+   eJzt2sEJwkAQhtGBkIuxEmMlmj7USjSVqF2652UPgQFDyHvw34fvPBHAPxy6iKGxY7f2ZdtwKp3Gxs76LaJfjn45l9Lp2tikHwAA7Mqtj7hXe/RrX7Udz9LqVW3WbzH9cvTL0S/nXVp9qn31AwAAaPKflOM/JEe/HP1y/CcBe/IDAMogaQ==
+  </data>
+ </layer>
  <layer id="19" name="underroad" width="80" height="40">
   <data encoding="base64" compression="zlib">
    eJztmUtukzEQx918EouyYQWsi+AIH5CuKI8jUGhXPO+QdlVedwhchJYzAEtYA3coqJt6lIwymoztmbGTAMpfGrU0+fzZP8/LJoS1qG5vhDBU2vbGqmfr171o96f2oOG4jyOTPaXtr5gfMrCsH5+5Ee3F1K47xknpX+L3PMzWr107PiOZZZyUWvEbDUI4IHY4qJyYIMripfKZN9HeMrvgGCelUWRyEO0s2PhxXvvR3hP7sAB+wALXXrPuVuNQIcecHRJ+Y8aLW47fnWg70e465ok+WLtu9Mt3leN4JfEbRjuZ2ieBH3K7Fu1ptGeO97bit2pJ/Eox+yRMuKF5+K3ab1rpOLLadvKDr72K9nrx03SrJsdoxX1Qy8/jd8vWMua65jfR5S6EKxm72s0/M3L0LK34YWzlrCbuYHxtjQN2v+O6b3ZpuyXwq6kfW8G/Prq2nNW8g+bpUo7uCadv8YHd+PP7IM+P+t6Q1BFL/dX6IPc1yg7rELUu1DO0xAnldzqYxCv1R2D6iPEbE3bQ542V/I7CbH3S3KS4TPlayjfoOzy5whK7oIeCv+XYgTgvLT8QjWEtK8nfcnFFGWp8kO4bnQPOsfR8iqGU90ApfnuD8r0B76FLnGhMWnyJM+R7Zdk3zR70gv+V+AEvfndAGfIeVMr9Ug7jvuWt25q9yu2fNpfyGox1RIpdkPbugMeqlPs1ZxBv3T4K83uTMx7zPJem3s99D+tIqvfjZ7ch+zfy4++nVvKlP5uz3z112yOpvmnqUd+l+5dSDCMvYCrdvXAf0OSySxfL61qUJF+na5Dipe/S/YuWX838rM/thHZnjdR7LHsl1Y5c/wKq5VeaH41f/hw3ZKrl+DGOfRztZHP+M4+vW/sXkJefZX4Yx1i3sebwXKCpkSDK7Uu0rwI/kKfeW/oXkJefZ36p72Ne0vYZnwm3n9F+Cfys5w+UxA/yoVR/QcvkV1qPts/4Qbil+HlrfSoHluoHnoEt0vLj/Xbu+1qG2rnBkjS9KYrmQKgb+Lv2DOeZo1RLqfF+u7SeFgxr7ih74nO90v9q+GnN4gtWhqn7MQ8/8EE8t5X4Yb9sjV0Q/3+kXE31+BHfH9rf5O4TqWn5pe7usYfO1WCPSvWN9vqeWMzdT29lPuN7qfX3VN3Q9DAeWeqbJxZ5zkz5tJcXV+7sW8svd5+szWkWhnRv6PjSPYyXF1fu7FvqAUvK1QlLfpYY4n7QnGbdmxYqxW+ND+bu36zrS92F8Zy2THYgHr+tY7ilUrVlVexAtGfhf9sVPvtbtMicttZa/6vOAX/KspY=
-  </data>
- </layer>
- <layer id="4" name="road" width="80" height="40">
-  <data encoding="base64" compression="zlib">
-   eJzt2rENwkAQRcG1DQRAJUAl4LKBSoA6uPh0gaWVMJZnpJ+vXrwRwC/sh4hDY8dh7suW4VQ6nRu76DeJfjn65VxLp1tjo34AALAq9y7iUe3ZzX3VcrxKq3e1j36T6ZejX45+OZs+Yltt1899FQAAwH/yn5TjPyRHvxz9cvwnAWvyBbvCJvM=
   </data>
  </layer>
  <layer id="5" name="playerBuildings" width="80" height="40">
@@ -95,6 +95,17 @@
    eJzt2TEKgDAMBdDMunj/iyqdJODQtUSpyntL1/BJCKQRAPc6lohtnV3Fd2V+/cuY7D3Zwf/t15zbN+NkV2fPAAAAAMB75e2z+a8saW6gJXoPAACAJ52aiAnS
   </data>
  </layer>
+ <objectgroup id="22" name="NPCSpawnPoint">
+  <object id="82" x="518.667" y="382.667">
+   <point/>
+  </object>
+  <object id="84" x="508" y="657.333">
+   <point/>
+  </object>
+  <object id="85" x="498.667" y="965.333">
+   <point/>
+  </object>
+ </objectgroup>
  <objectgroup id="10" name="cameraPos" visible="0">
   <object id="4" x="1829.33" y="684">
    <point/>
@@ -114,7 +125,7 @@
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="13" name="spawnArea" visible="0">
+ <objectgroup id="13" name="spawnArea">
   <object id="1" name="playerArea" x="1728" y="0" width="832" height="1280"/>
   <object id="3" x="450.667" y="316" width="161.333" height="710.667"/>
  </objectgroup>

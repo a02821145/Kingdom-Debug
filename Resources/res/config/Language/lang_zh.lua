@@ -15,7 +15,9 @@ local data = {
 ['@ItemTitle10006'] = '怒之铁拳',
 ['@ItemDes10006'] = '愤怒的铁拳像雨点一样落下，造成大范围伤害',
 ['@ItemTitle10007'] = '无敌药水',
-['@ItemDes10007'] = '使一定范围内我方单位无敌10秒',
+['@ItemDes10007'] = '使一定范围内我方单位无敌{0}秒',
+['@ItemTitle10008'] = '雷神之锤',
+['@ItemDes10008'] = '在一定范围内造成敌方{0}秒眩晕',
 ['@SoldierAnchorName'] = '弓箭手 ',
 ['@SoldierAnchorDesc'] = '登高望远是我的优势',
 ['@SoldierCannonerName'] = '炮手',
@@ -44,6 +46,8 @@ local data = {
 ['@SoldierCatapultDesc'] = '摧毁敌方城堡易的利器',
 ['@SoldierSpearManName'] = '长矛民兵',
 ['@SoldierSpearManDesc'] = '他们来自城镇平民，应徵入伍防御自己的家园，有时亦会外出作战',
+['@SoldierGolemName'] = '石头人',
+['@SoldierGolemDesc'] = '拥有强大力量的石头人',
 ['@Building_Name_4017'] = '炮塔',
 ['@Building_Desc_4017'] = '远程打击一切来犯之敌',
 ['@Building_Name_4001'] = '城堡',
@@ -133,5 +137,6 @@ local data = {
 ['@SkillUpgradeSuccess'] = '技能升级成功',
 ['@WarningNoDiamond'] = '宝石不够',
 ['@ExhangeDiamondSuccess'] = '兑换宝石成功',
+['@Boss1Dialogue'] = '没有人能从这里通过',
 }
 return data

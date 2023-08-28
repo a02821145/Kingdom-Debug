@@ -5,7 +5,7 @@ local level =
 	mapTmx = "maps/realLevelMap7.png",
 	mapInfo = "maps/Level7.ini",
 	prepareMusic = "prepareMusic1",
-	BGMusic = "MusicAttack1",
+	BGMusic = "MusicBoss1",
 	bonus = 210,
 
 	weather = 
@@ -67,6 +67,8 @@ local level =
 		building_type.player_magic_tower,
 		building_type.enemy_magic_tower,
 	},
+
+	hardUseFog = true,
 }
 
 return level

@@ -14,6 +14,8 @@ local conf =
 	team = actor_team.team_player,
 	upID = 10010,
 	population = 2,
+	isRemote = true,
+	FogViewSize = 200,
 	displayCSB = "UI/displayAni/displayAni1019.csb",
 
 	regulators = 
@@ -111,8 +113,8 @@ local conf =
 				[actor_status.as_alive]  = {"stand01"},
 				[actor_status.as_dead]   = {"die"},
 				[actor_status.as_moving] = {"walk"},
-				[actor_status.as_attack] = {"attack02"},
-				[actor_status.as_shoot]  = {"attack01"},
+				[actor_status.as_attack] = {"attack1"},
+				[actor_status.as_shoot]  = {"shoot1"},
 				[actor_status.as_stand]  = {"stand01"},
 			},
 		},
@@ -171,9 +173,37 @@ local conf =
 				-- 	name = "ExploreGoal_Evaluator",
 				-- },
 				{
+					name = "MoveToUnitGoal_Evaluator",
+					team = actor_team.team_player,
+					targetType = actor_type.type_soilder,
+					targetProf = actor_profession.prof_farmer,
+					value = 0.9,
+					regulator = 1,
+				},
+
+				{
+					name = "MoveToUnitGoal_Evaluator",
+					team = actor_team.team_player,
+					targetType = actor_type.type_soilder,
+					targetProfSet = {
+						actor_profession.prof_cavalier,
+						actor_profession.prof_golem,
+						actor_profession.prof_infantryman,
+						actor_profession.prof_low_soldier,
+						actor_profession.prof_thief,
+						actor_profession.prof_archer,
+					},
+
+					value = 0.95,
+					regulator = 1,
+				},
+
+				{
 					name = "CureTeammateGoal_Evaluator",
+					value = 1.0,
 					regulator = 2,
 				},
+				-- {
 				-- {
 				-- 	name = "GetWeaponGoal_Evaluator",
 				-- 	weaponType = actor_type.type_shotgun

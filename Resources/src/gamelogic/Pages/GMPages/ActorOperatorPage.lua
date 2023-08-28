@@ -27,6 +27,12 @@ function ActorOperatorPage:_init(data)
 	self:refreshCharacters()
 end
 
+function ActorOperatorPage:_Release()
+	for _,id in ipairs(self._EventIdList) do
+		RemoveEventListener(id)
+	end
+end
+
 function ActorOperatorPage:_initBtns()
 	self:addBtnClickListener("BtnAddPlayer",self.onAddPlayer)
 	self:addBtnClickListener("BtnAddEnemy",self.onAddEnemy)
@@ -48,11 +54,22 @@ function ActorOperatorPage:_initUI()
 	self._CBShowSpine   = self:getNode("CBShowSpine")
 	self._CBShowMoveSprite   = self:getNode("CBShowMoveSprite")
 	self._CBShowBuilding     = self:getNode("CBShowBuilding")
+	self._CBIsForce		= self:getNode("CBIsForce")
+	self._CBPause       = self:getNode("CBPause")
+	self._TextHealth	= self:getNode("TFHealth")
+
+	self._CBShowSprite:setSelected(true)
+	self._CBShowSpine:setSelected(true)
+	self._CBShowMoveSprite:setSelected(true)
+	self._CBShowBuilding:setSelected(true)
 end
 
 function ActorOperatorPage:_initEvents()
 	-- body
-	RegisterEventListener(EventType.ScriptEvent_Touch,handler(self,self.onTouchBegin))
+	self._EventIdList = {}
+	local id = RegisterEventListener(EventType.ScriptEvent_Touch,handler(self,self.onTouchBegin))
+
+	table.insert(self._EventIdList,id)
 end
 
 function ActorOperatorPage:refreshCharacters()
@@ -65,19 +82,37 @@ function ActorOperatorPage:refreshCharacters()
 	local configManager = TWRequire("ConfigDataManager")
 	local characters = configManager:getMod("Characters")
 	local chacterSelHandler = handler(self,self.onSelectCharacter)
-	for _,char in pairs(characters) do
-		local btn = btnSoldierCopy:clone()
-		local str = char.id..":"..char.name
-		btn:setTitleText(str)
-		viewList:addChild(btn)
-		btn.charcterID = char.id
-		btn:addClickEventListener(chacterSelHandler)
-		table.insert(self._btnList,btn)
+	local charactersBlue = {}
+	local charactersRed = {}
 
-		if char.id == self.curSelectedID then
-			btn:setHighlighted(true)
+	for _,char in pairs(characters) do
+		if char.team == actor_team.team_player then
+			table.insert(charactersBlue,char)
+		else
+			table.insert(charactersRed,char)
 		end
 	end
+
+
+	local function addChara(charList)
+		for _,char in pairs(charList) do
+			local btn = btnSoldierCopy:clone()
+			local teamStr = char.team == actor_team.team_player and "blue" or "red"
+			local str = teamStr..":".._Lang(char.name)
+			btn:setTitleText(str)
+			viewList:addChild(btn)
+			btn.charcterID = char.id
+			btn:addClickEventListener(chacterSelHandler)
+			table.insert(self._btnList,btn)
+
+			if char.id == self.curSelectedID then
+				btn:setHighlighted(true)
+			end
+		end
+	end
+
+	addChara(charactersBlue)
+	addChara(charactersRed)
 
 	self.curSelectedID = 1005
 	self.unitCount = default_playerConut
@@ -156,6 +191,10 @@ function ActorOperatorPage:_onAddActor(pos)
 	if team ~= actor_team.team_none then
 		local strLevel = self._TFLevel:getString()
 		local iLevel = tonumber(strLevel)
+		local isForce = self._CBIsForce:isSelected()
+		local strHealth = tonumber(self._TextHealth:getString())
+		local isPause = self._CBPause:isSelected()
+
 		local data =
 		{
 			command="createActor",
@@ -163,7 +202,10 @@ function ActorOperatorPage:_onAddActor(pos)
 			id=self.curSelectedID,
 			pos=pos,
 			num=self.unitCount,
-			level = iLevel
+			level = iLevel,
+			checkArea = not isForce,
+			health = strHealth,
+			pause = isPause
 		}
 
 		QueueEvent(EventType.ScriptEvent_ActorCommand,data)

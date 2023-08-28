@@ -10,6 +10,7 @@ local Building =
 	team = actor_team.team_player,
 	icon = "buliding_icon_4009.png",
 	displayCSB = "buildings/Building4009.csb",
+	FogViewSize = 500,
 	updateQuad = false,
 	
 	displayProperty = 

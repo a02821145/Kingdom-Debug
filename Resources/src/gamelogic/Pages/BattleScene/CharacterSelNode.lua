@@ -89,7 +89,7 @@ function CharacterSelNode:onAddCreateActor(event)
 	end
 
 	if self._pop > 0 then
-		if not PlayerManager.checkPopisEnough(actor_team.team_player,self._pop*(self._currentCreateNum + 1)) or  not PlayerManager.checkPopisEnough(actor_team.team_player,self._pop + preparePop) then
+		if PlayerManager.checkPopisEnough(actor_team.team_player,self._pop*(self._currentCreateNum + 1)) or  PlayerManager.checkPopisEnough(actor_team.team_player,self._pop + preparePop) then
 			gMessageManager:sendMessage(MessageDef_GameLogic.MSG_PlayBattleSceneAni,{ani="popNotEnough",loop = false,isUINode = true })
 			return 
 		end

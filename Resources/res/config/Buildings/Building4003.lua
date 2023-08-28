@@ -10,6 +10,7 @@ local Building =
 	cost = 6,
 	icon = "buliding_icon_4003.png",
 	displayCSB = "buildings/Building4003.csb",
+	FogViewSize = 200,
 	updateQuad = false,
 	
 	displayProperty = 

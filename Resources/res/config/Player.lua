@@ -7,7 +7,7 @@ local Player =
 
 	timeCreateDog = 60,
 	createCount = 6,
-
+	
 	AI=
 	{
 		lowRangeOfBias = 0.5,

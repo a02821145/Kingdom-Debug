@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.3.4385" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="32" tileheight="32" infinite="0" nextlayerid="34" nextobjectid="51">
+<map version="1.2" tiledversion="1.3.4385" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="32" tileheight="32" infinite="0" nextlayerid="36" nextobjectid="57">
  <tileset firstgid="1" source="building4001.tsx"/>
  <tileset firstgid="2" source="building4005.tsx"/>
  <tileset firstgid="3" source="building4003.tsx"/>
@@ -117,6 +117,17 @@
    eJzt0KEKACAMRVH7/t9o8kONlgVhBpFzYOzl2xo/6pF/zuhXo1+NfjX68YoZ+wAAAAAAAAAAALhnRL7hdwvgUwzP
   </data>
  </layer>
+ <objectgroup id="35" name="FogObject">
+  <object id="54" x="1518.6" y="957.433">
+   <point/>
+  </object>
+  <object id="55" x="1485.36" y="605.906">
+   <point/>
+  </object>
+  <object id="56" x="1452.13" y="150.837">
+   <point/>
+  </object>
+ </objectgroup>
  <objectgroup id="32" name="NPCSpawnPoint" visible="0">
   <object id="47" x="998" y="372">
    <point/>
@@ -125,6 +136,17 @@
    <point/>
   </object>
   <object id="50" x="1008" y="638">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="34" name="PlayerSpawnPoint">
+  <object id="51" x="1450.67" y="304">
+   <point/>
+  </object>
+  <object id="52" x="1442.67" y="609.333">
+   <point/>
+  </object>
+  <object id="53" x="1436" y="953.333">
    <point/>
   </object>
  </objectgroup>

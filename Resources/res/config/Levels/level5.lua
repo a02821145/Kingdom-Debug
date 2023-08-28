@@ -75,6 +75,8 @@ local level =
 		id = 100005,
 		page = "IntroducePage5",
 	},
+
+	hardUseFog = true,
 }
 
 return level

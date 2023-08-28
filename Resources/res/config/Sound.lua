@@ -749,6 +749,11 @@ local Sound =
 		time = 0.1,
 	},
 
+	{
+		id = "MusicBoss1",
+		path = "sounds/prepareBattle1.mp3",
+		time = 0.1,
+	},
 
 	{
 		id = "Stinger_Ready_For_War",
@@ -756,6 +761,12 @@ local Sound =
 		time = 0.1,
 	},
 
+	{
+		id = "Sound_Harmer_Thor",
+		path = "sounds/Sound_Harmer_Thor.mp3",
+		time = 0.1,
+	},
+	
 	{
 		id = "prepareMusic1",
 		path = "sounds/MusicBattlePrepare1.mp3",

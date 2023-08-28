@@ -13,19 +13,6 @@ local data = {
 		prepareState = true,
 	},
 
-	[100002]={
-		id = 100002,
-		name = 'Poison',
-		title = '@ItemTitle10002',
-		desc = '@ItemDes10002',
-		value = 50,
-		range = 200,
-		cost = 30,
-		hWidth = 69,
-		hHeight = 55,
-		icon = 'pixelicon64_poison.png',
-	},
-
 	[100003]={
 		id = 100003,
 		name = 'Firebomb',
@@ -77,9 +64,20 @@ local data = {
 		title = '@ItemTitle10007',
 		desc = '@ItemDes10007',
 		radius = 150,
-		value = 10,
+		value = 8,
 		cost = 80,
 		icon = 'pixelicon64_invincible.png',
+	},
+
+	[100008]={
+		id = 100008,
+		name = 'Hammer of Thor',
+		title = '@ItemTitle10008',
+		desc = '@ItemDes10008',
+		radius = 100,
+		value = 5,
+		cost = 50,
+		icon = 'leishen_chui_cion.png',
 	}
 
 }

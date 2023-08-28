@@ -15,6 +15,7 @@ local conf =
 	upID = 10007,
 	spId = 80002,
 	population = 1,
+	isRemote = true,
 	canStandOnBuilding = true,
 	
 	regulators = 
@@ -94,6 +95,12 @@ local conf =
 			ignoreSpan = 5,
 			updateByView = true,
 			regStart = true,
+
+			AttackPriority=
+			{
+				[1] = EAttackPriotry.AttackPriotryMeleeUnit,
+				[2] = EAttackPriotry.AttackPriotryDist
+			},
 		},
 		{
 			name = "TargetSysComponent",
@@ -126,8 +133,8 @@ local conf =
 				[actor_status.as_alive]  = {"stand01","stand02"},
 				[actor_status.as_dead]   = {"die"},
 				[actor_status.as_moving] = {"walk"},
-				[actor_status.as_attack] = {"attack"},
-				[actor_status.as_shoot]  = {"shoot"},
+				[actor_status.as_attack] = {"attack1"},
+				[actor_status.as_shoot]  = {"shoot1"},
 				[actor_status.as_stand]  = {"stand01","stand02"},
 			},
 		},
@@ -191,6 +198,7 @@ local conf =
 					profession = actor_profession.prof_farmer,
 					regulator = 0.5,
 					ratio = 30,
+					value = 1.2,
 				},
 
 				{

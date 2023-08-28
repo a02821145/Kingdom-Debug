@@ -6,10 +6,10 @@ local SK_CureTeammate =
 	cureAmount= 5,
 	regulator = 0.5,
 	changeReg = 1,
+	checkRadius = 0.5,
 	sound = "sound_magic_cure",
-	effect = "UI/Effects/CureEffect.csb",
-	batchPath = "UI/TextureUI/Projectiles.png",
-	layer = ESpriteLayer.layerProjectile,
+	effect = "7051",
+	effectBlue = 7052,
 }
 
 return SK_CureTeammate

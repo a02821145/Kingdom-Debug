@@ -37,7 +37,7 @@ function ShopItem:GetTitle()
 end
 
 function ShopItem:GetDes()
-	return _Lang(self._data.desc)
+	return _Lang(self._data.desc,self._data.value)
 end
 
 return ShopItem

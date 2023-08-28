@@ -80,6 +80,8 @@ local level =
 		id = 100004,
 		page = "IntroducePage4",
 	},
+
+	hardUseFog = true,
 }
 
 return level

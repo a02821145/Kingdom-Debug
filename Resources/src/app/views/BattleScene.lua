@@ -10,6 +10,7 @@ local Vector2D 		= TWRequire("Vector2D")
 local SimpleAniNode = TWRequire("SimpleAniNode")
 local SkillNodeHandler = TWRequire("SkillNodeHandler")
 local GolemNodeHandler = TWRequire("GolemNodeHandler")
+
 local GolemLevelStart = 6
 
 local SimulateTouchType = 
@@ -70,6 +71,7 @@ function BattleScene:_init(data)
 	self._playAni = data.playAni
 	self._totalPop = 0
 	self._curPop = 0
+	self._bossDialogueTime = 0
 
 	self._gameLoadedFinish = false
 	self._curChaSelect =  {}
@@ -241,6 +243,8 @@ function BattleScene:initUI()
 	self:setSceneNodeVisibleLang("btn_text_fotress",true,self._uiSceneNode)
 	self:setSceneNodeVisibleLang("BagPanelNoItems",true,self._uiSceneNode)
 	self:setSceneNodeVisibleLang("select_troop_frame",true,self._uiSceneNode)
+	self:setNodeVisibleLang("dialogue_content")
+	self:setNodeVisible("DialogueNode",false)
 end
 
 function BattleScene:relocate()
@@ -441,6 +445,47 @@ function BattleScene:onBtnTrap()
 
 end
 
+function BattleScene:onDebugShowAIModel(data)
+	local team = data.team == nil and actor_team.team_NPC or tonumber(data.team)
+	local cmd = data.cmd
+
+	local text_ai_model = team == actor_team.team_NPC and "Text_AI_Model" or "Text_My_AI_Model"
+	local text_ai_soldier_Model = team == actor_team.team_NPC and "Text_AI_Soldier_Model" or "Text_My_AI_Soldier_Model"
+	local text_ai_operation = team == actor_team.team_NPC and "Text_AI_Operation" or "Text_My_AI_Operation"
+
+	if cmd == "ShowAIModel" then
+		local AIType = PlayerManager.getAIModel(team)
+		local str = ConstCfg.AIModeStrMap[AIType]
+		self:setLabelText(text_ai_model,str,self._uiSceneNode)
+	elseif cmd == "ShowAISolderModel" then
+		local soldierArr = string.split(data.soldiers,",")
+		local strSoldierType = ConstCfg.CreateSoldierTypeStrMap[data.createSoldierType] or "无"
+		local strOut = strSoldierType.." "
+		local cost = data.cost
+
+		for _,soldierStr in ipairs(soldierArr) do
+			if #soldierStr > 0 then
+				local infoArr = string.split(soldierStr,"_")
+				local strType =  ConstCfg.ProfessionChsMap[infoArr[1]]
+				local strCount = infoArr[2]
+				strOut = strOut.._Lang(strType)..":"..strCount.." "
+			end
+		end
+
+		strOut = strOut.." 花费:"..cost
+		self:setLabelText(text_ai_soldier_Model,strOut,self._uiSceneNode)
+	elseif cmd == "ShowAIOperation" then
+		local strMap = {
+			["jihuo"] = "我方远程单位达到5个 集火",
+			["jihuo3"] = "玩家近战单位在视野范围内达到3个 集火",
+			["zhiliaojihuo"] = "我方近战单位血量低于10% 集火",
+		}
+		local  str = strMap[data.str]
+
+		self:setLabelText(text_ai_operation,str,self._uiSceneNode)
+	end
+end
+
 function BattleScene:onSelectBag(bagItemNode,data)
 	if self._curBagItemNode then
 		self._curBagItemNode:setSelect(false)
@@ -574,6 +619,15 @@ function BattleScene:OnStateStart()
 		end
 	end
 
+	local AIType = PlayerManager.getAIModel(actor_team.team_NPC)
+	local str = ConstCfg.AIModeStrMap[AIType]
+	self:setLabelText("Text_AI_Model",str,self._uiSceneNode)
+
+	AIType = PlayerManager.getAIModel(actor_team.team_player)
+	str = ConstCfg.AIModeStrMap[AIType]
+	self:setLabelText("Text_My_AI_Model",str,self._uiSceneNode)
+
+
 	self._CurDecisiveTime = ConstCfg.Decisive_Time*60
 	local str = common:format_time(self._CurDecisiveTime)
 	self:setLabelText("TextDecisiveBattle",str,self._uiSceneNode)
@@ -582,6 +636,8 @@ function BattleScene:OnStateStart()
 	if self._GolemNodeHandler then
 		 self._GolemNodeHandler:Start()
 	end
+
+
 end
 
 function BattleScene:onSelectSoldierLV()
@@ -705,6 +761,21 @@ function BattleScene:refreshBuildingLV()
 	end
 
 	self._PutBuildingLV:forceDoLayout()
+end
+
+function BattleScene:onShowBossDialogNode(data)
+	local bossType =  tonumber(data.bossType)
+	local posX = tonumber(data.posX)
+	local posY = tonumber(data.posY)
+
+	local str = ConstCfg.BossDialogueBox[bossType]
+	if str then
+		self._bossDialogueTime = 5
+		self:setNodeVisible("DialogueNode",true)
+		self:setLabelTextLang("dialogue_content",_Lang(str))
+
+		self:setNodePosition("DialogueNode",posX,posY)
+	end
 end
 
 function BattleScene:refreshPutSoldierLV()
@@ -1031,6 +1102,11 @@ function BattleScene:_update(dt)
 	self:UpdateSimpluator(dt)
 
 	self:UpdateDecisiveTime(dt)
+
+	self._bossDialogueTime = self._bossDialogueTime - dt
+	if self._bossDialogueTime <=0 then
+		self:setNodeVisible("DialogueNode",false)
+	end
 end
 
 function BattleScene:onShrinkMap()
@@ -1403,8 +1479,14 @@ function BattleScene:onBtnBuyAndSellSure()
 	_GModel.PlayerManager:SetPrepareMoney(0)
 	_GModel.PlayerManager:SetPreparePop(0)
 
+	_GModel.PlayerManager:SetCurSelectId(nil)
+
 	gMessageManager:sendMessage(MessageDef_GameLogic.MSG_RefreshBattleCoins)
 	gMessageManager:sendMessage(MessageDef_GameLogic.MSG_NewbieCallback,{value = "onBtnBuyAndSellSure"})
+
+	for _,putNode in pairs(self._PutNodeList) do
+		putNode:SetIsSelect(false)
+	end
 end
 
 function BattleScene:onSelectPutNode(id,isSelect)

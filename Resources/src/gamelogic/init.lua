@@ -65,6 +65,7 @@ function initGame(loadingList)
 		GiftboxManager.loadGiftBoxConfig(configManager:getMod("GiftBoxs"))
 		BuffManager.loadBuffConfig(configManager:getMod("Buffs"))
 		loadSoldierSkillCfg(configManager:getMod("SoldierSkill"))
+		loadPlayerOpAICfg(configManager:getMod("PlayerOpAICfg"))
 	end
 
 

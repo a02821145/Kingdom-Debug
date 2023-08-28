@@ -106,7 +106,7 @@ function PutSelNode:onSelectPut(event)
 	end
 
 	if self._pop > 0 then
-		if not PlayerManager.checkPopisEnough(actor_team.team_player,self._pop) then
+		if PlayerManager.checkPopisEnough(actor_team.team_player,self._pop) then
 			gMessageManager:sendMessage(MessageDef_GameLogic.MSG_PlayBattleSceneAni,{ani="popNotEnough",loop = false,isUINode = true })
 			return 
 		end

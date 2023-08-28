@@ -59,6 +59,8 @@ local data = {
 ['@SoldierCatapultDesc'] = 'A sharp weapon to destroy the castle',
 ['@SoldierSpearManName'] = 'Spear Militia',
 ['@SoldierSpearManDesc'] = 'These troops are made up of locals who have been organised to defend their settlement',
+['@SoldierGolemName'] = 'Golem',
+['@SoldierGolemDesc'] = 'The Golem with mighty power',
 ['@Building_Name_4017'] = 'Turret',
 ['@Building_Desc_4017'] = 'Long-range attack against all enemies',
 ['@TestVip'] = 'VIP Level {0}',
@@ -75,7 +77,9 @@ local data = {
 ['@ItemTitle10006'] = 'Iron Fist of Wrath',
 ['@ItemDes10006'] = 'Angry iron fists fall like raindrops, causing extensive damage',
 ['@ItemTitle10007'] = 'Invincible potion',
-['@ItemDes10007'] = 'Make our units invincible within a certain range for 10 seconds',
+['@ItemDes10007'] = 'Make our units invincible within a certain range for {0} seconds',
+['@ItemTitle10008'] = 'Hammer of Thor',
+['@ItemDes10008'] = 'In a certain range, it causes the enemy to be stunned for {0} seconds.',
 ['@BuyGemsSuccess'] = 'Successfully purchased diamonds',
 ['@BuyGemsFailed'] = 'Failed to buy diamonds',
 ['@GemsNotEnought'] = 'Not enough diamonds',
@@ -127,5 +131,6 @@ local data = {
 ['@SkillUpgradeSuccess'] = 'Successfully upgraded skills',
 ['@WarningNoDiamond'] = 'Not enough diamonds',
 ['@ExhangeDiamondSuccess'] = 'Successfully exchanged Ruby',
+['@Boss1Dialogue'] = 'No one can pass through from here',
 }
 return data

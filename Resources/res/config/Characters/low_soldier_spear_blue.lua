@@ -109,7 +109,7 @@ local conf =
 				[actor_status.as_alive] = {"stand"},
 				[actor_status.as_dead] = {"die"},
 				[actor_status.as_moving] = {"walk"},
-				[actor_status.as_attack] ={"attack"},
+				[actor_status.as_attack] ={"attack1"},
 				[actor_status.as_stand] = {"stand"},
 			},
 		},

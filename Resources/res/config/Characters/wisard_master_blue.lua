@@ -14,6 +14,7 @@ local conf =
 	team = actor_team.team_player,
 	upID = 10012,
 	population = 3,
+	isRemote = true,
 	displayCSB = "UI/displayAni/displayAni1023.csb",
 
 	regulators = 
@@ -102,6 +103,12 @@ local conf =
 			regulator = 2,
 			memorySpan = 5,
 			ignoreSpan = 5,
+
+			AttackPriority=
+			{
+				[1] = EAttackPriotry.AttackPriotryMeleeUnit,
+				[2] = EAttackPriotry.AttackPriotryDist
+			},
 		},
 		{
 			name = "PathComponent",
@@ -140,8 +147,8 @@ local conf =
 				[actor_status.as_alive]  = {"stand"},
 				[actor_status.as_dead]   = {"die"},
 				[actor_status.as_moving] = {"walk"},
-				[actor_status.as_attack] = {"attack01"},
-				[actor_status.as_shoot]  = {"attack02"},
+				[actor_status.as_attack] = {"attack1"},
+				[actor_status.as_shoot]  = {"shoot1"},
 				[actor_status.as_stand]  = {"stand"},
 			},
 		},

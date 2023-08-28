@@ -91,6 +91,12 @@ local conf =
 			memorySpan = 5,
 			ignoreSpan = 5,
 			regStart = true,
+
+			AttackPriority=
+			{
+				[1] = EAttackPriotry.AttackPriotryRestrainUnit,
+				[2] = EAttackPriotry.AttackPriotryDist
+			},
 		},
 		{
 			name = "TargetSysComponent",
@@ -121,7 +127,7 @@ local conf =
 				[actor_status.as_alive] = {"stand01","stand02"},
 				[actor_status.as_dead] = {"die"},
 				[actor_status.as_moving] = {"walk"},
-				[actor_status.as_attack] ={"attack01","attack02"},
+				[actor_status.as_attack] ={"attack1","attack2"},
 				[actor_status.as_stand] = {"stand01","stand02"},
 			},
 		},

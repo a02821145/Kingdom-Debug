@@ -81,7 +81,7 @@ function sSpriteAniManager:addSceneObject(id,pos)
 		if ext == "csb" then
 			if cfg.time and cfg.time > 0 then
 				local randomObject = {}
-				obj = SimpleAniNode.new(cfg.path)
+				obj = SimpleAniNode.new(cfg.path,false)
 				randomObject.obj = obj
 				randomObject.time = cfg.time
 				randomObject.curTime = math.random(0,cfg.time)

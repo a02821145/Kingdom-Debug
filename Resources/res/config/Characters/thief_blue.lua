@@ -96,6 +96,14 @@ local conf =
 			regulator = 2,
 			memorySpan = 5,
 			ignoreSpan = 5,
+
+			AttackPriority=
+			{
+				[1] = EAttackPriotry.AttackPriotryRestrainUnit,
+				[2] = EAttackPriotry.AttackPriotryRemoteUnit,
+				[3] = EAttackPriotry.AttackPriotryBuilding,
+				[4] = EAttackPriotry.AttackPriotryDist
+			},
 		},
 		{
 			name = "VisualableComponent",
@@ -135,7 +143,7 @@ local conf =
 				[actor_status.as_alive] = {"stand"},
 				[actor_status.as_dead] = {"die"},
 				[actor_status.as_moving] = {"walk"},
-				[actor_status.as_attack] ={"attack01","attack02"},
+				[actor_status.as_attack] ={"attack1","attack2"},
 				[actor_status.as_stand] = {"stand"},
 			},
 		},
@@ -184,29 +192,6 @@ local conf =
 
 			Evaluators = 
 			{
-				{
-					name = "AttackFarmerGoal_Evaluator",
-					profession = actor_profession.prof_wisard,
-					regulator = 0.5,
-					value = 2.2,
-					ratio = 100,
-				},
-
-				{
-					name = "AttackFarmerGoal_Evaluator",
-					profession = actor_profession.prof_wisard_master,
-					regulator = 0.5,
-					value = 2.1,
-					ratio = 100,
-				},
-
-				{
-					name = "AttackFarmerGoal_Evaluator",
-					profession = actor_profession.prof_farmer,
-					regulator = 0.5,
-					value = 2.0,
-					ratio = 70,
-				},
 
 				{
 					name = "AttackTargetGoal_Evaluator",
@@ -220,6 +205,32 @@ local conf =
 					name = "MoveFowardGoal_Evaluator",
 					regulator = 1.0;
 					value = 0.9,
+				},
+
+				{
+					name = "MoveToUnitGoal_Evaluator",
+					targetType = actor_type.type_building,
+					regulator = 1.0,
+					buildingTypes = 
+					{
+						building_type.enemy_ware_house,
+					},
+
+					value = 1.5
+				},
+
+				{
+					name = "MoveToUnitGoal_Evaluator",
+					targetType = actor_type.type_building,
+					regulator = 1.0;
+					buildingTypes = 
+					{
+						building_type.enemy_arrow_tower,
+						building_type.enemy_cannon_buliding,
+						building_type.enemy_magic_tower
+					},
+
+					value = 1.4
 				},
 
 				{

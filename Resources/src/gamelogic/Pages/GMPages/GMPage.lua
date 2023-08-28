@@ -97,4 +97,14 @@ function GMPage:onFinishGame()
 	self:_close()
 end
 
+function GMPage:onAIMaster()
+	gRootManager:OpenPage("AIMasterChangePage");
+	self:_close()
+end
+
+function GMPage:onPauseActorPage()
+	gRootManager:OpenPage("PauseActorPage")
+	self:_close()
+end
+
 return GMPage

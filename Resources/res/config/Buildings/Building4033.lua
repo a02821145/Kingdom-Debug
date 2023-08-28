@@ -9,6 +9,7 @@ local Building =
 	team = actor_team.team_player,
 	icon = "buliding_icon_4033.png",
 	displayCSB = "buildings/Building4033Display.csb",
+	FogViewSize = 300,
 	updateQuad = false,
 	
 	displayProperty = 
@@ -43,6 +44,11 @@ local Building =
 
 		{
  			name = "BuildingProperty",
+ 			CDTime = 50,
+		},
+
+		{
+ 			name = "LongCannonBuildingProperty",
  			CDTime = 50,
 		},
 

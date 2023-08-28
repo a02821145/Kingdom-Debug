@@ -16,6 +16,7 @@ local conf =
 	population = 0,
 	canStandOnBuilding = true,
 	isGuard = true,
+	isRemote = true,
 	displayCSB = "UI/displayAni/displayAni1003.csb",
 
 	regulators = 
@@ -115,7 +116,7 @@ local conf =
 			{
 				[actor_status.as_alive] = {"stand01"},
 				[actor_status.as_dead] = {"die"},
-				[actor_status.as_shoot] ={"shoot"},
+				[actor_status.as_shoot] ={"shoot1"},
 				[actor_status.as_stand] = {"stand01"},
 			},
 		},

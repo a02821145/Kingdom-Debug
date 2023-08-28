@@ -6,8 +6,8 @@ local level =
 	mapInfo = "maps/Level1.ini",
 	prepareMusic = "prepareMusic1",
 	BGMusic = "MusicAttack1",
-	bonus = 80,
-	diamond = 40,
+	bonus = 80,--钻石奖励
+	diamond = 40, --红宝石奖励
 	newbieId = 10000001,
 	difficulty = level_difficulty.level_difficulty_easy,
 
@@ -100,6 +100,8 @@ local level =
 	},
 	
 	--newbieTaskId = 10000002,
+
+	hardUseFog = true,
 }
 
 return level

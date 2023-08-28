@@ -9,7 +9,9 @@ local GMList =
 	"ActorEditor",
 	"ActorRenderDebug",
 	"ManagersInfo",
-	"FinishGame"
+	"FinishGame",
+	"AIMaster",
+	"PauseActorPage",
 }
 
 return GMList

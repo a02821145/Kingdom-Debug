@@ -78,7 +78,48 @@ local ConstCfg =
 		[actor_profession.prof_thief] = "ThiefBlue-stand01_00.png",
 		[actor_profession.prof_wisard_master] = "MasterBlue-stand_00.png",
 		[actor_profession.prof_catapult] = "catapult-upgrade_37.png",
-	}
+	},
+
+	AIModeStrMap = 
+	{
+		[EPlayerAIType.PlayerAITypeNormal] = "中庸",
+		[EPlayerAIType.PlayerAITypeFast] = "快攻",
+		[EPlayerAIType.PlayerAITypeLateStageGod] = "后期大神",
+		[EPlayerAIType.PlayerAITypeMaster] = "操作高手",
+	},
+
+	MIN_AI_SPEED = 0.1,
+	MAX_AI_SPEED = 2,
+
+	CreateSoldierTypeStrMap = 
+	{
+		["1"] = "我方组合",
+		["2"] = "克制敌军",
+		["3"] = "建筑目标",
+		["4"] = "兵种序列",
+	},
+
+	BossDialogueBox = 
+	{
+		[actor_profession.prof_boss1] = "@Boss1Dialogue",
+	},
+
+	ProfessionChsMap = 
+	{
+		["1001"] = "@SoldierFarmerName",
+		["1002"] = "@SoldierLowerSoldierName",
+		["1003"] = "@SoldierInfrantryName",
+		["1004"] = "@SoldierAnchorName",
+		["1005"] = "@SoldierCavalierName",
+		["1006"] = "@SoldierThiefName",
+		["1007"] = "@SoldierWisardName",
+		["1008"] = "@SoldierMasterWisardName",
+		["1009"] = "",
+		["1010"] = "",
+		["1011"] = "",
+		["1012"] = "",
+		["1013"] = "@SoldierCatapultName",
+	},
 }
 
 return ConstCfg

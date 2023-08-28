@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.3.4385" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="32" tileheight="32" infinite="0" nextlayerid="23" nextobjectid="54">
+<map version="1.2" tiledversion="1.3.4385" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="32" tileheight="32" infinite="0" nextlayerid="25" nextobjectid="60">
  <tileset firstgid="1" source="terrain.tsx"/>
  <tileset firstgid="2049" source="Forest Tileset.tsx"/>
  <tileset firstgid="2372" source="building4002.tsx"/>
@@ -60,32 +60,44 @@
    eJzt2kEKwyAQhWFXQfQGOX3uoK56qRyhSB0Yh2k2LS2G/1uZiZT46vKF8HKkgA80ld851kXNJN89z3v0u1UV5/u3cc7HeBfzPLe8zKpaS759JhnK3rZ4fkIyiuZ8Ooc+i06Ge/afvfumf9vOAQAAAAAAAAAAAAAAAAD4htW7kb+ke4LS+2umVynzeqP+32bOZOd6HU0vVRymV3qmuVNZk9/Z9bqvqymmo/vuuV6c2evg2v+js/fyTrz7drUH+LcnFyglVA==
   </data>
  </layer>
- <layer id="6" name="playerBuildings" width="80" height="40" visible="0">
+ <layer id="6" name="playerBuildings" width="80" height="40">
   <data encoding="base64" compression="zlib">
    eJzt2TsKgDAQQMG0uZs/RPA6Ht3OSjSRyCrMNNtYiDyWEFMC+I85R78BQKyhcg+u9iYN1fYHLemPSFf9jblswlMl/cFb9MdX6Y9I+mur8z0PfU7b3TP6423Of0TSH5Hc/xGp5v/HlM8nPKU/AEosdv7n7KBkDe8=
   </data>
  </layer>
- <layer id="7" name="npcBuildings" width="80" height="40" visible="0">
+ <layer id="7" name="npcBuildings" width="80" height="40">
   <data encoding="base64" compression="zlib">
    eJzt2DsKg0AUhtFp3Vc0AWuD2f9GUkgaGTSO3NyA5zQWNvrzgY9SAEoZu+wrAOAfzJ4HIabVroOdSaS/GPcL7Pq5x2+PNfojmv7I1NrfU5un2G/R+i5iv3Pst9DftlvQfV5lvz1b/fU2IpjvDzLpjwj+/5Hp0dWPR+iPVkf7e1XO6w8A+KU33u0Phw==
   </data>
  </layer>
- <layer id="8" name="goldenPlayer" width="80" height="40" visible="0">
+ <layer id="8" name="goldenPlayer" width="80" height="40">
   <data encoding="base64" compression="zlib">
    eJztxjENAAAIA7A9+BeGKQwggIT2agIAwCVd+wEAAAAAAAAAAIC/BsgFAaE=
   </data>
  </layer>
- <layer id="9" name="goldenNPC" width="80" height="40" visible="0">
+ <layer id="9" name="goldenNPC" width="80" height="40">
   <data encoding="base64" compression="zlib">
    eJztxqERAAAIBKAv7j+YS3l2uwUSCQAAq+s+AAAAAAAAAAAAwLcBpRQBoQ==
   </data>
  </layer>
- <layer id="22" name="decoration" width="80" height="40" visible="0">
+ <layer id="22" name="decoration" width="80" height="40">
   <data encoding="base64" compression="zlib">
    eJzt0rENADAIwDB23m//5QSKRDd7yQOJAAAAAH46uVuY8B8AAADQublbmPAfAADAuwJ8aRjt
   </data>
  </layer>
- <objectgroup id="21" name="NPCSpawnPoint" visible="0">
+ <objectgroup id="24" name="FogObject"/>
+ <objectgroup id="23" name="PlayerSpawnPoint">
+  <object id="54" x="1758.67" y="350.667">
+   <point/>
+  </object>
+  <object id="55" x="1758.67" y="669.333">
+   <point/>
+  </object>
+  <object id="56" x="1750.67" y="1068">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="21" name="NPCSpawnPoint">
   <object id="51" x="893" y="293">
    <point/>
   </object>
@@ -112,7 +124,7 @@
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="14" name="spawnArea" visible="0">
+ <objectgroup id="14" name="spawnArea">
   <object id="5" name="playerArea" x="1696" y="0" width="864" height="1280"/>
   <object id="7" x="692" y="224.334" width="246.667" height="900"/>
  </objectgroup>

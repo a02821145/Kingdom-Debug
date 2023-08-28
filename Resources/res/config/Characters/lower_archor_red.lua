@@ -15,6 +15,7 @@ local conf =
 	upID = 10002,
 	population = 0,
 	isGuard = true,
+	isRemote = true,
 	canStandOnBuilding = true,
 	
 	regulators = 
@@ -113,7 +114,7 @@ local conf =
 				[actor_status.as_alive] = {"stand01"},
 				[actor_status.as_dead] = {"die"},
 				[actor_status.as_moving] = {"walk"},
-				[actor_status.as_shoot] ={"shoot"},
+				[actor_status.as_shoot] ={"shoot1"},
 				[actor_status.as_stand] = {"stand01"},
 			},
 		},

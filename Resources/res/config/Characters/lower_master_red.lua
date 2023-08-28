@@ -15,6 +15,7 @@ local conf =
 	upID = 10004,
 	population = 0,
 	isGuard = true,
+	isRemote = true,
 	canStandOnBuilding = true,
 	
 	regulators = 
@@ -85,6 +86,12 @@ local conf =
 			ignoreSpan = 5,
 			updateByView = true,
 			regStart = true,
+
+			AttackPriority=
+			{
+				[1] = EAttackPriotry.AttackPriotryRestrainUnit,
+				[2] = EAttackPriotry.AttackPriotryDist
+			},
 		},
 		{
 			name = "TargetSysComponent",
@@ -115,7 +122,7 @@ local conf =
 				[actor_status.as_alive] = {"stand"},
 				[actor_status.as_dead] = {"die"},
 				[actor_status.as_moving] = {"walk"},
-				[actor_status.as_shoot] ={"attack01"},
+				[actor_status.as_shoot] ={"shoot1"},
 				[actor_status.as_stand] = {"stand"},
 			},
 		},

@@ -19,8 +19,6 @@ function WeatherManager:onStartGame()
 	if weathers and next(weathers) then
 		for _,weatherId in ipairs(weathers) do
 			local weatherInfo = configManager:getConfigById(weatherId)
-			print("WeatherManager:onStartGame weatherInfo=")
-			dump(weatherInfo)
 			table.insert(self._weatherCfg,weatherInfo)
 		end
 	end

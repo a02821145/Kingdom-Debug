@@ -103,6 +103,13 @@ local conf =
 			memorySpan = 5,
 			ignoreSpan = 5,
 			regStart = true,
+
+			AttackPriority=
+			{
+				[1] = EAttackPriotry.AttackPriotryRestrainUnit,
+				[2] = EAttackPriotry.AttackPriotryRemoteUnit,
+				[3] = EAttackPriotry.AttackPriotryDist,
+			},
 		},
 		{
 			name = "TargetSysComponent",
@@ -133,7 +140,7 @@ local conf =
 				[actor_status.as_alive] = {"stand01","stand02"},
 				[actor_status.as_dead] = {"die"},
 				[actor_status.as_moving] = {"walk"},
-				[actor_status.as_attack] ={"attack01","attack02"},
+				[actor_status.as_attack] ={"attack1","attack2"},
 				[actor_status.as_stand] = {"stand01","stand02"},
 			},
 		},
@@ -212,12 +219,27 @@ local conf =
 					regulator = 1,
 				},
 
+
 				{
 					name = "MoveFowardGoal_Evaluator",
 					regulator = 1.0;
 					value = 0.9,
 				},
 				
+				{
+					name = "MoveToUnitGoal_Evaluator",
+					targetType = actor_type.type_building,
+					regulator = 1.0;
+					buildingTypes = 
+					{
+						building_type.enemy_arrow_tower,
+						building_type.enemy_cannon_buliding,
+						building_type.enemy_magic_tower
+					},
+
+					value = 0.85
+				},
+
 				{
 					name = "MoveToTargetBase_Evaluator",
 					regulator = 1,

@@ -14,7 +14,8 @@ local conf =
 	team = actor_team.team_NPC,
 	upID = 10013,
 	population = 5,
-
+	isRemote = true,
+	
 	regulators = 
 	{
 		{name = "triggerTestRegulator",time=8},
@@ -116,7 +117,7 @@ local conf =
 				[actor_status.as_alive]  = {"stand"},
 				[actor_status.as_dead]   = {"die"},
 				[actor_status.as_moving] = {"walk"},
-				[actor_status.as_attack] = {"attack"},
+				[actor_status.as_attack] = {"attack1"},
 				[actor_status.as_stand]  = {"stand"},
 			},
 		},

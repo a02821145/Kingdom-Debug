@@ -13,6 +13,7 @@ local conf =
 	icon = "icon_soldier_1015.png",
 	team = actor_team.team_NPC,
 	population = 3,
+	isRemote = true,
 	upID = 10012,
 
 	regulators = 
@@ -99,6 +100,12 @@ local conf =
 			regulator = 2,
 			memorySpan = 5,
 			ignoreSpan = 5,
+
+			AttackPriority=
+			{
+				[1] = EAttackPriotry.AttackPriotryMeleeUnit,
+				[2] = EAttackPriotry.AttackPriotryDist
+			},
 		},
 		{
 			name = "PathComponent",
@@ -133,8 +140,8 @@ local conf =
 				[actor_status.as_alive]  = {"stand"},
 				[actor_status.as_dead]   = {"die"},
 				[actor_status.as_moving] = {"walk"},
-				[actor_status.as_attack] = {"attack01"},
-				[actor_status.as_shoot]  = {"attack02"},
+				[actor_status.as_attack] = {"attack1"},
+				[actor_status.as_shoot]  = {"shoot1"},
 				[actor_status.as_stand]  = {"stand"},
 			},
 		},
