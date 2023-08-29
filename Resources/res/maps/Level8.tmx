@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.3.4385" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="32" tileheight="32" infinite="0" nextlayerid="22" nextobjectid="73">
+<map version="1.2" tiledversion="1.3.4385" orientation="orthogonal" renderorder="right-down" width="80" height="40" tilewidth="32" tileheight="32" infinite="0" nextlayerid="23" nextobjectid="76">
  <tileset firstgid="1" source="terrain.tsx"/>
  <tileset firstgid="2049" source="building4006.tsx"/>
  <tileset firstgid="2050" source="building4004.tsx"/>
@@ -50,7 +50,7 @@
  <tileset firstgid="4208" source="scene_object_tree2.tsx"/>
  <tileset firstgid="4209" source="sceneObject__meat_cooking.tsx"/>
  <tileset firstgid="4210" source="sceneObject__Torch_Metal.tsx"/>
- <layer id="1" name="river" width="80" height="40" visible="0">
+ <layer id="1" name="river" width="80" height="40">
   <data encoding="base64" compression="zlib">
    eJztwzENAAAMA6DOv876qI0dkNBLqqqqqqqqqqqqqqqq6tsDETY7pg==
   </data>
@@ -85,32 +85,43 @@
    eJzt2ktKw1AYxfHPB2SQ4M3ER7dQrXQd4irEkRFXYDvo2HToQNRhRuKk4g46EtyKW/CEXEmsSQWt9sH/B4cLyQ3kHr7MYoZZuwmL9TQ2u3RmPaXvPu95Cv//vf7S2J/nfOv7vaPJs0dma8q6sqFsRuWeK/WWKkNX9Hntin5P4rLnOmlg9qYMlXbwoyPNxSBqvvelN29bz+wou8qe0lIyV+y/1Xqn3Pv5y/w6rbvcqzq7UGLleAn6S/zc5fN3NmUGk5p7bfW1rxwoHeVQea58r3lXH91Xr+czuArGE7NQN2fV3prmEAAAAAAAAAAAAAAAAAAA/N5LYPaodP1/nOkS/Me5SEL11VEefI7oDyvmHSyQI4g=
   </data>
  </layer>
- <layer id="5" name="playerBuildings" width="80" height="40" visible="0">
+ <layer id="5" name="playerBuildings" width="80" height="40">
   <data encoding="base64" compression="zlib">
-   eJzt10sKgzAUQNFAJ6ZdXv+zQjfi0jusAyWGND6o50wEQQiPG6MpAQBrvHP0CoBWpyF6Bf/nnOuuezbt72Eem9Dfl/cfkfTXzyuvu+6Z/vrRF5H0RyT9LTsOaax9Jjurq+ivzPdfP/or018//n/L9Pc7dz1V0x+Rpv3dZvbvdebexT6Hbg7OhCbm12bN/J7OgEX6a7P1/D5YFQ1J
+   eJzt10sKgzAUQNEMTV1e/zOhG+nSO6wDSww2PjDnTAKCEOTGJCkBAGu8cvQMgK3GIXoGx3POdWPP5v09fI9d6O/L/49I+mtnyuvGnumvHX0RSX9E0t9vpyG9a9/J9uoq+itz/mtHf2X6a8f9t0x//3PXUzX9EWne321h/V4Xnl2sc4BuPe0BHMQHtp4NEg==
   </data>
  </layer>
- <layer id="6" name="npcBuildings" width="80" height="40" visible="0">
+ <layer id="6" name="npcBuildings" width="80" height="40">
   <data encoding="base64" compression="zlib">
    eJzt2csOgjAQhWFUlJJ42/B4LjTuff+d6YLQGGAALTNnPF9CMLpQ/hQLpSh07YLyDwDHft9hv061oAX7zXdImrEfEZZ4zno5b489x3Hqee/s5Hit2bIrrexed6/Hxt+zHv5sTFNN3/7RTeiK1K+9lpX2Q5b8/0nzb9rndbXdz6LYpQw++uUYf5K2W7sh99P22Qqtn8b4i1DmD6u89JPGXy5D5ytaP00cf7/5fsv99gbv/5HuPyTS+Ntkuv7z0k/DWCu0frz/xYPUT2P9RRK7xDUuhH4WpV28zx98/rG+0lnzEKbt++SYf726zDzmpc+P0Kw9/oiIiFKPCfOt9nos2fIGbIocWA==
   </data>
  </layer>
- <layer id="7" name="goldenPlayer" width="80" height="40" visible="0">
+ <layer id="7" name="goldenPlayer" width="80" height="40">
   <data encoding="base64" compression="zlib">
    eJztxzERAAAIBKBf7B/MUjZw14ONBAAAAAAAAAAAAIBPuvYDAPcM8aoBoQ==
   </data>
  </layer>
- <layer id="9" name="goldenNPC" width="80" height="40" visible="0">
+ <layer id="9" name="goldenNPC" width="80" height="40">
   <data encoding="base64" compression="zlib">
    eJztxjERAAAIBKBf7B/MUhawgB5MJADAF137AQAAAAAAAAAAALhtAK0yAaE=
   </data>
  </layer>
- <layer id="18" name="npcTrap" width="80" height="40" visible="0">
+ <layer id="18" name="npcTrap" width="80" height="40">
   <data encoding="base64" compression="zlib">
    eJzt1sEJwCAQRUGv9pj+68hBUsFjwcAM2MBj4bsWAAAAzz4PAL5NsAtMcVuNfo1+jX6Nfo1+3Mr/GYBJNgYA5tjYRr9Gv0a/5u/9XpaOCEo=
   </data>
  </layer>
- <objectgroup id="21" name="NPCSpawnPoint" visible="0">
+ <objectgroup id="22" name="PlayerSpawnPoint">
+  <object id="73" x="1825.33" y="101.333">
+   <point/>
+  </object>
+  <object id="74" x="1817.33" y="657.333">
+   <point/>
+  </object>
+  <object id="75" x="1814.67" y="1193.33">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="21" name="NPCSpawnPoint">
   <object id="70" x="836" y="288">
    <point/>
   </object>
@@ -121,12 +132,12 @@
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="11" name="cameraPos" visible="0">
+ <objectgroup id="11" name="cameraPos">
   <object id="1" x="1800" y="617.333">
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="12" name="BoxPoints" visible="0">
+ <objectgroup id="12" name="BoxPoints">
   <object id="2" x="1361.33" y="78.6667">
    <point/>
   </object>
@@ -137,14 +148,14 @@
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="13" name="spawnArea" visible="0">
+ <objectgroup id="13" name="spawnArea">
   <object id="5" name="playerArea" x="1760" y="0" width="800" height="1280"/>
   <object id="6" x="653.585" y="248.799" width="221.333" height="800"/>
  </objectgroup>
- <objectgroup id="14" name="createArea" visible="0">
+ <objectgroup id="14" name="createArea">
   <object id="7" x="1760" y="0" width="800" height="1280"/>
  </objectgroup>
- <objectgroup id="15" name="walls" visible="0">
+ <objectgroup id="15" name="walls">
   <object id="8" x="0" y="0" width="2560" height="1280">
    <properties>
     <property name="normalInside" type="bool" value="true"/>
@@ -230,7 +241,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="16" name="playerSolders" visible="0">
+ <objectgroup id="16" name="playerSolders">
   <object id="30" name="1003" x="2045" y="554">
    <point/>
   </object>
@@ -262,7 +273,7 @@
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="17" name="npcSolders" visible="0">
+ <objectgroup id="17" name="npcSolders">
   <object id="22" name="1008" x="546" y="601">
    <point/>
   </object>
